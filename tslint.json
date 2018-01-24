@@ -155,6 +155,7 @@
         ],
         "missing-jsdoc": true,
         "mocha-unneeded-done": true,
+        "newline-per-chained-call": false,
         "new-parens": true,
         "no-construct": true,
         "no-default-export": true,

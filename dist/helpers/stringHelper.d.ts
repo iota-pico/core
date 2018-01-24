@@ -7,5 +7,5 @@ export declare class StringHelper {
      * @param value Object to test for its stringyness.
      * @returns True if the object is a string.
      */
-    static isString(value: any): boolean;
+    static isString(value: any): value is string;
 }

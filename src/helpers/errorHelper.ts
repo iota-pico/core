@@ -1,3 +1,4 @@
+import { CoreError } from "../error/coreError";
 import { JsonHelper } from "./jsonHelper";
 import { StringHelper } from "./stringHelper";
 
@@ -15,9 +16,11 @@ export class ErrorHelper {
             return "unknown error";
         } else if (err instanceof Error) {
             return err.message;
+        } else if (CoreError.isError(err)) {
+            return err.format();
         } else {
             if (StringHelper.isString(err)) {
-                return <string>err;
+                return err;
             } else {
                 return JsonHelper.stringify(err, undefined, "\t");
             }

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const coreError_1 = require("../error/coreError");
 const jsonHelper_1 = require("./jsonHelper");
 const stringHelper_1 = require("./stringHelper");
 /**
@@ -17,6 +18,9 @@ class ErrorHelper {
         }
         else if (err instanceof Error) {
             return err.message;
+        }
+        else if (coreError_1.CoreError.isError(err)) {
+            return err.format();
         }
         else {
             if (stringHelper_1.StringHelper.isString(err)) {

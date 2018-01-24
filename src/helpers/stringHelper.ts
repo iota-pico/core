@@ -7,7 +7,7 @@ export class StringHelper {
      * @param value Object to test for its stringyness.
      * @returns True if the object is a string.
      */
-    public static isString(value: any): boolean {
+    public static isString(value: any): value is string {
         return value === null || value === undefined
             ? false : Object.prototype.toString.call(value) === "[object String]";
     }

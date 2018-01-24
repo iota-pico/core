@@ -34,7 +34,7 @@
         "docs-clean": "rimraf ./docs/*",
         "docs-generate": "typedoc --module commonjs --excludePrivate --theme default --readme none --hideGenerator --mode file --target es5 --exclude ./**/src/index.ts --out ./docs ./src",
         "docs": "npm-run-all docs-clean docs-generate",
-        "security": "nsp -check",
+        "security": "nsp check",
         "dist": "npm-run-all build test docs security"
     },
     "devDependencies": {

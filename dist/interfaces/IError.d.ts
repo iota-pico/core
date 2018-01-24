@@ -10,7 +10,7 @@ export interface IError {
     /**
      * Additional details about the error.
      */
-    additional: {
+    additional?: {
         [id: string]: string;
     };
 }
