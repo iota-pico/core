@@ -28,7 +28,7 @@
         "build-compile": "tsc",
         "build-lint": "tslint -p ./tsconfig.json -c ./tslint.json -t verbose",
         "build": "npm-run-all build-clean build-compile build-lint",
-        "test-lint": "tslint -p ./tsconfig.json -c ./tslint.json -t verbose ./test/**/*.spec.ts",
+        "test-lint": "tslint -p ./test/tsconfig.json -c ./tslint.json -t verbose",
         "test-run": "mocha",
         "test": "npm-run-all test-lint test-run",
         "docs-clean": "rimraf ./docs/*",
