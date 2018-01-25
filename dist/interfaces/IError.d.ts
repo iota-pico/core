@@ -11,6 +11,6 @@ export interface IError {
      * Additional details about the error.
      */
     additional?: {
-        [id: string]: string;
+        [id: string]: any;
     };
 }

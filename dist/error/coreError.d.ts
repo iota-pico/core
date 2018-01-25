@@ -1,4 +1,4 @@
-import { IError } from "../index";
+import { IError } from "../interfaces/IError";
 /**
  * A core implementation of an error.
  */
@@ -11,7 +11,7 @@ export declare class CoreError implements IError {
      * Additional details about the error.
      */
     additional?: {
-        [id: string]: string;
+        [id: string]: any;
     };
     /**
      * Create an instance of CoreError.
@@ -19,7 +19,7 @@ export declare class CoreError implements IError {
      * @param additional Additional details about the error.
      */
     constructor(message: string, additional?: {
-        [id: string]: string;
+        [id: string]: any;
     });
     /**
      * Check if an object could be a CoreError.

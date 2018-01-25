@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const index_1 = require("../index");
+const jsonHelper_1 = require("../helpers/jsonHelper");
 /**
  * A core implementation of an error.
  */
@@ -31,7 +31,7 @@ class CoreError {
         if (keys.length > 0) {
             out += "\r\n";
             keys.forEach(key => {
-                out += `\t${index_1.JsonHelper.stringify(this.additional[key])}`;
+                out += `\t${key}: ${jsonHelper_1.JsonHelper.stringify(this.additional[key])}\r\n`;
             });
         }
         return out;

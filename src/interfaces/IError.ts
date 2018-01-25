@@ -10,5 +10,5 @@ export interface IError {
     /**
      * Additional details about the error.
      */
-    additional?: { [id: string]: string};
+    additional?: { [id: string]: any };
 }

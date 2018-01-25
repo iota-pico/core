@@ -2,7 +2,7 @@
  * Tests for JsonHelper.
  */
 import * as chai from "chai";
-import { JsonHelper } from "../src/helpers/jsonHelper";
+import { JsonHelper } from "../../src/helpers/jsonHelper";
 
 describe("JsonHelper", () => {
     it("can be created", () => {

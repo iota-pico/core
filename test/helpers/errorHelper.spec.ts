@@ -2,7 +2,7 @@
  * Tests for ErrorHelper.
  */
 import * as chai from "chai";
-import { ErrorHelper } from "../src/helpers/errorHelper";
+import { ErrorHelper } from "../../src/helpers/errorHelper";
 
 describe("ErrorHelper", () => {
     it("can be created", () => {

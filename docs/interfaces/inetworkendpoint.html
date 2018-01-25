@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IError | @iota-pico/core</title>
+	<title>INetworkEndPoint | @iota-pico/core</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="ierror.html">IError</a>
+					<a href="inetworkendpoint.html">INetworkEndPoint</a>
 				</li>
 			</ul>
-			<h1>Interface IError</h1>
+			<h1>Interface INetworkEndPoint</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Represents an error.</p>
+						<p>Represents the configuration for a network endpoint.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>interface</dt>
@@ -81,14 +81,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IError</span>
+						<span class="target">INetworkEndPoint</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/coreerror.html" class="tsd-signature-type">CoreError</a></li>
+					<li><a href="../classes/networkendpoint.html" class="tsd-signature-type">NetworkEndPoint</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -96,54 +96,134 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ierror.html#additional" class="tsd-kind-icon">additional</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ierror.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inetworkendpoint.html#gethost" class="tsd-kind-icon">get<wbr>Host</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inetworkendpoint.html#getpath" class="tsd-kind-icon">get<wbr>Path</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inetworkendpoint.html#getport" class="tsd-kind-icon">get<wbr>Port</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inetworkendpoint.html#getprotocol" class="tsd-kind-icon">get<wbr>Protocol</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="inetworkendpoint.html#geturi" class="tsd-kind-icon">get<wbr>Uri</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="additional" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> additional</h3>
-					<div class="tsd-signature tsd-kind-icon">additional<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/iotaeco/iota-pico-core/blob/110e51d/src/interfaces/IError.ts#L13">interfaces/IError.ts:13</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Additional details about the error.</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
-							</li>
-						</ul>
-					</div>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="gethost" class="tsd-anchor"></a>
+					<h3>get<wbr>Host</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Host<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in interfaces/INetworkEndPoint.ts:17</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The host name or ip of the endpoint.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The host.</p>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/iotaeco/iota-pico-core/blob/110e51d/src/interfaces/IError.ts#L9">interfaces/IError.ts:9</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The message for the error.</p>
-						</div>
-					</div>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getpath" class="tsd-anchor"></a>
+					<h3>get<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Path<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in interfaces/INetworkEndPoint.ts:22</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The path to the endpoint.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The path.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getport" class="tsd-anchor"></a>
+					<h3>get<wbr>Port</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Port<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in interfaces/INetworkEndPoint.ts:27</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The port of the endpoint.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The port.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getprotocol" class="tsd-anchor"></a>
+					<h3>get<wbr>Protocol</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Protocol<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../index.html#networkprotocol" class="tsd-signature-type">NetworkProtocol</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in interfaces/INetworkEndPoint.ts:12</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The protocol to access the endpoint with.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../index.html#networkprotocol" class="tsd-signature-type">NetworkProtocol</a></h4>
+							<p>The protocol.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="geturi" class="tsd-anchor"></a>
+					<h3>get<wbr>Uri</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Uri<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in interfaces/INetworkEndPoint.ts:32</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The complete uri.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The uri.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -172,30 +252,39 @@
 					<li class=" tsd-kind-class">
 						<a href="../classes/stringhelper.html" class="tsd-kind-icon">String<wbr>Helper</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="ierror.html" class="tsd-kind-icon">IError</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ierror.html#additional" class="tsd-kind-icon">additional</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ierror.html#message" class="tsd-kind-icon">message</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="ilogger.html" class="tsd-kind-icon">ILogger</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="inetworkclient.html" class="tsd-kind-icon">INetwork<wbr>Client</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="inetworkendpoint.html" class="tsd-kind-icon">INetwork<wbr>End<wbr>Point</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inetworkendpoint.html#gethost" class="tsd-kind-icon">get<wbr>Host</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inetworkendpoint.html#getpath" class="tsd-kind-icon">get<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inetworkendpoint.html#getport" class="tsd-kind-icon">get<wbr>Port</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inetworkendpoint.html#getprotocol" class="tsd-kind-icon">get<wbr>Protocol</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="inetworkendpoint.html#geturi" class="tsd-kind-icon">get<wbr>Uri</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-type-alias">
 						<a href="../index.html#networkprotocol" class="tsd-kind-icon">Network<wbr>Protocol</a>
 					</li>

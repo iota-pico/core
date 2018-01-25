@@ -1,4 +1,5 @@
-import { IError, JsonHelper } from "../index";
+import { JsonHelper } from "../helpers/jsonHelper";
+import { IError } from "../interfaces/IError";
 
 /**
  * A core implementation of an error.
@@ -11,14 +12,14 @@ export class CoreError implements IError {
     /**
      * Additional details about the error.
      */
-    public additional?: { [id: string]: string };
+    public additional?: { [id: string]: any };
 
     /**
      * Create an instance of CoreError.
      * @param message The message for the error.
      * @param additional Additional details about the error.
      */
-    constructor(message: string, additional?: { [id: string]: string }) {
+    constructor(message: string, additional?: { [id: string]: any }) {
         this.message = message;
         this.additional = additional ? additional : {};
     }
@@ -41,7 +42,7 @@ export class CoreError implements IError {
         if (keys.length > 0) {
             out += "\r\n";
             keys.forEach(key => {
-                out += `\t${JsonHelper.stringify(this.additional[key])}`;
+                out += `\t${key}: ${JsonHelper.stringify(this.additional[key])}\r\n`;
             });
         }
         return out;
