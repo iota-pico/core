@@ -8,6 +8,10 @@ export declare class CoreError implements IError {
      */
     message: string;
     /**
+     * The stack trace for the error.
+     */
+    stack: string;
+    /**
      * Additional details about the error.
      */
     additional?: {

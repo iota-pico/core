@@ -10,6 +10,10 @@ export class CoreError implements IError {
      */
     public message: string;
     /**
+     * The stack trace for the error.
+     */
+    public stack: string;
+    /**
      * Additional details about the error.
      */
     public additional?: { [id: string]: any };
@@ -22,6 +26,7 @@ export class CoreError implements IError {
     constructor(message: string, additional?: { [id: string]: any }) {
         this.message = message;
         this.additional = additional ? additional : {};
+        this.stack = new Error().stack;
     }
 
     /**

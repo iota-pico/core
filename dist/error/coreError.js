@@ -13,6 +13,7 @@ class CoreError {
     constructor(message, additional) {
         this.message = message;
         this.additional = additional ? additional : {};
+        this.stack = new Error().stack;
     }
     /**
      * Check if an object could be a CoreError.
