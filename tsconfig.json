@@ -13,7 +13,8 @@
         "strict": true,
         "noImplicitReturns": true,
         "noUnusedLocals": true,
-        "strictNullChecks": false
+        "strictNullChecks": false,
+        "esModuleInterop": true
     },
     "include": [
         "src/**/*"
