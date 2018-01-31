@@ -35,7 +35,7 @@
         "test-run": "mocha",
         "test": "npm-run-all test-lint test-run",
         "docs-clean": "rimraf ./docs/*",
-        "docs-generate": "typedoc --module commonjs --excludePrivate --theme default --readme none --hideGenerator --mode file --target es5 --exclude ./**/src/index.ts --out ./docs ./src",
+        "docs-generate": "typedoc --module commonjs --excludePrivate --theme markdown --readme none --hideGenerator --mode file --target es5 --exclude ./**/src/index.ts --out ./docs ./src",
         "docs": "npm-run-all docs-clean docs-generate",
         "security": "nsp check",
         "dist": "npm-run-all build test docs security"
@@ -52,6 +52,7 @@
         "tslint": "^5.9.1",
         "tslint-microsoft-contrib": "^5.0.2",
         "typedoc": "^0.9.0",
+        "typedoc-plugin-markdown": "^1.0.12",
         "typescript": "^2.7.0-rc"
     }
 }
