@@ -1,18 +1,9 @@
 import { JsonHelper } from "../helpers/jsonHelper";
-import { IError } from "../interfaces/IError";
 
 /**
  * A core implementation of an error.
  */
-export class CoreError implements IError {
-    /**
-     * The message for the error.
-     */
-    public message: string;
-    /**
-     * The stack trace for the error.
-     */
-    public stack: string;
+export class CoreError extends Error {
     /**
      * Additional details about the error.
      */
@@ -24,9 +15,8 @@ export class CoreError implements IError {
      * @param additional Additional details about the error.
      */
     constructor(message: string, additional?: { [id: string]: any }) {
-        this.message = message;
+        super(message);
         this.additional = additional ? additional : {};
-        this.stack = new Error().stack;
     }
 
     /**

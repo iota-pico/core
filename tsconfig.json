@@ -2,15 +2,16 @@
     "compilerOptions": {
         "target": "es2017",
         "lib": [
-            "es2015"
+            "es2016",
+            "dom"
         ],
         "outDir": "dist",
         "module": "commonjs",
         "declaration": true,
         "moduleResolution": "node",
-        "types": [
-        ],
-        "strict": true,
+        "types": [],
+        "noImplicitAny": true,
+        "noImplicitThis": true,
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "strictNullChecks": false,

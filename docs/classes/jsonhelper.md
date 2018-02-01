@@ -25,7 +25,7 @@ Json helper methods
 
 
 
-*Defined in [helpers/jsonHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/helpers/jsonHelper.ts#L12)*
+*Defined in [helpers/jsonHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/0bbb142/src/helpers/jsonHelper.ts#L12)*
 
 
 

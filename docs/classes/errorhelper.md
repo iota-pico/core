@@ -25,7 +25,7 @@ Handle errors as gracefully as possible.
 
 
 
-*Defined in [helpers/errorHelper.ts:15](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/helpers/errorHelper.ts#L15)*
+*Defined in [helpers/errorHelper.ts:15](https://github.com/iotaeco/iota-pico-core/blob/0bbb142/src/helpers/errorHelper.ts#L15)*
 
 
 

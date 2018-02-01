@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.5.2
+
+* Added isAscii, encodeNonASCII, decodeNonASCII to StringHelper
+* Added NumberHelper
+* Removed IError
+
 ## v0.5.1
 
 * PAL network client name unification

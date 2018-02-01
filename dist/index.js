@@ -9,5 +9,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./error/coreError"));
 __export(require("./helpers/errorHelper"));
 __export(require("./helpers/jsonHelper"));
+__export(require("./helpers/numberHelper"));
 __export(require("./helpers/stringHelper"));
 __export(require("./network/networkEndPoint"));

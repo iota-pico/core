@@ -1,16 +1,7 @@
-import { IError } from "../interfaces/IError";
 /**
  * A core implementation of an error.
  */
-export declare class CoreError implements IError {
-    /**
-     * The message for the error.
-     */
-    message: string;
-    /**
-     * The stack trace for the error.
-     */
-    stack: string;
+export declare class CoreError extends Error {
     /**
      * Additional details about the error.
      */

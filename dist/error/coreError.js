@@ -4,16 +4,15 @@ const jsonHelper_1 = require("../helpers/jsonHelper");
 /**
  * A core implementation of an error.
  */
-class CoreError {
+class CoreError extends Error {
     /**
      * Create an instance of CoreError.
      * @param message The message for the error.
      * @param additional Additional details about the error.
      */
     constructor(message, additional) {
-        this.message = message;
+        super(message);
         this.additional = additional ? additional : {};
-        this.stack = new Error().stack;
     }
     /**
      * Check if an object could be a CoreError.

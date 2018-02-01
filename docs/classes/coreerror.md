@@ -7,9 +7,18 @@
 
 A core implementation of an error.
 
-## Implements
+## Hierarchy
 
-* [IError](../interfaces/ierror.md)
+
+ `Error`
+
+**↳ CoreError**
+
+
+
+
+
+
 
 ## Index
 
@@ -21,7 +30,9 @@ A core implementation of an error.
 ### Properties
 
 * [additional](coreerror.md#additional)
+* [Error](coreerror.md#error)
 * [message](coreerror.md#message)
+* [name](coreerror.md#name)
 * [stack](coreerror.md#stack)
 
 
@@ -40,7 +51,7 @@ A core implementation of an error.
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*): [CoreError](coreerror.md)
 
 
-*Defined in [error/coreError.ts:19](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L19)*
+*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/0bbb142/src/error/coreError.ts#L10)*
 
 
 
@@ -70,9 +81,7 @@ Create an instance of CoreError.
 
 **●  additional**:  *`object`* 
 
-*Implementation of [IError](../interfaces/ierror.md).[additional](../interfaces/ierror.md#additional)*
-
-*Defined in [error/coreError.ts:19](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L19)*
+*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/0bbb142/src/error/coreError.ts#L10)*
 
 
 
@@ -90,19 +99,46 @@ Additional details about the error.
 
 ___
 
+<a id="error"></a>
+
+### «Static» Error
+
+**●  Error**:  *`ErrorConstructor`* 
+
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:884*
+
+
+
+
+
+___
+
 <a id="message"></a>
 
-###  message
+### «Static» message
 
 **●  message**:  *`string`* 
 
-*Implementation of [IError](../interfaces/ierror.md).[message](../interfaces/ierror.md#message)*
+*Inherited from Error.message*
 
-*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L11)*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:874*
 
 
 
-The message for the error.
+
+
+___
+
+<a id="name"></a>
+
+### «Static» name
+
+**●  name**:  *`string`* 
+
+*Inherited from Error.name*
+
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:873*
+
 
 
 
@@ -111,17 +147,14 @@ ___
 
 <a id="stack"></a>
 
-###  stack
+### «Static»«Optional» stack
 
 **●  stack**:  *`string`* 
 
-*Implementation of [IError](../interfaces/ierror.md).[stack](../interfaces/ierror.md#stack)*
+*Inherited from Error.stack*
 
-*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L15)*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:875*
 
-
-
-The stack trace for the error.
 
 
 
@@ -138,7 +171,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:44](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L44)*
+*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/0bbb142/src/error/coreError.ts#L34)*
 
 
 
@@ -163,7 +196,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:37](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L37)*
+*Defined in [error/coreError.ts:27](https://github.com/iotaeco/iota-pico-core/blob/0bbb142/src/error/coreError.ts#L27)*
 
 
 

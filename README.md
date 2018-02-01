@@ -23,6 +23,11 @@ Helper classes and core interface definitions.
 ## API Documentation
 
 Documentation for the code can be found in [docs](./docs/README.md) folder.
+
+## Tutorials
+
+Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iotaeco/tutorials)
+
 ## Examples
 
 There is example code using all the functionality of the libraries for the following platforms and languages.
