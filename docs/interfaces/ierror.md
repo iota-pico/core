@@ -21,7 +21,7 @@ Represents an error.
 
 **●  additional**:  *`object`* 
 
-*Defined in [interfaces/IError.ts:17](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/interfaces/IError.ts#L17)*
+*Defined in [interfaces/IError.ts:17](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/interfaces/IError.ts#L17)*
 
 
 
@@ -45,7 +45,7 @@ ___
 
 **●  message**:  *`string`* 
 
-*Defined in [interfaces/IError.ts:9](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/interfaces/IError.ts#L9)*
+*Defined in [interfaces/IError.ts:9](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/interfaces/IError.ts#L9)*
 
 
 
@@ -62,7 +62,7 @@ ___
 
 **●  stack**:  *`string`* 
 
-*Defined in [interfaces/IError.ts:13](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/interfaces/IError.ts#L13)*
+*Defined in [interfaces/IError.ts:13](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/interfaces/IError.ts#L13)*
 
 
 

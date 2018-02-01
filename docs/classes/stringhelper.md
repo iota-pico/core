@@ -25,7 +25,7 @@ String helper methods
 
 
 
-*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/helpers/stringHelper.ts#L10)*
+*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/helpers/stringHelper.ts#L10)*
 
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@iota-pico/core",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "description": "IOTA Pico Framework Core",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",

@@ -40,7 +40,7 @@ A core implementation of an error.
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*): [CoreError](coreerror.md)
 
 
-*Defined in [error/coreError.ts:19](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/error/coreError.ts#L19)*
+*Defined in [error/coreError.ts:19](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L19)*
 
 
 
@@ -72,7 +72,7 @@ Create an instance of CoreError.
 
 *Implementation of [IError](../interfaces/ierror.md).[additional](../interfaces/ierror.md#additional)*
 
-*Defined in [error/coreError.ts:19](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/error/coreError.ts#L19)*
+*Defined in [error/coreError.ts:19](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L19)*
 
 
 
@@ -98,7 +98,7 @@ ___
 
 *Implementation of [IError](../interfaces/ierror.md).[message](../interfaces/ierror.md#message)*
 
-*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/error/coreError.ts#L11)*
+*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L11)*
 
 
 
@@ -117,7 +117,7 @@ ___
 
 *Implementation of [IError](../interfaces/ierror.md).[stack](../interfaces/ierror.md#stack)*
 
-*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/error/coreError.ts#L15)*
+*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L15)*
 
 
 
@@ -138,7 +138,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:44](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/error/coreError.ts#L44)*
+*Defined in [error/coreError.ts:44](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L44)*
 
 
 
@@ -163,7 +163,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:37](https://github.com/iotaeco/iota-pico-core/blob/cbca082/src/error/coreError.ts#L37)*
+*Defined in [error/coreError.ts:37](https://github.com/iotaeco/iota-pico-core/blob/9e91e5f/src/error/coreError.ts#L37)*
 
 
 
