@@ -4,10 +4,6 @@ import { NetworkProtocol } from "../interfaces/networkProtocol";
  * Default implementation of a network endpoint.
  */
 export declare class NetworkEndPoint implements INetworkEndPoint {
-    private readonly _protocol;
-    private readonly _host;
-    private readonly _path;
-    private readonly _port;
     /**
      * Create an instance of NetworkEndPoint.
      * @param protocol The protocol to access the endpoint with.

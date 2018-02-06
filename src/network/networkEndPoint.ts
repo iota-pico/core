@@ -6,9 +6,13 @@ import { NetworkProtocol } from "../interfaces/networkProtocol";
  * Default implementation of a network endpoint.
  */
 export class NetworkEndPoint implements INetworkEndPoint {
+    /* @internal */
     private readonly _protocol: NetworkProtocol;
+    /* @internal */
     private readonly _host: string;
+    /* @internal */
     private readonly _path: string;
+    /* @internal */
     private readonly _port: number;
 
     /**

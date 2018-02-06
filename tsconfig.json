@@ -15,7 +15,8 @@
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "strictNullChecks": false,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "stripInternal": true
     },
     "include": [
         "src/**/*"
