@@ -19,7 +19,7 @@ Represents a client for performing communication.
 
 
 
-*Defined in [interfaces/INetworkClient.ts:14](https://github.com/iotaeco/iota-pico-core/blob/c1a33f0/src/interfaces/INetworkClient.ts#L14)*
+*Defined in [interfaces/INetworkClient.ts:14](https://github.com/iotaeco/iota-pico-core/blob/c766392/src/interfaces/INetworkClient.ts#L14)*
 
 
 

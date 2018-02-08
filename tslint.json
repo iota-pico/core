@@ -321,6 +321,7 @@
         "no-var-self": false,
         "valid-typeof": false,
         "no-switch-case-fall-through": false,
-        "typeof-compare": false
+        "typeof-compare": false,
+        "no-dynamic-delete": false
     }
 }

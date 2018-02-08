@@ -2,6 +2,8 @@
 
 ## v0.5.3
 
+* Added generic factory base
+
 ## v0.5.2
 
 * Added isAscii, encodeNonASCII, decodeNonASCII to StringHelper
