@@ -33,7 +33,7 @@ The generic type for the object types in the factory.
 
 
 
-*Defined in factories/factoryBase.ts:31*
+*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/ac93e17/src/factories/factoryBase.ts#L31)*
 
 
 
@@ -68,7 +68,7 @@ ___
 
 
 
-*Defined in factories/factoryBase.ts:41*
+*Defined in [factories/factoryBase.ts:41](https://github.com/iotaeco/iota-pico-core/blob/ac93e17/src/factories/factoryBase.ts#L41)*
 
 
 
@@ -90,7 +90,7 @@ ___
 
 
 
-*Defined in factories/factoryBase.ts:14*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/ac93e17/src/factories/factoryBase.ts#L14)*
 
 
 
@@ -124,7 +124,7 @@ ___
 
 
 
-*Defined in factories/factoryBase.ts:22*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/ac93e17/src/factories/factoryBase.ts#L22)*
 
 
 
