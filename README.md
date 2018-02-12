@@ -26,7 +26,7 @@ Documentation for the code can be found in [docs](./docs/README.md) folder.
 
 ## Tutorials
 
-Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iotaeco/tutorials)
+Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iotaeco/iota-pico-tutorials)
 
 ## Examples
 
