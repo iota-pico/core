@@ -11,6 +11,118 @@ Represents a client for performing communication.
 
 
 ## Methods
+<a id="get"></a>
+
+###  get
+
+► **get**(additionalHeaders?: *`object`*): `Promise`.<`string`>
+
+
+
+*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L12)*
+
+
+
+Get data asynchronously.
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| additionalHeaders | `object`   |  Extra headers to send with the request. |
+
+
+
+
+
+**Returns:** `Promise`.<`string`>
+Promise which resolves to the object returned or rejects with error.
+
+
+
+
+
+
+___
+
+<a id="getjson"></a>
+
+###  getJson
+
+► **getJson**U(additionalHeaders?: *`object`*): `Promise`.<`U`>
+
+
+
+*Defined in [interfaces/INetworkClient.ts:28](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L28)*
+
+
+
+Get data as JSON asynchronously.
+
+
+**Type parameters:**
+
+#### U 
+
+The generic type for the returned object.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| additionalHeaders | `object`   |  Extra headers to send with the request. |
+
+
+
+
+
+**Returns:** `Promise`.<`U`>
+Promise which resolves to the object returned or rejects with error.
+
+
+
+
+
+
+___
+
+<a id="post"></a>
+
+###  post
+
+► **post**(data: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+
+
+
+*Defined in [interfaces/INetworkClient.ts:20](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L20)*
+
+
+
+Post data asynchronously.
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| data | `string`   |  The data to send. |
+| additionalHeaders | `object`   |  Extra headers to send with the request. |
+
+
+
+
+
+**Returns:** `Promise`.<`string`>
+Promise which resolves to the object returned or rejects with error.
+
+
+
+
+
+
+___
+
 <a id="postjson"></a>
 
 ###  postJson
@@ -19,7 +131,7 @@ Represents a client for performing communication.
 
 
 
-*Defined in [interfaces/INetworkClient.ts:14](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/interfaces/INetworkClient.ts#L14)*
+*Defined in [interfaces/INetworkClient.ts:38](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L38)*
 
 
 

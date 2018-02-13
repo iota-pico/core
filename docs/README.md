@@ -11,6 +11,7 @@
 * [ErrorHelper](classes/errorhelper.md)
 * [FactoryBase](classes/factorybase.md)
 * [JsonHelper](classes/jsonhelper.md)
+* [NetworkClientFactory](classes/networkclientfactory.md)
 * [NetworkEndPoint](classes/networkendpoint.md)
 * [NumberHelper](classes/numberhelper.md)
 * [StringHelper](classes/stringhelper.md)
@@ -36,7 +37,7 @@
 
 **Τ NetworkProtocol**:  *"http"⎮"https"* 
 
-*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/interfaces/networkProtocol.ts#L4)*
+*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/networkProtocol.ts#L4)*
 
 
 

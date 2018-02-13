@@ -51,7 +51,7 @@ A core implementation of an error.
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*): [CoreError](coreerror.md)
 
 
-*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/error/coreError.ts#L10)*
+*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L10)*
 
 
 
@@ -81,7 +81,7 @@ Create an instance of CoreError.
 
 **●  additional**:  *`object`* 
 
-*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/error/coreError.ts#L10)*
+*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L10)*
 
 
 
@@ -105,7 +105,7 @@ ___
 
 **●  Error**:  *`ErrorConstructor`* 
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:884*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:896*
 
 
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:874*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 
 
@@ -137,7 +137,7 @@ ___
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:873*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 
 
@@ -153,7 +153,7 @@ ___
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:875*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:887*
 
 
 
@@ -171,7 +171,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/error/coreError.ts#L34)*
+*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L34)*
 
 
 
@@ -196,7 +196,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:27](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/error/coreError.ts#L27)*
+*Defined in [error/coreError.ts:27](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L27)*
 
 
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6.1
+
+* Added NetworkClientFactory
+* Added get, post, getJson methods to INetworkClient
+* Added args parameters for factory constructors
+
 ## v0.6.0
 
 * Added generic factory base

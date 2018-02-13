@@ -9,12 +9,12 @@
         "module": "commonjs",
         "declaration": true,
         "moduleResolution": "node",
-        "types": [],
         "noImplicitAny": true,
         "noImplicitThis": true,
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "strictNullChecks": false,
+        "types": [],
         "esModuleInterop": true,
         "stripInternal": true
     },

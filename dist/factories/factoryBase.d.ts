@@ -8,7 +8,7 @@ export declare abstract class FactoryBase<T> {
      * @param name The name of the type to register.
      * @param typeConstructor The constructor for the type.
      */
-    register(name: string, typeConstructor: () => T): void;
+    register(name: string, typeConstructor: (...args: any[]) => T): void;
     /**
      * Unregister a type from the factory.
      * @param name The name of the type to unregister.
@@ -17,7 +17,8 @@ export declare abstract class FactoryBase<T> {
     /**
      * Create an instance of an object from the factory.
      * @param name The name of the type to create.
+     * @param args Any parameters to pass to the constructor.
      * @returns A new instance of the type if it exists, or undefined if it does not.
      */
-    create(name: string): T;
+    create(name: string, ...args: any[]): T;
 }

@@ -1,6 +1,6 @@
 {
     "name": "@iota-pico/core",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "description": "IOTA Pico Framework Core",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -51,8 +51,8 @@
         "ts-node": "^4.1.0",
         "tslint": "^5.9.1",
         "tslint-microsoft-contrib": "^5.0.2",
-        "typedoc": "^0.9.0",
+        "typedoc": "^0.10.0",
         "typedoc-plugin-markdown": "^1.0.12",
-        "typescript": "^2.7.0-rc"
+        "typescript": "^2.7.1"
     }
 }

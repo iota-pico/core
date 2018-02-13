@@ -4,14 +4,14 @@
  */
 export abstract class FactoryBase<T> {
     /* @internal */
-    private readonly _types: { [name: string]: () => T } = {};
+    private readonly _types: { [name: string]: (...args: any[]) => T } = {};
 
     /**
      * Register a new type with the factory.
      * @param name The name of the type to register.
      * @param typeConstructor The constructor for the type.
      */
-    public register(name: string, typeConstructor: () => T): void {
+    public register(name: string, typeConstructor: (...args: any[]) => T): void {
         this.getInstance()._types[name] = typeConstructor;
     }
 
@@ -26,12 +26,13 @@ export abstract class FactoryBase<T> {
     /**
      * Create an instance of an object from the factory.
      * @param name The name of the type to create.
+     * @param args Any parameters to pass to the constructor.
      * @returns A new instance of the type if it exists, or undefined if it does not.
      */
-    public create(name: string): T {
+    public create(name: string, ...args: any[]): T {
         const instance = this.getInstance();
         if (instance._types[name]) {
-            return instance._types[name]();
+            return instance._types[name](...args);
         } else {
             return undefined;
         }

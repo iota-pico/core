@@ -12,6 +12,19 @@ Factory to generate types.
 
 The generic type for the object types in the factory.
 
+## Hierarchy
+
+**FactoryBase**
+
+↳  [NetworkClientFactory](networkclientfactory.md)
+
+
+
+
+
+
+
+
 ## Index
 
 ### Methods
@@ -29,11 +42,11 @@ The generic type for the object types in the factory.
 
 ###  create
 
-► **create**(name: *`string`*): `T`
+► **create**(name: *`string`*, ...args: *`any`[]*): `T`
 
 
 
-*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/factories/factoryBase.ts#L31)*
+*Defined in [factories/factoryBase.ts:32](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/factories/factoryBase.ts#L32)*
 
 
 
@@ -45,6 +58,7 @@ Create an instance of an object from the factory.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | name | `string`   |  The name of the type to create. |
+| args | `any`[]   |  Any parameters to pass to the constructor. |
 
 
 
@@ -62,13 +76,13 @@ ___
 
 <a id="getinstance"></a>
 
-### «Protected» getInstance
+### «Protected»«Abstract» getInstance
 
 ► **getInstance**(): [FactoryBase](factorybase.md)`T`
 
 
 
-*Defined in [factories/factoryBase.ts:41](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/factories/factoryBase.ts#L41)*
+*Defined in [factories/factoryBase.ts:42](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/factories/factoryBase.ts#L42)*
 
 
 
@@ -90,7 +104,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/factories/factoryBase.ts#L14)*
 
 
 
@@ -124,7 +138,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/6691633/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/factories/factoryBase.ts#L22)*
 
 
 

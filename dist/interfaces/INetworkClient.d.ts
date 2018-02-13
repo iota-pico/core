@@ -4,6 +4,33 @@
  */
 export interface INetworkClient {
     /**
+     * Get data asynchronously.
+     * @param data The data to send.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
+     */
+    get(additionalHeaders?: {
+        [header: string]: string;
+    }): Promise<string>;
+    /**
+     * Post data asynchronously.
+     * @param data The data to send.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
+     */
+    post(data: string, additionalHeaders?: {
+        [header: string]: string;
+    }): Promise<string>;
+    /**
+     * Get data as JSON asynchronously.
+     * @typeparam U The generic type for the returned object.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
+     */
+    getJson<U>(additionalHeaders?: {
+        [header: string]: string;
+    }): Promise<U>;
+    /**
      * Post data as JSON asynchronously.
      * @typeparam T The generic type for the object to send.
      * @typeparam U The generic type for the returned object.
