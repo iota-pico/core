@@ -9,13 +9,18 @@ export declare class CoreError extends Error {
         [id: string]: any;
     };
     /**
+     * The inner error if there was one.
+     */
+    innerError?: Error;
+    /**
      * Create an instance of CoreError.
      * @param message The message for the error.
      * @param additional Additional details about the error.
+     * @param innerError Add information from inner error if there was one.
      */
     constructor(message: string, additional?: {
         [id: string]: any;
-    });
+    }, innerError?: Error);
     /**
      * Check if an object could be a CoreError.
      * @param obj The object to check if it is a CoreError.

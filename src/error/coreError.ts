@@ -10,13 +10,20 @@ export class CoreError extends Error {
     public additional?: { [id: string]: any };
 
     /**
+     * The inner error if there was one.
+     */
+    public innerError?: Error;
+
+    /**
      * Create an instance of CoreError.
      * @param message The message for the error.
      * @param additional Additional details about the error.
+     * @param innerError Add information from inner error if there was one.
      */
-    constructor(message: string, additional?: { [id: string]: any }) {
+    constructor(message: string, additional?: { [id: string]: any }, innerError?: Error) {
         super(message);
         this.additional = additional ? additional : {};
+        this.innerError = innerError;
     }
 
     /**
@@ -33,6 +40,7 @@ export class CoreError extends Error {
      */
     public format(): string {
         let out = this.message || "";
+
         const keys = Object.keys(this.additional);
         if (keys.length > 0) {
             out += "\r\n";
@@ -40,6 +48,7 @@ export class CoreError extends Error {
                 out += `\t${key}: ${JsonHelper.stringify(this.additional[key])}\r\n`;
             });
         }
+
         return out;
     }
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6.2
+
+* Fixed ErrorHelper.format ordering of CoreError types
+* Added optional innerError for CoreError constructor
+* Improved error formatting
+
 ## v0.6.1
 
 * Added NetworkClientFactory

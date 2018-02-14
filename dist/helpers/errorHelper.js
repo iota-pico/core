@@ -17,17 +17,33 @@ class ErrorHelper {
         if (err === null || err === undefined) {
             return "unknown error";
         }
-        else if (err instanceof Error) {
-            let ret = err.message;
-            if (includeStack && err.stack) {
-                ret += `\r\n${err.stack}`;
-            }
-            return ret;
-        }
         else if (coreError_1.CoreError.isError(err)) {
             let ret = err.format();
             if (includeStack && err.stack) {
+                ret += `\r\nStack Trace`;
+                const parts = err.stack.split("\n");
+                parts.shift();
+                ret += `\r\n${parts.join("\n")}`;
+            }
+            if (err.innerError) {
+                if (includeStack && err.innerError.stack) {
+                    ret += `\r\n\r\n-----------------------------------------------`;
+                    ret += `\r\nInner Stack Trace\r\n`;
+                    ret += err.innerError.stack;
+                }
+                else {
+                    ret += `\r\nInner Error: ${err.innerError.message}\r\n`;
+                }
+            }
+            return ret;
+        }
+        else if (err instanceof Error) {
+            let ret = "";
+            if (includeStack && err.stack) {
                 ret += `\r\n${err.stack}`;
+            }
+            else {
+                ret += err.message;
             }
             return ret;
         }

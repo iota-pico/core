@@ -9,10 +9,12 @@ class CoreError extends Error {
      * Create an instance of CoreError.
      * @param message The message for the error.
      * @param additional Additional details about the error.
+     * @param innerError Add information from inner error if there was one.
      */
-    constructor(message, additional) {
+    constructor(message, additional, innerError) {
         super(message);
         this.additional = additional ? additional : {};
+        this.innerError = innerError;
     }
     /**
      * Check if an object could be a CoreError.
