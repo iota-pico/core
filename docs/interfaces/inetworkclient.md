@@ -19,7 +19,7 @@ Represents a client for performing communication.
 
 
 
-*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L12)*
+*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/interfaces/INetworkClient.ts#L12)*
 
 
 
@@ -54,7 +54,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkClient.ts:28](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L28)*
+*Defined in [interfaces/INetworkClient.ts:28](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/interfaces/INetworkClient.ts#L28)*
 
 
 
@@ -95,7 +95,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkClient.ts:20](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L20)*
+*Defined in [interfaces/INetworkClient.ts:20](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/interfaces/INetworkClient.ts#L20)*
 
 
 
@@ -131,7 +131,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkClient.ts:38](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/interfaces/INetworkClient.ts#L38)*
+*Defined in [interfaces/INetworkClient.ts:38](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/interfaces/INetworkClient.ts#L38)*
 
 
 

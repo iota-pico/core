@@ -30,6 +30,7 @@ A core implementation of an error.
 ### Properties
 
 * [additional](coreerror.md#additional)
+* [innerError](coreerror.md#innererror)
 * [Error](coreerror.md#error)
 * [message](coreerror.md#message)
 * [name](coreerror.md#name)
@@ -48,10 +49,10 @@ A core implementation of an error.
 <a id="constructor"></a>
 
 
-### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*): [CoreError](coreerror.md)
+### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
 
 
-*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L10)*
+*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/error/coreError.ts#L15)*
 
 
 
@@ -64,6 +65,7 @@ Create an instance of CoreError.
 | ------ | ------ | ------ |
 | message | `string`   |  The message for the error. |
 | additional | `object`   |  Additional details about the error. |
+| innerError | `Error`   |  Add information from inner error if there was one. |
 
 
 
@@ -81,7 +83,7 @@ Create an instance of CoreError.
 
 **●  additional**:  *`object`* 
 
-*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L10)*
+*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/error/coreError.ts#L10)*
 
 
 
@@ -93,6 +95,23 @@ Additional details about the error.
 [id: `string`]: `any`
 
 
+
+
+
+
+___
+
+<a id="innererror"></a>
+
+### «Optional» innerError
+
+**●  innerError**:  *`Error`* 
+
+*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/error/coreError.ts#L15)*
+
+
+
+The inner error if there was one.
 
 
 
@@ -171,7 +190,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L34)*
+*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/error/coreError.ts#L41)*
 
 
 
@@ -196,7 +215,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:27](https://github.com/iotaeco/iota-pico-core/blob/8651c4f/src/error/coreError.ts#L27)*
+*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/250f24f/src/error/coreError.ts#L34)*
 
 
 

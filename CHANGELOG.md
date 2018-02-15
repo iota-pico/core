@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.6.2
+## v0.7.0
 
 * Fixed ErrorHelper.format ordering of CoreError types
 * Added optional innerError for CoreError constructor
