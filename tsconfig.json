@@ -16,7 +16,9 @@
         "strictNullChecks": false,
         "types": [],
         "esModuleInterop": true,
-        "stripInternal": true
+        "stripInternal": true,
+        "inlineSourceMap": true,
+        "noImplicitUseStrict": true
     },
     "include": [
         "src/**/*"

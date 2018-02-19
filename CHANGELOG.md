@@ -5,6 +5,7 @@
 * Fixed ErrorHelper.format ordering of CoreError types
 * Added optional innerError for CoreError constructor
 * Improved error formatting
+* Added code coverage to testing
 
 ## v0.6.1
 
