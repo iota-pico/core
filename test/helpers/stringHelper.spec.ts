@@ -48,6 +48,15 @@ describe("StringHelper", () => {
         });
     });
 
+    describe("isEmpty", () => {
+        it("can return false if passed empty string", () => {
+            chai.expect(StringHelper.isEmpty("")).to.equal(true);
+        });
+        it("can return true if passed non empty string", () => {
+            chai.expect(StringHelper.isEmpty("a")).to.equal(false);
+        });
+    });
+
     describe("isAscii", () => {
         it("can return false if passed undefined", () => {
             chai.expect(StringHelper.isAscii(undefined)).to.equal(false);

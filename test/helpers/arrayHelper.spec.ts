@@ -43,15 +43,15 @@ describe("ArrayHelper", () => {
         });
     });
 
-    describe("isNonEmpty", () => {
+    describe("isEmpty", () => {
         it("can return false with empty array", () => {
-            chai.expect(ArrayHelper.isNonEmpty([])).to.equal(false);
+            chai.expect(ArrayHelper.isEmpty([])).to.equal(true);
         });
         it("can return true with non-empty array", () => {
-            chai.expect(ArrayHelper.isNonEmpty([1, 2, 3])).to.equal(true);
+            chai.expect(ArrayHelper.isEmpty([1, 2, 3])).to.equal(false);
         });
         it("can return true with Array", () => {
-            chai.expect(ArrayHelper.isNonEmpty(Array(5))).to.equal(true);
+            chai.expect(ArrayHelper.isEmpty(Array(5))).to.equal(false);
         });
     });
 

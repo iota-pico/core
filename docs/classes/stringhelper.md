@@ -14,6 +14,7 @@ String helper methods.
 * [decodeNonASCII](stringhelper.md#decodenonascii)
 * [encodeNonASCII](stringhelper.md#encodenonascii)
 * [isAscii](stringhelper.md#isascii)
+* [isEmpty](stringhelper.md#isempty)
 * [isString](stringhelper.md#isstring)
 
 
@@ -28,7 +29,7 @@ String helper methods.
 
 
 
-*Defined in [helpers/stringHelper.ts:39](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/helpers/stringHelper.ts#L39)*
+*Defined in [helpers/stringHelper.ts:48](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/stringHelper.ts#L48)*
 
 
 
@@ -63,7 +64,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/helpers/stringHelper.ts#L30)*
+*Defined in [helpers/stringHelper.ts:39](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/stringHelper.ts#L39)*
 
 
 
@@ -98,7 +99,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:20](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/helpers/stringHelper.ts#L20)*
+*Defined in [helpers/stringHelper.ts:29](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/stringHelper.ts#L29)*
 
 
 
@@ -125,6 +126,41 @@ True if the object is all ASCII.
 
 ___
 
+<a id="isempty"></a>
+
+### «Static» isEmpty
+
+► **isEmpty**(value: *`any`*): `boolean`
+
+
+
+*Defined in [helpers/stringHelper.ts:20](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/stringHelper.ts#L20)*
+
+
+
+Is the value a string that is empty.
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| value | `any`   |  Object to test for its no emptyness. |
+
+
+
+
+
+**Returns:** `boolean`
+True if the object is an empty string.
+
+
+
+
+
+
+___
+
 <a id="isstring"></a>
 
 ### «Static» isString
@@ -133,7 +169,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/helpers/stringHelper.ts#L10)*
+*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/stringHelper.ts#L10)*
 
 
 

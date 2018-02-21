@@ -9,6 +9,12 @@ export declare class StringHelper {
      */
     static isString(value: any): value is string;
     /**
+     * Is the value a string that is empty.
+     * @param value Object to test for its no emptyness.
+     * @returns True if the object is an empty string.
+     */
+    static isEmpty(value: any): value is string;
+    /**
      * Is the string all ASCII characters.
      * @param value string to test if is is ASCII.
      * @returns True if the object is all ASCII.

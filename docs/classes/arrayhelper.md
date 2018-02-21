@@ -12,7 +12,7 @@ Array helper methods.
 ### Methods
 
 * [isArray](arrayhelper.md#isarray)
-* [isNonEmpty](arrayhelper.md#isnonempty)
+* [isEmpty](arrayhelper.md#isempty)
 * [isTyped](arrayhelper.md#istyped)
 
 
@@ -27,7 +27,7 @@ Array helper methods.
 
 
 
-*Defined in helpers/arrayHelper.ts:12*
+*Defined in [helpers/arrayHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/arrayHelper.ts#L12)*
 
 
 
@@ -54,19 +54,19 @@ True if the value is an array.
 
 ___
 
-<a id="isnonempty"></a>
+<a id="isempty"></a>
 
-### «Static» isNonEmpty
+### «Static» isEmpty
 
-► **isNonEmpty**(value: *`any`*): `boolean`
-
-
-
-*Defined in helpers/arrayHelper.ts:22*
+► **isEmpty**(value: *`any`*): `boolean`
 
 
 
-Is the value a non empty array.
+*Defined in [helpers/arrayHelper.ts:22](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/arrayHelper.ts#L22)*
+
+
+
+Is the value a empty array.
 
 
 **Parameters:**
@@ -80,7 +80,7 @@ Is the value a non empty array.
 
 
 **Returns:** `boolean`
-True if the value is a non empty array.
+True if the value is a empty array.
 
 
 
@@ -97,7 +97,7 @@ ___
 
 
 
-*Defined in helpers/arrayHelper.ts:32*
+*Defined in [helpers/arrayHelper.ts:32](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/arrayHelper.ts#L32)*
 
 
 

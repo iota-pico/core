@@ -15,12 +15,12 @@ export class ArrayHelper {
     }
 
     /**
-     * Is the value a non empty array.
+     * Is the value a empty array.
      * @param value Object to test.
-     * @returns True if the value is a non empty array.
+     * @returns True if the value is a empty array.
      */
-    public static isNonEmpty(value: any): boolean {
-        return ArrayHelper.isArray(value) && value.length > 0;
+    public static isEmpty(value: any): boolean {
+        return !ArrayHelper.isArray(value) || value.length === 0;
     }
 
     /**
@@ -30,7 +30,7 @@ export class ArrayHelper {
      * @returns True if the value is a non empty array of a specific type.
      */
     public static isTyped(value: any, type: Function): boolean {
-        return ArrayHelper.isNonEmpty(value) &&
+        return !ArrayHelper.isEmpty(value) &&
             !value.includes(undefined) &&
             !value.includes(null) &&
             value.every((a: any) => ObjectHelper.isObjectType(a, type));

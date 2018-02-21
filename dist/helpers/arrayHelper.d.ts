@@ -9,11 +9,11 @@ export declare class ArrayHelper {
      */
     static isArray(value: any): boolean;
     /**
-     * Is the value a non empty array.
+     * Is the value a empty array.
      * @param value Object to test.
-     * @returns True if the value is a non empty array.
+     * @returns True if the value is a empty array.
      */
-    static isNonEmpty(value: any): boolean;
+    static isEmpty(value: any): boolean;
     /**
      * Is the value a non empty array of specific type.
      * @param value Object to test.
