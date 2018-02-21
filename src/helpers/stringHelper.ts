@@ -1,5 +1,5 @@
 /**
- * String helper methods
+ * String helper methods.
  */
 export class StringHelper {
     /**
@@ -28,7 +28,7 @@ export class StringHelper {
      * @returns The escaped version of the string.
      */
     public static encodeNonASCII(value: string): string {
-        return value.replace(/[\u007F-\uFFFF]/g, (chr) => `\\u${(`0000${chr.charCodeAt(0).toString(16)}`).substr(-4)}`);
+        return StringHelper.isString(value) ? value.replace(/[\u007F-\uFFFF]/g, (chr) => `\\u${(`0000${chr.charCodeAt(0).toString(16)}`).substr(-4)}`) : undefined;
     }
 
     /**
@@ -37,6 +37,6 @@ export class StringHelper {
      * @returns The decoded version of the string.
      */
     public static decodeNonASCII(value: string): string {
-        return value.replace(/\\u([\d\w]{4})/gi, (match, grp) => String.fromCharCode(parseInt(grp, 16)));
+        return StringHelper.isString(value) ? value.replace(/\\u([\d\w]{4})/gi, (match, grp) => String.fromCharCode(parseInt(grp, 16))) : undefined;
     }
 }

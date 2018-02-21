@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.08% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/13</span>
+        <span class='fraction'>14/14</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">45.45% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>5/11</span>
+        <span class='fraction'>13/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">25% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.08% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/13</span>
+        <span class='fraction'>14/14</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -97,7 +97,9 @@
 52
 53
 54
-55</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+55
+56
+57</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -120,9 +122,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -131,24 +133,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { JsonHelper } from "../helpers/jsonHelper";
@@ -173,10 +177,10 @@ export class CoreError extends Error {
      * @param additional Additional details about the error.
      * @param innerError Add information from inner error if there was one.
      */
-<span class="fstat-no" title="function not covered" >    constructor(</span>message: string, additional?: { [id: string]: any }, innerError?: Error) {
-<span class="cstat-no" title="statement not covered" >        super(message);</span>
-<span class="cstat-no" title="statement not covered" >        this.additional = additional ? additional : {};</span>
-<span class="cstat-no" title="statement not covered" >        this.innerError = innerError;</span>
+    constructor(message: string, additional?: { [id: string]: any }, innerError?: Error) {
+        super(message);
+        this.additional = additional ? additional : {};
+        this.innerError = innerError;
     }
 &nbsp;
     /**
@@ -191,18 +195,20 @@ export class CoreError extends Error {
     /**
      * Format the error to a readable version.
      */
-    public <span class="fstat-no" title="function not covered" >format</span>(): string {
-        let out = <span class="cstat-no" title="statement not covered" >this.message || "";</span>
+    public format(): string {
+        let out = this.message || "";
 &nbsp;
-        const keys = <span class="cstat-no" title="statement not covered" >Object.keys(this.additional);</span>
-<span class="cstat-no" title="statement not covered" >        if (keys.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >            out += "\r\n";</span>
-<span class="cstat-no" title="statement not covered" >            keys.forEach(<span class="fstat-no" title="function not covered" >key</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >                out += `\t${key}: ${JsonHelper.stringify(this.additional[key])}\r\n`;</span>
+        const keys = Object.keys(this.additional);
+        if (keys.length &gt; 0) {
+            if (out.length &gt; 0) {
+                out += "\n";
+            }
+            keys.forEach(key =&gt; {
+                out += `\t${key}: ${JsonHelper.stringify(this.additional[key])}\n`;
             });
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return out;</span>
+        return out;
     }
 }
 &nbsp;</pre></td></tr>
@@ -211,7 +217,7 @@ export class CoreError extends Error {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 19 2018 13:40:56 GMT+0300 (Turkey Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 21 2018 12:50:02 GMT+0300 (Turkey Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

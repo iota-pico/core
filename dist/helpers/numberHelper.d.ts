@@ -1,5 +1,5 @@
 /**
- * Number helper methods
+ * Number helper methods.
  */
 export declare class NumberHelper {
     /**

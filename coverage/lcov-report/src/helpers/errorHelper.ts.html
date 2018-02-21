@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">51.72% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>15/29</span>
+        <span class='fraction'>29/29</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">45.83% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>11/24</span>
+        <span class='fraction'>24/24</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,13 +35,13 @@
         <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">51.72% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>15/29</span>
+        <span class='fraction'>29/29</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -112,36 +112,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -168,30 +168,30 @@ export class ErrorHelper {
     public static format(err: any, includeStack: boolean): string {
         if (err === null || err === undefined) {
             return "unknown error";
-        } else <span class="missing-if-branch" title="if path not taken" >I</span>if (CoreError.isError(err)) {
-            let ret = <span class="cstat-no" title="statement not covered" >err.format();</span>
-<span class="cstat-no" title="statement not covered" >            if (includeStack &amp;&amp; err.stack) {</span>
-<span class="cstat-no" title="statement not covered" >                ret += `\r\nStack Trace`;</span>
-                const parts = <span class="cstat-no" title="statement not covered" >err.stack.split("\n");</span>
-<span class="cstat-no" title="statement not covered" >                parts.shift();</span>
-<span class="cstat-no" title="statement not covered" >                ret += `\r\n${parts.join("\n")}`;</span>
+        } else if (CoreError.isError(err)) {
+            let ret = err.format();
+            if (includeStack &amp;&amp; err.stack) {
+                ret += `\nStack Trace`;
+                const parts = err.stack.split("\n");
+                parts.shift();
+                ret += `\n${parts.join("\n")}`;
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            if (err.innerError) {</span>
-<span class="cstat-no" title="statement not covered" >                if (includeStack &amp;&amp; err.innerError.stack) {</span>
-<span class="cstat-no" title="statement not covered" >                    ret += `\r\n\r\n-----------------------------------------------`;</span>
-<span class="cstat-no" title="statement not covered" >                    ret += `\r\nInner Stack Trace\r\n`;</span>
-<span class="cstat-no" title="statement not covered" >                    ret += err.innerError.stack;</span>
+            if (err.innerError) {
+                if (includeStack &amp;&amp; err.innerError.stack) {
+                    ret += `\n\n-----------------------------------------------`;
+                    ret += `\nInner Stack Trace\n`;
+                    ret += err.innerError.stack;
                 } else {
-<span class="cstat-no" title="statement not covered" >                    ret += `\r\nInner Error: ${err.innerError.message}\r\n`;</span>
+                    ret += `\nInner Error: ${err.innerError.message}\n`;
                 }
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            return ret;</span>
+            return ret;
         } else if (err instanceof Error) {
             let ret = "";
-            <span class="missing-if-branch" title="if path not taken" >I</span>if (includeStack &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >err.stack)</span> {
-<span class="cstat-no" title="statement not covered" >                ret += `\r\n${err.stack}`;</span>
+            if (includeStack &amp;&amp; err.stack) {
+                ret += err.stack;
             } else {
                 ret += err.message;
             }
@@ -211,7 +211,7 @@ export class ErrorHelper {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 19 2018 13:40:56 GMT+0300 (Turkey Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 21 2018 12:50:02 GMT+0300 (Turkey Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

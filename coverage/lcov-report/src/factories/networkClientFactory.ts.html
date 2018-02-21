@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/helpers/jsonHelper.ts</title>
+    <title>Code coverage report for src/factories/networkClientFactory.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/helpers</a> jsonHelper.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/factories</a> networkClientFactory.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>9/9</span>
+        <span class='fraction'>7/7</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>9/9</span>
-      </div>
-      <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
-        <span class="quiet">Functions</span>
         <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/9</span>
+        <span class='fraction'>7/7</span>
       </div>
     </div>
   </div>
@@ -74,7 +74,13 @@
 29
 30
 31
-32</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+32
+33
+34
+35</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -86,54 +92,57 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">29x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">26x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * Json helper methods.
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { INetworkClient } from "../interfaces/INetworkClient";
+import { FactoryBase } from "./factoryBase";
+&nbsp;
+/**
+ * Factory to generate network clients.
  */
-export class JsonHelper {
+export class NetworkClientFactory extends FactoryBase&lt;INetworkClient&gt; {
+    /* @internal */
+    private static _instance: NetworkClientFactory;
+&nbsp;
     /**
-     * Stringify an object with recursion breaking.
-     * @param value A JavaScript value, usually an object or array, to be converted.
-     * @param replacer A function that transforms the results.
-     * @param space Adds indentation, white space, and line break characters to the return-value JSON text to make it easier to read.
-     * @returns String version of the object.
+     * Don't allow manual construction of the factory.
+     * @internal
      */
-    public static stringify(value: any, replacer?: (key: string, value: any) =&gt; any, space?: string | number): string {
-        // eliminates any recursion in the stringify
-        const cache: any[] = [];
+    private constructor() {
+        super();
+    }
 &nbsp;
-        const recusionReplacer = (key: string, replaceValue: any) =&gt; {
-            if (typeof replaceValue === "object" &amp;&amp; value !== null &amp;&amp; replaceValue !== undefined) {
-                if (cache.indexOf(replaceValue) !== -1) {
-                    // circular reference found, discard key
-                    return;
-                } else {
-                    cache.push(replaceValue);
-                }
-            }
+    /**
+     * Get the instance of the factory.
+     * @returns The factory instance.
+     */
+    public static instance(): FactoryBase&lt;INetworkClient&gt; {
+        if (!NetworkClientFactory._instance) {
+            NetworkClientFactory._instance = new NetworkClientFactory();
+        }
+        return NetworkClientFactory._instance;
+    }
 &nbsp;
-            return replacer ? replacer(key, replaceValue) : replaceValue;
-        };
-&nbsp;
-        return JSON.stringify(value, recusionReplacer, space);
+    /* @internal */
+    protected getInstance(): FactoryBase&lt;INetworkClient&gt; {
+        return NetworkClientFactory.instance();
     }
 }
 &nbsp;</pre></td></tr>

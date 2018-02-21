@@ -24,6 +24,15 @@ export abstract class FactoryBase<T> {
     }
 
     /**
+     * Does the factory contain a specific type.
+     * @param name The name of the type to look for.
+     * @returns True if the type exists.
+     */
+    public exists(name: string): boolean {
+        return this.getInstance()._types[name] !== undefined;
+    }
+
+    /**
      * Create an instance of an object from the factory.
      * @param name The name of the type to create.
      * @param args Any parameters to pass to the constructor.

@@ -47,4 +47,58 @@ describe("StringHelper", () => {
             chai.expect(StringHelper.isString("hello")).to.equal(true);
         });
     });
+
+    describe("isAscii", () => {
+        it("can return false if passed undefined", () => {
+            chai.expect(StringHelper.isAscii(undefined)).to.equal(false);
+        });
+
+        it("can return false if passed null", () => {
+            chai.expect(StringHelper.isAscii(null)).to.equal(false);
+        });
+
+        it("can return false if non ascii", () => {
+            chai.expect(StringHelper.isAscii("🎺")).to.equal(false);
+        });
+
+        it("can return true if ascii", () => {
+            chai.expect(StringHelper.isAscii("$")).to.equal(true);
+        });
+    });
+
+    describe("encodeNonASCII", () => {
+        it("can return undefined if passed undefined", () => {
+            chai.expect(StringHelper.encodeNonASCII(undefined)).to.equal(undefined);
+        });
+
+        it("can return undefined if passed null", () => {
+            chai.expect(StringHelper.encodeNonASCII(null)).to.equal(undefined);
+        });
+
+        it("can return encoded string if non ascii", () => {
+            chai.expect(StringHelper.encodeNonASCII("🎺⚽")).to.equal("\\ud83c\\udfba\\u26bd");
+        });
+
+        it("can return same string if all ascii", () => {
+            chai.expect(StringHelper.encodeNonASCII("$ABCD")).to.equal("$ABCD");
+        });
+    });
+
+    describe("decodeNonASCII", () => {
+        it("can return undefined if passed undefined", () => {
+            chai.expect(StringHelper.decodeNonASCII(undefined)).to.equal(undefined);
+        });
+
+        it("can return undefined if passed null", () => {
+            chai.expect(StringHelper.decodeNonASCII(null)).to.equal(undefined);
+        });
+
+        it("can return encoded string if non ascii", () => {
+            chai.expect(StringHelper.decodeNonASCII("\\ud83c\\udfba\\u26bd")).to.equal("🎺⚽");
+        });
+
+        it("can return same string if all ascii", () => {
+            chai.expect(StringHelper.decodeNonASCII("$ABCD")).to.equal("$ABCD");
+        });
+    });
 });

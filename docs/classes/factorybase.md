@@ -30,6 +30,7 @@ The generic type for the object types in the factory.
 ### Methods
 
 * [create](factorybase.md#create)
+* [exists](factorybase.md#exists)
 * [getInstance](factorybase.md#getinstance)
 * [register](factorybase.md#register)
 * [unregister](factorybase.md#unregister)
@@ -46,7 +47,7 @@ The generic type for the object types in the factory.
 
 
 
-*Defined in [factories/factoryBase.ts:32](https://github.com/iotaeco/iota-pico-core/blob/a6b61a1/src/factories/factoryBase.ts#L32)*
+*Defined in [factories/factoryBase.ts:41](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/factories/factoryBase.ts#L41)*
 
 
 
@@ -74,6 +75,41 @@ A new instance of the type if it exists, or undefined if it does not.
 
 ___
 
+<a id="exists"></a>
+
+###  exists
+
+► **exists**(name: *`string`*): `boolean`
+
+
+
+*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/factories/factoryBase.ts#L31)*
+
+
+
+Does the factory contain a specific type.
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| name | `string`   |  The name of the type to look for. |
+
+
+
+
+
+**Returns:** `boolean`
+True if the type exists.
+
+
+
+
+
+
+___
+
 <a id="getinstance"></a>
 
 ### «Protected»«Abstract» getInstance
@@ -82,7 +118,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:42](https://github.com/iotaeco/iota-pico-core/blob/a6b61a1/src/factories/factoryBase.ts#L42)*
+*Defined in [factories/factoryBase.ts:51](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/factories/factoryBase.ts#L51)*
 
 
 
@@ -104,7 +140,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/a6b61a1/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/factories/factoryBase.ts#L14)*
 
 
 
@@ -138,7 +174,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/a6b61a1/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/factories/factoryBase.ts#L22)*
 
 
 

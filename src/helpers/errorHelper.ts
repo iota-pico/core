@@ -18,19 +18,19 @@ export class ErrorHelper {
         } else if (CoreError.isError(err)) {
             let ret = err.format();
             if (includeStack && err.stack) {
-                ret += `\r\nStack Trace`;
+                ret += `\nStack Trace`;
                 const parts = err.stack.split("\n");
                 parts.shift();
-                ret += `\r\n${parts.join("\n")}`;
+                ret += `\n${parts.join("\n")}`;
             }
 
             if (err.innerError) {
                 if (includeStack && err.innerError.stack) {
-                    ret += `\r\n\r\n-----------------------------------------------`;
-                    ret += `\r\nInner Stack Trace\r\n`;
+                    ret += `\n\n-----------------------------------------------`;
+                    ret += `\nInner Stack Trace\n`;
                     ret += err.innerError.stack;
                 } else {
-                    ret += `\r\nInner Error: ${err.innerError.message}\r\n`;
+                    ret += `\nInner Error: ${err.innerError.message}\n`;
                 }
             }
 
@@ -38,7 +38,7 @@ export class ErrorHelper {
         } else if (err instanceof Error) {
             let ret = "";
             if (includeStack && err.stack) {
-                ret += `\r\n${err.stack}`;
+                ret += err.stack;
             } else {
                 ret += err.message;
             }

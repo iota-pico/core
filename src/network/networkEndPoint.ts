@@ -1,3 +1,4 @@
+import { NumberHelper, ObjectHelper, StringHelper } from "..";
 import { CoreError } from "../error/coreError";
 import { INetworkEndPoint } from "../interfaces/INetworkEndPoint";
 import { NetworkProtocol } from "../interfaces/networkProtocol";
@@ -23,16 +24,22 @@ export class NetworkEndPoint implements INetworkEndPoint {
      * @param port The port of the endpoint.
      */
     constructor(protocol: NetworkProtocol, host: string, path: string, port: number) {
-        if (protocol === undefined || protocol === null || !/http|https/.test(protocol)) {
+        if (!StringHelper.isString(protocol) || !/http|https/.test(protocol)) {
             throw new CoreError("The protocol must be defined as http or https");
         }
-        if (host === undefined || host === null) {
+        if (!StringHelper.isString(host)) {
             throw new CoreError("The host must be defined");
         }
+        if (!NumberHelper.isInteger(port) || port <= 0) {
+            throw new CoreError("The port must be a number greater than zero");
+        }
+        if (!ObjectHelper.isEmpty(path) && !StringHelper.isString(path)) {
+            throw new CoreError("The path must be a valid string");
+        }
         this._protocol = protocol;
-        this._host = host.replace(/\/$/, "");
-        this._path = (path || "").replace(/^\//, "").replace(/\/$/, "");
-        this._port = port || 80;
+        this._host = host.replace(/^\/*/, "").replace(/\/*$/, "");
+        this._path = (path || "").replace(/^\/*/, "").replace(/\/*$/, "");
+        this._port = port;
     }
 
     /**

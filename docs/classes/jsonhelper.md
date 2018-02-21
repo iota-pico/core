@@ -5,7 +5,7 @@
 # Class: JsonHelper
 
 
-Json helper methods
+Json helper methods.
 
 ## Index
 
@@ -25,7 +25,7 @@ Json helper methods
 
 
 
-*Defined in [helpers/jsonHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/a6b61a1/src/helpers/jsonHelper.ts#L12)*
+*Defined in [helpers/jsonHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/76dd0ea/src/helpers/jsonHelper.ts#L12)*
 
 
 

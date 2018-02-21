@@ -1,5 +1,5 @@
 /**
- * Json helper methods
+ * Json helper methods.
  */
 export declare class JsonHelper {
     /**

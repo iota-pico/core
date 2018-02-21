@@ -1,6 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Json helper methods
+ * Json helper methods.
  */
 class JsonHelper {
     /**

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/interfaces/INetworkEndPoint.ts</title>
+    <title>Code coverage report for src/helpers/arrayHelper.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/interfaces</a> INetworkEndPoint.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/helpers</a> arrayHelper.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>10/10</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>6/6</span>
       </div>
     </div>
   </div>
@@ -76,7 +76,25 @@
 31
 32
 33
-34</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+34
+35
+36
+37
+38
+39
+40</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -86,6 +104,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -95,52 +114,51 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { NetworkProtocol } from "./networkProtocol";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ObjectHelper } from "./objectHelper";
 &nbsp;
 /**
- * Represents the configuration for a network endpoint.
- * @interface
+ * Array helper methods.
  */
-export interface INetworkEndPoint {
+export class ArrayHelper {
     /**
-     * The protocol to access the endpoint with.
-     * @return The protocol.
+     * Is the value an array.
+     * @param value Object to test.
+     * @returns True if the value is an array.
      */
-    getProtocol(): NetworkProtocol;
+    public static isArray(value: any): boolean {
+        return value === null || value === undefined
+            ? false : Array.isArray(value);
+    }
+&nbsp;
     /**
-     * The host name or ip of the endpoint.
-     * @returns The host.
+     * Is the value a non empty array.
+     * @param value Object to test.
+     * @returns True if the value is a non empty array.
      */
-    getHost(): string;
+    public static isNonEmpty(value: any): boolean {
+        return ArrayHelper.isArray(value) &amp;&amp; value.length &gt; 0;
+    }
+&nbsp;
     /**
-     * The path to the endpoint.
-     * @returns The path.
+     * Is the value a non empty array of specific type.
+     * @param value Object to test.
+     * @param type The type of the object
+     * @returns True if the value is a non empty array of a specific type.
      */
-    getPath(): string;
-    /**
-     * The port of the endpoint.
-     * @returns The port.
-     */
-    getPort(): number;
-    /**
-     * The complete uri.
-     * @returns The uri.
-     */
-    getUri(): string;
+    public static isTyped(value: any, type: Function): boolean {
+        return ArrayHelper.isNonEmpty(value) &amp;&amp;
+            !value.includes(undefined) &amp;&amp;
+            !value.includes(null) &amp;&amp;
+            value.every((a: any) =&gt; ObjectHelper.isObjectType(a, type));
+    }
+&nbsp;
 }
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -148,7 +166,7 @@ export interface INetworkEndPoint {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 19 2018 13:40:56 GMT+0300 (Turkey Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 21 2018 12:50:02 GMT+0300 (Turkey Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

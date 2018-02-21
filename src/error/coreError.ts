@@ -43,9 +43,11 @@ export class CoreError extends Error {
 
         const keys = Object.keys(this.additional);
         if (keys.length > 0) {
-            out += "\r\n";
+            if (out.length > 0) {
+                out += "\n";
+            }
             keys.forEach(key => {
-                out += `\t${key}: ${JsonHelper.stringify(this.additional[key])}\r\n`;
+                out += `\t${key}: ${JsonHelper.stringify(this.additional[key])}\n`;
             });
         }
 

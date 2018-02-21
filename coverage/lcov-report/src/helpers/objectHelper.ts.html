@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/interfaces/INetworkClient.ts</title>
+    <title>Code coverage report for src/helpers/objectHelper.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/interfaces</a> INetworkClient.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/helpers</a> objectHelper.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>10/10</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>20/20</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>10/10</span>
       </div>
     </div>
   </div>
@@ -82,7 +82,36 @@
 37
 38
 39
-40</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -93,6 +122,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -101,64 +132,63 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * Represents a client for performing communication.
- * @interface
+ * Object helper methods.
  */
-export interface INetworkClient {
+export class ObjectHelper {
     /**
-     * Get data asynchronously.
-     * @param data The data to send.
-     * @param additionalHeaders Extra headers to send with the request.
-     * @returns Promise which resolves to the object returned or rejects with error.
+     * Is the value empty.
+     * @param value Object to test.
+     * @returns True if the value is empty.
      */
-    get(additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
+    public static isEmpty(value: any): boolean {
+        return value === null || value === undefined;
+    }
 &nbsp;
     /**
-     * Post data asynchronously.
-     * @param data The data to send.
-     * @param additionalHeaders Extra headers to send with the request.
-     * @returns Promise which resolves to the object returned or rejects with error.
+     * Is the value an object.
+     * @param value Object to test.
+     * @returns True if the value is an object.
      */
-    post(data: string, additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
+    public static isObject(value: any): value is Object {
+        return value === null || value === undefined
+            ? false : typeof(value) === "object" &amp;&amp; !Array.isArray(value);
+    }
 &nbsp;
     /**
-     * Get data as JSON asynchronously.
-     * @typeparam U The generic type for the returned object.
-     * @param additionalHeaders Extra headers to send with the request.
-     * @returns Promise which resolves to the object returned or rejects with error.
+     * Is the value an object if given type.
+     * @param value Object to test.
+     * @param type The type of the object
+     * @returns True if the value is an object of the specified type.
      */
-    getJson&lt;U&gt;(additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
+    public static isObjectType(value: any, typeConstructor: Function): boolean {
+        const valueClassName = ObjectHelper.getClassName(value);
+        return valueClassName !== undefined &amp;&amp; valueClassName === ObjectHelper.getClassName(typeConstructor);
+    }
 &nbsp;
     /**
-     * Post data as JSON asynchronously.
-     * @typeparam T The generic type for the object to send.
-     * @typeparam U The generic type for the returned object.
-     * @param data The data to send.
-     * @param additionalHeaders Extra headers to send with the request.
-     * @returns Promise which resolves to the object returned or rejects with error.
+     * Get the class name of an object if it has one.
+     * @param object The object to get the class name for.
+     * @returns The class name if it has one or undefined if not.
      */
-    postJson&lt;T, U&gt;(data: T, additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
+    public static getClassName(object: any): string {
+        if (object === null || object === undefined) {
+            return undefined;
+        } else {
+            const constructor = typeof object === "function" ? object.toString() : object.constructor.toString();
+            const results = constructor.match(/\w+/g);
+            return (results &amp;&amp; results.length &gt; 1) ? results[1] : undefined;
+        }
+    }
 }
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -166,7 +196,7 @@ export interface INetworkClient {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Feb 19 2018 13:40:56 GMT+0300 (Turkey Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Feb 21 2018 12:50:02 GMT+0300 (Turkey Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

@@ -1,5 +1,5 @@
 /**
- * String helper methods
+ * String helper methods.
  */
 export declare class StringHelper {
     /**

@@ -1,6 +1,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Number helper methods
+ * Number helper methods.
  */
 class NumberHelper {
     /**

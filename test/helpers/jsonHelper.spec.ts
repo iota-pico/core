@@ -32,19 +32,27 @@ describe("JsonHelper", () => {
         });
 
         it("can return JSON when called with an object", () => {
-            chai.expect(JsonHelper.stringify({ p1: true, p2: 10})).to.equal(JSON.stringify({ p1: true, p2: 10}));
+            chai.expect(JsonHelper.stringify({ p1: true, p2: 10 })).to.equal(JSON.stringify({ p1: true, p2: 10 }));
         });
 
         it("can return JSON when called with a recursive object", () => {
-            const obj: { p1: boolean; p2: number; p3: any } = { p1: true, p2: 10, p3: undefined};
+            const obj: { p1: boolean; p2: number; p3: any } = { p1: true, p2: 10, p3: undefined };
             obj.p3 = obj;
-            chai.expect(JsonHelper.stringify(obj)).to.equal(JSON.stringify({ p1: true, p2: 10}));
+            chai.expect(JsonHelper.stringify(obj)).to.equal(JSON.stringify({ p1: true, p2: 10 }));
         });
 
         it("can return formatted JSON when called with a recursive object", () => {
-            const obj: { p1: boolean; p2: number; p3: any } = { p1: true, p2: 10, p3: undefined};
+            const obj: { p1: boolean; p2: number; p3: any } = { p1: true, p2: 10, p3: undefined };
             obj.p3 = obj;
-            chai.expect(JsonHelper.stringify(obj, undefined, "\t")).to.equal(JSON.stringify({ p1: true, p2: 10}, undefined, "\t"));
+            chai.expect(JsonHelper.stringify(obj, undefined, "\t")).to.equal(JSON.stringify({ p1: true, p2: 10 }, undefined, "\t"));
+        });
+
+        it("can return formatted JSON when called with a recursive object and custom relacer", () => {
+            const obj: { p1: boolean; p2: number; p3: any } = { p1: true, p2: 10, p3: undefined };
+            obj.p3 = obj;
+            chai.expect(JsonHelper.stringify(obj,
+                                             (key: string, replaceValue: any) => replaceValue === 10 ? 11 : replaceValue,
+                                             "\t")).to.equal(JSON.stringify({ p1: true, p2: 11 }, undefined, "\t"));
         });
     });
 });
