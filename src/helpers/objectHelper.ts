@@ -27,7 +27,7 @@ export class ObjectHelper {
      * @param type The type of the object
      * @returns True if the value is an object of the specified type.
      */
-    public static isObjectType(value: any, typeConstructor: Function): boolean {
+    public static isType(value: any, typeConstructor: Function): boolean {
         const valueClassName = ObjectHelper.getClassName(value);
         return valueClassName !== undefined && valueClassName === ObjectHelper.getClassName(typeConstructor);
     }

@@ -14,7 +14,7 @@ Object helper methods.
 * [getClassName](objecthelper.md#getclassname)
 * [isEmpty](objecthelper.md#isempty)
 * [isObject](objecthelper.md#isobject)
-* [isObjectType](objecthelper.md#isobjecttype)
+* [isType](objecthelper.md#istype)
 
 
 
@@ -28,7 +28,7 @@ Object helper methods.
 
 
 
-*Defined in [helpers/objectHelper.ts:40](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/objectHelper.ts#L40)*
+*Defined in [helpers/objectHelper.ts:40](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/objectHelper.ts#L40)*
 
 
 
@@ -63,7 +63,7 @@ ___
 
 
 
-*Defined in [helpers/objectHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/objectHelper.ts#L10)*
+*Defined in [helpers/objectHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/objectHelper.ts#L10)*
 
 
 
@@ -98,7 +98,7 @@ ___
 
 
 
-*Defined in [helpers/objectHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/objectHelper.ts#L19)*
+*Defined in [helpers/objectHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/objectHelper.ts#L19)*
 
 
 
@@ -125,15 +125,15 @@ True if the value is an object.
 
 ___
 
-<a id="isobjecttype"></a>
+<a id="istype"></a>
 
-### «Static» isObjectType
+### «Static» isType
 
-► **isObjectType**(value: *`any`*, typeConstructor: *`Function`*): `boolean`
+► **isType**(value: *`any`*, typeConstructor: *`Function`*): `boolean`
 
 
 
-*Defined in [helpers/objectHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/e3b356e/src/helpers/objectHelper.ts#L30)*
+*Defined in [helpers/objectHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/objectHelper.ts#L30)*
 
 
 

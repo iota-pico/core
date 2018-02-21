@@ -33,7 +33,7 @@ export class ArrayHelper {
         return !ArrayHelper.isEmpty(value) &&
             !value.includes(undefined) &&
             !value.includes(null) &&
-            value.every((a: any) => ObjectHelper.isObjectType(a, type));
+            value.every((a: any) => ObjectHelper.isType(a, type));
     }
 
 }

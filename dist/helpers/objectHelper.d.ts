@@ -20,7 +20,7 @@ export declare class ObjectHelper {
      * @param type The type of the object
      * @returns True if the value is an object of the specified type.
      */
-    static isObjectType(value: any, typeConstructor: Function): boolean;
+    static isType(value: any, typeConstructor: Function): boolean;
     /**
      * Get the class name of an object if it has one.
      * @param object The object to get the class name for.

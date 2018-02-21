@@ -70,21 +70,21 @@ describe("ObjectHelper", () => {
         });
     });
 
-    describe("isObjectType", () => {
+    describe("isType", () => {
         it("can return false with undefined", () => {
-            chai.expect(ObjectHelper.isObjectType(undefined, TestClass)).to.equal(false);
+            chai.expect(ObjectHelper.isType(undefined, TestClass)).to.equal(false);
         });
         it("can return false with null", () => {
-            chai.expect(ObjectHelper.isObjectType(null, TestClass)).to.equal(false);
+            chai.expect(ObjectHelper.isType(null, TestClass)).to.equal(false);
         });
         it("can return false with Date", () => {
-            chai.expect(ObjectHelper.isObjectType(new Date(), TestClass)).to.equal(false);
+            chai.expect(ObjectHelper.isType(new Date(), TestClass)).to.equal(false);
         });
         it("can return false with object of different type", () => {
-            chai.expect(ObjectHelper.isObjectType(new TestClass2(), TestClass)).to.equal(false);
+            chai.expect(ObjectHelper.isType(new TestClass2(), TestClass)).to.equal(false);
         });
         it("can return true with object of same type", () => {
-            chai.expect(ObjectHelper.isObjectType(new TestClass(), TestClass)).to.equal(true);
+            chai.expect(ObjectHelper.isType(new TestClass(), TestClass)).to.equal(true);
         });
     });
 
