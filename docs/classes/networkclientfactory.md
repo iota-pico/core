@@ -45,7 +45,7 @@ Factory to generate network clients.
 
 *Inherited from [FactoryBase](factorybase.md).[create](factorybase.md#create)*
 
-*Defined in [factories/factoryBase.ts:41](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/factories/factoryBase.ts#L41)*
+*Defined in [factories/factoryBase.ts:41](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/factories/factoryBase.ts#L41)*
 
 
 
@@ -83,7 +83,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[exists](factorybase.md#exists)*
 
-*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/factories/factoryBase.ts#L31)*
+*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/factories/factoryBase.ts#L31)*
 
 
 
@@ -120,7 +120,7 @@ ___
 
 *Overrides [FactoryBase](factorybase.md).[getInstance](factorybase.md#getinstance)*
 
-*Defined in [factories/networkClientFactory.ts:31](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/factories/networkClientFactory.ts#L31)*
+*Defined in [factories/networkClientFactory.ts:31](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/factories/networkClientFactory.ts#L31)*
 
 
 
@@ -144,7 +144,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[register](factorybase.md#register)*
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/factories/factoryBase.ts#L14)*
 
 
 
@@ -180,7 +180,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[unregister](factorybase.md#unregister)*
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/factories/factoryBase.ts#L22)*
 
 
 
@@ -213,7 +213,7 @@ ___
 
 
 
-*Defined in [factories/networkClientFactory.ts:23](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/factories/networkClientFactory.ts#L23)*
+*Defined in [factories/networkClientFactory.ts:23](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/factories/networkClientFactory.ts#L23)*
 
 
 

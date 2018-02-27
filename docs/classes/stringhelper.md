@@ -29,7 +29,7 @@ String helper methods.
 
 
 
-*Defined in [helpers/stringHelper.ts:48](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/stringHelper.ts#L48)*
+*Defined in [helpers/stringHelper.ts:48](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/helpers/stringHelper.ts#L48)*
 
 
 
@@ -64,7 +64,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:39](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/stringHelper.ts#L39)*
+*Defined in [helpers/stringHelper.ts:39](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/helpers/stringHelper.ts#L39)*
 
 
 
@@ -99,7 +99,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:29](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/stringHelper.ts#L29)*
+*Defined in [helpers/stringHelper.ts:29](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/helpers/stringHelper.ts#L29)*
 
 
 
@@ -134,7 +134,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:20](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/stringHelper.ts#L20)*
+*Defined in [helpers/stringHelper.ts:20](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/helpers/stringHelper.ts#L20)*
 
 
 
@@ -169,7 +169,7 @@ ___
 
 
 
-*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/a3ffcb1/src/helpers/stringHelper.ts#L10)*
+*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/helpers/stringHelper.ts#L10)*
 
 
 
