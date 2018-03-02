@@ -8,6 +8,7 @@
 ### Classes
 
 * [ArrayHelper](classes/arrayhelper.md)
+* [BackgroundTaskService](classes/backgroundtaskservice.md)
 * [CoreError](classes/coreerror.md)
 * [ErrorHelper](classes/errorhelper.md)
 * [FactoryBase](classes/factorybase.md)
@@ -17,12 +18,15 @@
 * [NumberHelper](classes/numberhelper.md)
 * [ObjectHelper](classes/objecthelper.md)
 * [StringHelper](classes/stringhelper.md)
+* [TimeService](classes/timeservice.md)
 
 
 ### Interfaces
 
+* [IBackgroundTaskService](interfaces/ibackgroundtaskservice.md)
 * [INetworkClient](interfaces/inetworkclient.md)
 * [INetworkEndPoint](interfaces/inetworkendpoint.md)
+* [ITimeService](interfaces/itimeservice.md)
 
 
 ### Type aliases
@@ -39,7 +43,7 @@
 
 **Τ NetworkProtocol**:  *"http"⎮"https"* 
 
-*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/07a4425/src/interfaces/networkProtocol.ts#L4)*
+*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/178a52d/src/interfaces/networkProtocol.ts#L4)*
 
 
 

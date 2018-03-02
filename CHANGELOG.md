@@ -5,6 +5,8 @@
 * Fixed ErrorHelper.format ordering of CoreError types
 * Added optional innerError for CoreError constructor
 * Improved error formatting
+* Added ITimeService and TimeService implementation
+* Added IBackgroundTaskService and BackgroundTaskService implementation
 * Added code coverage to testing
 
 ## v0.6.1

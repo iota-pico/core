@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for helpers/arrayHelper.ts</title>
+    <title>Code coverage report for src/factories/networkClientFactory.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="..\prettify.css" />
-    <link rel="stylesheet" href="..\base.css" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(..\sort-arrow-sprite.png);
+            background-image: url(..\..\sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\index.html">All files</a> / <a href="index.html">helpers</a> arrayHelper.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/factories</a> networkClientFactory.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>7/7</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>6/6</span>
+        <span class='fraction'>7/7</span>
       </div>
     </div>
   </div>
@@ -77,12 +77,8 @@
 32
 33
 34
-35
-36
-37
-38
-39
-40</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+35</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -94,7 +90,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -102,63 +100,50 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ObjectHelper } from "./objectHelper";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { INetworkClient } from "../interfaces/INetworkClient";
+import { FactoryBase } from "./factoryBase";
 &nbsp;
 /**
- * Array helper methods.
+ * Factory to generate network clients.
  */
-export class ArrayHelper {
+export class NetworkClientFactory extends FactoryBase&lt;INetworkClient&gt; {
+    /* @internal */
+    private static _instance: NetworkClientFactory;
+&nbsp;
     /**
-     * Is the value an array.
-     * @param value Object to test.
-     * @returns True if the value is an array.
+     * Don't allow manual construction of the factory.
+     * @internal
      */
-    public static isArray(value: any): boolean {
-        return value === null || value === undefined
-            ? false : Array.isArray(value);
+    private constructor() {
+        super();
     }
 &nbsp;
     /**
-     * Is the value a empty array.
-     * @param value Object to test.
-     * @returns True if the value is a empty array.
+     * Get the instance of the factory.
+     * @returns The factory instance.
      */
-    public static isEmpty(value: any): boolean {
-        return !ArrayHelper.isArray(value) || value.length === 0;
+    public static instance(): FactoryBase&lt;INetworkClient&gt; {
+        if (!NetworkClientFactory._instance) {
+            NetworkClientFactory._instance = new NetworkClientFactory();
+        }
+        return NetworkClientFactory._instance;
     }
 &nbsp;
-    /**
-     * Is the value a non empty array of specific type.
-     * @param value Object to test.
-     * @param type The type of the object
-     * @returns True if the value is a non empty array of a specific type.
-     */
-    public static isTyped(value: any, type: Function): boolean {
-        return !ArrayHelper.isEmpty(value) &amp;&amp;
-            !value.includes(undefined) &amp;&amp;
-            !value.includes(null) &amp;&amp;
-            value.every((a: any) =&gt; ObjectHelper.isType(a, type));
+    /* @internal */
+    protected getInstance(): FactoryBase&lt;INetworkClient&gt; {
+        return NetworkClientFactory.instance();
     }
-&nbsp;
 }
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -166,10 +151,10 @@ export class ArrayHelper {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 27 2018 10:37:04 GMT+0300 (Turkey Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 02 2018 14:21:30 GMT+0300 (Turkey Standard Time)
 </div>
 </div>
-<script src="..\prettify.js"></script>
+<script src="..\..\prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -177,6 +162,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="..\sorter.js"></script>
+<script src="..\..\sorter.js"></script>
 </body>
 </html>
