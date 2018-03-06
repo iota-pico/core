@@ -1,5 +1,7 @@
-import { NumberHelper, ObjectHelper, StringHelper } from "..";
 import { CoreError } from "../error/coreError";
+import { NumberHelper } from "../helpers/numberHelper";
+import { ObjectHelper } from "../helpers/objectHelper";
+import { StringHelper } from "../helpers/stringHelper";
 import { INetworkEndPoint } from "../interfaces/INetworkEndPoint";
 import { NetworkProtocol } from "../interfaces/networkProtocol";
 

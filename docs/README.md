@@ -43,7 +43,7 @@
 
 **Τ NetworkProtocol**:  *"http"⎮"https"* 
 
-*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/178a52d/src/interfaces/networkProtocol.ts#L4)*
+*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/2878392/src/interfaces/networkProtocol.ts#L4)*
 
 
 

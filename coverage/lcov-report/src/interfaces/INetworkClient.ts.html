@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/helpers/objectHelper.ts</title>
+    <title>Code coverage report for src/interfaces/INetworkClient.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/helpers</a> objectHelper.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/interfaces</a> INetworkClient.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>20/20</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>10/10</span>
+        <span class='fraction'>0/0</span>
       </div>
     </div>
   </div>
@@ -82,36 +82,7 @@
 37
 38
 39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">11x</span>
+40</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -122,8 +93,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -132,63 +101,64 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">28x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
-<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
- * Object helper methods.
+ * Represents a client for performing communication.
+ * @interface
  */
-export class ObjectHelper {
+export interface INetworkClient {
     /**
-     * Is the value empty.
-     * @param value Object to test.
-     * @returns True if the value is empty.
+     * Get data asynchronously.
+     * @param data The data to send.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
      */
-    public static isEmpty(value: any): boolean {
-        return value === null || value === undefined;
-    }
+    get(additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
 &nbsp;
     /**
-     * Is the value an object.
-     * @param value Object to test.
-     * @returns True if the value is an object.
+     * Post data asynchronously.
+     * @param data The data to send.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
      */
-    public static isObject(value: any): value is Object {
-        return value === null || value === undefined
-            ? false : typeof(value) === "object" &amp;&amp; !Array.isArray(value);
-    }
+    post(data: string, additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
 &nbsp;
     /**
-     * Is the value an object if given type.
-     * @param value Object to test.
-     * @param type The type of the object
-     * @returns True if the value is an object of the specified type.
+     * Get data as JSON asynchronously.
+     * @typeparam U The generic type for the returned object.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
      */
-    public static isType(value: any, typeConstructor: Function): boolean {
-        const valueClassName = ObjectHelper.getClassName(value);
-        return valueClassName !== undefined &amp;&amp; valueClassName === ObjectHelper.getClassName(typeConstructor);
-    }
+    getJson&lt;U&gt;(additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
 &nbsp;
     /**
-     * Get the class name of an object if it has one.
-     * @param object The object to get the class name for.
-     * @returns The class name if it has one or undefined if not.
+     * Post data as JSON asynchronously.
+     * @typeparam T The generic type for the object to send.
+     * @typeparam U The generic type for the returned object.
+     * @param data The data to send.
+     * @param additionalHeaders Extra headers to send with the request.
+     * @returns Promise which resolves to the object returned or rejects with error.
      */
-    public static getClassName(object: any): string {
-        if (object === null || object === undefined) {
-            return undefined;
-        } else {
-            const constructor = typeof object === "function" ? object.toString() : object.constructor.toString();
-            const results = constructor.match(/\w+/g);
-            return (results &amp;&amp; results.length &gt; 1) ? results[1] : undefined;
-        }
-    }
+    postJson&lt;T, U&gt;(data: T, additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
 }
 &nbsp;</pre></td></tr>
 </table></pre>
