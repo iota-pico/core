@@ -9,12 +9,14 @@
 
 * [ArrayHelper](classes/arrayhelper.md)
 * [BackgroundTaskService](classes/backgroundtaskservice.md)
+* [ConsoleLogger](classes/consolelogger.md)
 * [CoreError](classes/coreerror.md)
 * [ErrorHelper](classes/errorhelper.md)
 * [FactoryBase](classes/factorybase.md)
 * [JsonHelper](classes/jsonhelper.md)
 * [NetworkClientFactory](classes/networkclientfactory.md)
 * [NetworkEndPoint](classes/networkendpoint.md)
+* [NullLogger](classes/nulllogger.md)
 * [NumberHelper](classes/numberhelper.md)
 * [ObjectHelper](classes/objecthelper.md)
 * [StringHelper](classes/stringhelper.md)
@@ -24,6 +26,7 @@
 ### Interfaces
 
 * [IBackgroundTaskService](interfaces/ibackgroundtaskservice.md)
+* [ILogger](interfaces/ilogger.md)
 * [INetworkClient](interfaces/inetworkclient.md)
 * [INetworkEndPoint](interfaces/inetworkendpoint.md)
 * [ITimeService](interfaces/itimeservice.md)
@@ -43,7 +46,7 @@
 
 **Τ NetworkProtocol**:  *"http"⎮"https"* 
 
-*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/2878392/src/interfaces/networkProtocol.ts#L4)*
+*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/interfaces/networkProtocol.ts#L4)*
 
 
 

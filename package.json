@@ -2,8 +2,8 @@
     "name": "@iota-pico/core",
     "version": "0.7.0",
     "description": "IOTA Pico Framework Core",
-    "main": "dist/index.js",
     "typings": "dist/index.d.ts",
+    "main": "dist/index.js",
     "keywords": [
         "iota",
         "pico",
@@ -43,6 +43,7 @@
         "dist": "npm-run-all build test docs"
     },
     "devDependencies": {
+        "@babel/runtime": "^7.0.0-beta.40",
         "@types/chai": "^4.1.1",
         "@types/mocha": "^2.2.46",
         "chai": "^4.1.2",
@@ -59,6 +60,6 @@
         "tslint-microsoft-contrib": "^5.0.2",
         "typedoc": "^0.10.0",
         "typedoc-plugin-markdown": "^1.0.12",
-        "typescript": "^2.7.1"
+        "typescript": "^2.7.2"
     }
 }

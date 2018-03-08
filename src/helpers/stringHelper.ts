@@ -17,7 +17,7 @@ export class StringHelper {
      * @param value Object to test for its no emptyness.
      * @returns True if the object is an empty string.
      */
-    public static isEmpty(value: any): value is string {
+    public static isEmpty(value: any): boolean {
         return !StringHelper.isString(value) || value.length === 0;
     }
 

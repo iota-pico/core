@@ -15,11 +15,11 @@ Represents a client for performing communication.
 
 ###  get
 
-► **get**(additionalHeaders?: *`object`*): `Promise`.<`string`>
+► **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
 
 
 
-*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/2878392/src/interfaces/INetworkClient.ts#L12)*
+*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/interfaces/INetworkClient.ts#L12)*
 
 
 
@@ -30,6 +30,7 @@ Get data asynchronously.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
+| additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
 
@@ -50,11 +51,11 @@ ___
 
 ###  getJson
 
-► **getJson**U(additionalHeaders?: *`object`*): `Promise`.<`U`>
+► **getJson**U(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
 
 
 
-*Defined in [interfaces/INetworkClient.ts:28](https://github.com/iotaeco/iota-pico-core/blob/2878392/src/interfaces/INetworkClient.ts#L28)*
+*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/interfaces/INetworkClient.ts#L30)*
 
 
 
@@ -71,6 +72,7 @@ The generic type for the returned object.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
+| additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
 
@@ -91,11 +93,11 @@ ___
 
 ###  post
 
-► **post**(data: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+► **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
 
 
 
-*Defined in [interfaces/INetworkClient.ts:20](https://github.com/iotaeco/iota-pico-core/blob/2878392/src/interfaces/INetworkClient.ts#L20)*
+*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/interfaces/INetworkClient.ts#L21)*
 
 
 
@@ -107,6 +109,7 @@ Post data asynchronously.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | data | `string`   |  The data to send. |
+| additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
 
@@ -127,11 +130,11 @@ ___
 
 ###  postJson
 
-► **postJson**T,U(data: *`T`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
+► **postJson**T,U(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
 
 
 
-*Defined in [interfaces/INetworkClient.ts:38](https://github.com/iotaeco/iota-pico-core/blob/2878392/src/interfaces/INetworkClient.ts#L38)*
+*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/interfaces/INetworkClient.ts#L41)*
 
 
 
@@ -153,6 +156,7 @@ The generic type for the returned object.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | data | `T`   |  The data to send. |
+| additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
 

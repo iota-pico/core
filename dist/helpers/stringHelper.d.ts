@@ -13,7 +13,7 @@ export declare class StringHelper {
      * @param value Object to test for its no emptyness.
      * @returns True if the object is an empty string.
      */
-    static isEmpty(value: any): value is string;
+    static isEmpty(value: any): boolean;
     /**
      * Is the string all ASCII characters.
      * @param value string to test if is is ASCII.
