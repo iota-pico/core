@@ -19,23 +19,15 @@ describe("ConsoleLogger", () => {
         consoleStub = <Console>{};
         consoleStub.log = (message) => {
             logs.push(message);
-            // tslint:disable-next-line:no-console
-            console.log("   ---", message);
         };
         consoleStub.info = (message) => {
             infos.push(message);
-            // tslint:disable-next-line:no-console
-            console.log("   ---", message);
         };
         consoleStub.warn = (message) => {
             warnings.push(message);
-            // tslint:disable-next-line:no-console
-            console.log("   ---", message);
         };
         consoleStub.error = (message) => {
             errors.push(message);
-            // tslint:disable-next-line:no-console
-            console.log("   ---", message);
         };
     });
 

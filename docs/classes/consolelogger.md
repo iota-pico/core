@@ -23,6 +23,7 @@ Implementation of ILogger which sends to the this._loggingObject.
 * [banner](consolelogger.md#banner)
 * [error](consolelogger.md#error)
 * [info](consolelogger.md#info)
+* [log](consolelogger.md#log)
 * [warning](consolelogger.md#warning)
 
 
@@ -35,7 +36,7 @@ Implementation of ILogger which sends to the this._loggingObject.
 ### ⊕ **new ConsoleLogger**(loggingObject?: *`Console`*): [ConsoleLogger](consolelogger.md)
 
 
-*Defined in loggers/consoleLogger.ts:12*
+*Defined in [loggers/consoleLogger.ts:13](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/consoleLogger.ts#L13)*
 
 
 
@@ -62,13 +63,13 @@ Create and instance of the console logger.
 
 ###  banner
 
-► **banner**(message: *`string`*, args?: *`any`*): `void`
+► **banner**(message: *`string`*, ...args: *`any`[]*): `void`
 
 
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[banner](../interfaces/ilogger.md#banner)*
 
-*Defined in loggers/consoleLogger.ts:26*
+*Defined in [loggers/consoleLogger.ts:27](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/consoleLogger.ts#L27)*
 
 
 
@@ -80,7 +81,7 @@ Send banner to the logger.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | message | `string`   |  The message to log. |
-| args | `any`   |  Additional parameters to log. |
+| args | `any`[]   |  Additional parameters to log. |
 
 
 
@@ -98,13 +99,13 @@ ___
 
 ###  error
 
-► **error**(message: *`string`*, err?: *`any`*, args?: *`any`*): `void`
+► **error**(message: *`string`*, err?: *`any`*, ...args: *`any`[]*): `void`
 
 
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[error](../interfaces/ilogger.md#error)*
 
-*Defined in loggers/consoleLogger.ts:59*
+*Defined in [loggers/consoleLogger.ts:70](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/consoleLogger.ts#L70)*
 
 
 
@@ -117,7 +118,7 @@ Send error to the logger.
 | ------ | ------ | ------ |
 | message | `string`   |  The message to log. |
 | err | `any`   |  An error object to log. |
-| args | `any`   |  Additional parameters to log. |
+| args | `any`[]   |  Additional parameters to log. |
 
 
 
@@ -135,13 +136,13 @@ ___
 
 ###  info
 
-► **info**(message: *`string`*, args?: *`any`*): `void`
+► **info**(message: *`string`*, ...args: *`any`[]*): `void`
 
 
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[info](../interfaces/ilogger.md#info)*
 
-*Defined in loggers/consoleLogger.ts:38*
+*Defined in [loggers/consoleLogger.ts:49](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/consoleLogger.ts#L49)*
 
 
 
@@ -153,7 +154,43 @@ Send information to the logger.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | message | `string`   |  The message to log. |
-| args | `any`   |  Additional parameters to log. |
+| args | `any`[]   |  Additional parameters to log. |
+
+
+
+
+
+**Returns:** `void`
+
+
+
+
+
+___
+
+<a id="log"></a>
+
+###  log
+
+► **log**(message: *`string`*, ...args: *`any`[]*): `void`
+
+
+
+*Implementation of [ILogger](../interfaces/ilogger.md).[log](../interfaces/ilogger.md#log)*
+
+*Defined in [loggers/consoleLogger.ts:39](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/consoleLogger.ts#L39)*
+
+
+
+Send log to the logger.
+
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| message | `string`   |  The message to log. |
+| args | `any`[]   |  Additional parameters to log. |
 
 
 
@@ -171,13 +208,13 @@ ___
 
 ###  warning
 
-► **warning**(message: *`string`*, args?: *`any`*): `void`
+► **warning**(message: *`string`*, ...args: *`any`[]*): `void`
 
 
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[warning](../interfaces/ilogger.md#warning)*
 
-*Defined in loggers/consoleLogger.ts:48*
+*Defined in [loggers/consoleLogger.ts:59](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/consoleLogger.ts#L59)*
 
 
 
@@ -189,7 +226,7 @@ Send warning to the logger.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | message | `string`   |  The message to log. |
-| args | `any`   |  Additional parameters to log. |
+| args | `any`[]   |  Additional parameters to log. |
 
 
 

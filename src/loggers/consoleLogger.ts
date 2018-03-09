@@ -1,8 +1,8 @@
 import { ArrayHelper } from "../helpers/arrayHelper";
 import { ErrorHelper } from "../helpers/errorHelper";
 import { ObjectHelper } from "../helpers/objectHelper";
+import { StringHelper } from "../helpers/stringHelper";
 import { ILogger } from "../interfaces/ILogger";
-import { StringHelper } from "..";
 
 /**
  * Implementation of ILogger which sends to the this._loggingObject.
@@ -94,6 +94,7 @@ export class ConsoleLogger implements ILogger {
         }
     }
 
+    /* @internal */
     private logItem(indent: string, key: string, item: any, logMethod: (message: string) => void): void {
         if (ArrayHelper.isArray(item)) {
             const newIndent = `${indent}\t`;

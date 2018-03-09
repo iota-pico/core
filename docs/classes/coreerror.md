@@ -52,7 +52,7 @@ A core implementation of an error.
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
 
 
-*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/error/coreError.ts#L15)*
+*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/error/coreError.ts#L15)*
 
 
 
@@ -83,7 +83,7 @@ Create an instance of CoreError.
 
 **●  additional**:  *`object`* 
 
-*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/error/coreError.ts#L10)*
+*Defined in [error/coreError.ts:10](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/error/coreError.ts#L10)*
 
 
 
@@ -107,7 +107,7 @@ ___
 
 **●  innerError**:  *`Error`* 
 
-*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/error/coreError.ts#L15)*
+*Defined in [error/coreError.ts:15](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/error/coreError.ts#L15)*
 
 
 
@@ -124,7 +124,7 @@ ___
 
 **●  Error**:  *`ErrorConstructor`* 
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:896*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:896*
 
 
 
@@ -140,7 +140,7 @@ ___
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 
 
@@ -156,7 +156,7 @@ ___
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 
 
@@ -172,7 +172,7 @@ ___
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887*
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:887*
 
 
 
@@ -190,7 +190,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/error/coreError.ts#L41)*
+*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/error/coreError.ts#L41)*
 
 
 
@@ -215,7 +215,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/165c7c3/src/error/coreError.ts#L34)*
+*Defined in [error/coreError.ts:34](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/error/coreError.ts#L34)*
 
 
 

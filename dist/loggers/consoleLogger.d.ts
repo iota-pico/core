@@ -38,5 +38,4 @@ export declare class ConsoleLogger implements ILogger {
      * @param args Additional parameters to log.
      */
     error(message: string, err?: any, ...args: any[]): void;
-    private logItem(indent, key, item, logMethod);
 }
