@@ -82,48 +82,56 @@ export class ConsoleLogger implements ILogger {
     private logArgs(logMethod: (message: string) => void, args: any[]): void {
         if (!ArrayHelper.isEmpty(args)) {
             const indent = "\t";
-            if (args.length === 1) {
-                if (!ObjectHelper.isEmpty(args[0])) {
-                    this.logItem(indent, "", args[0], logMethod);
+            let output = "";
+            args.forEach((arg, index) => {
+                output += this.createItem(indent, "", arg);
+                if (index < args.length - 1) {
+                    output += `${indent}${"-".repeat(70)}\n`;
                 }
-            } else {
-                args.forEach((arg, index) => {
-                    this.logItem(indent, index.toString(), arg, logMethod);
-                });
-            }
+            });
+            logMethod(output);
         }
     }
 
     /* @internal */
-    private logItem(indent: string, key: string, item: any, logMethod: (message: string) => void): void {
+    private createItem(indent: string, key: string, item: any, singleItemLineBreak: string = "\n"): string {
+        let output = "";
         if (ArrayHelper.isArray(item)) {
             const newIndent = `${indent}\t`;
             if (StringHelper.isEmpty(key)) {
-                logMethod(`${indent} [`);
+                output += `${indent}[\n`;
             } else {
-                logMethod(`${indent}${key}: [`);
+                output += `${indent}${key}: [\n`;
             }
             item.forEach((element: any, index: number) => {
-                this.logItem(newIndent, "", element, logMethod);
+                output += this.createItem(newIndent, "", element, `${index < item.length - 1 ? "," : ""}\n`);
             });
-            logMethod(`${indent}]`);
+            output += `${indent}]\n`;
         } else if (ObjectHelper.isObject(item)) {
-            const newIndent = `${indent}\t`;
-            if (StringHelper.isEmpty(key)) {
-                logMethod(`${indent} {`);
+            const obString = item.toString();
+
+            if (obString === "[object Object]") {
+                const newIndent = `${indent}\t`;
+                if (StringHelper.isEmpty(key)) {
+                    output += `${indent}{\n`;
+                } else {
+                    output += `${indent}${key}: {\n`;
+                }
+                const keys = Object.keys(item);
+                keys.forEach((itemKey: string, index: number) => {
+                    output += this.createItem(newIndent, itemKey, item[itemKey], `${index < keys.length - 1 ? "," : ""}\n`);
+                });
+                output += `${indent}}\n`;
             } else {
-                logMethod(`${indent}${key}: {`);
+                output += this.createItem(indent, key, obString, "\n");
             }
-            for (const key2 in item) {
-                this.logItem(newIndent, key2, item[key2], logMethod);
-            }
-            logMethod(`${indent}}`);
         } else {
             if (StringHelper.isEmpty(key)) {
-                logMethod(`${indent}${item}`);
+                output += `${indent}${ObjectHelper.isEmpty(item) ? item : item.toString()}${singleItemLineBreak}`;
             } else {
-                logMethod(`${indent}${key}: ${item}`);
+                output += `${indent}${key}: ${ObjectHelper.isEmpty(item) ? item : item.toString()}${singleItemLineBreak}`;
             }
         }
+        return output;
     }
 }

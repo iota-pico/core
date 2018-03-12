@@ -1,5 +1,6 @@
 import { CoreError } from "../error/coreError";
 import { JsonHelper } from "./jsonHelper";
+import { ObjectHelper } from "./objectHelper";
 import { StringHelper } from "./stringHelper";
 
 /**
@@ -24,8 +25,8 @@ export class ErrorHelper {
                 ret += `\n${parts.join("\n")}`;
             }
 
-            if (err.innerError) {
-                if (includeStack && err.innerError.stack) {
+            if (!ObjectHelper.isEmpty(err.innerError)) {
+                if (includeStack && !ObjectHelper.isEmpty(err.innerError.stack)) {
                     ret += `\n\n-----------------------------------------------`;
                     ret += `\nInner Stack Trace\n`;
                     ret += err.innerError.stack;
@@ -37,7 +38,7 @@ export class ErrorHelper {
             return ret;
         } else if (err instanceof Error) {
             let ret = "";
-            if (includeStack && err.stack) {
+            if (includeStack && !ObjectHelper.isEmpty(err.stack)) {
                 ret += err.stack;
             } else {
                 ret += err.message;

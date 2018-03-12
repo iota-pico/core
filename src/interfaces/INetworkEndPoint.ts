@@ -16,15 +16,15 @@ export interface INetworkEndPoint {
      */
     getHost(): string;
     /**
-     * The path to the endpoint.
-     * @returns The path.
-     */
-    getPath(): string;
-    /**
      * The port of the endpoint.
      * @returns The port.
      */
     getPort(): number;
+    /**
+     * The path to the endpoint.
+     * @returns The path.
+     */
+    getRootPath(): string;
     /**
      * The complete uri.
      * @returns The uri.

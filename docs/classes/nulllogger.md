@@ -35,7 +35,7 @@ Implementation of ILogger which is silent.
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[banner](../interfaces/ilogger.md#banner)*
 
-*Defined in [loggers/nullLogger.ts:12](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/nullLogger.ts#L12)*
+*Defined in [loggers/nullLogger.ts:12](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/loggers/nullLogger.ts#L12)*
 
 
 
@@ -71,7 +71,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[error](../interfaces/ilogger.md#error)*
 
-*Defined in [loggers/nullLogger.ts:45](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/nullLogger.ts#L45)*
+*Defined in [loggers/nullLogger.ts:45](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/loggers/nullLogger.ts#L45)*
 
 
 
@@ -108,7 +108,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[info](../interfaces/ilogger.md#info)*
 
-*Defined in [loggers/nullLogger.ts:28](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/nullLogger.ts#L28)*
+*Defined in [loggers/nullLogger.ts:28](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/loggers/nullLogger.ts#L28)*
 
 
 
@@ -144,7 +144,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[log](../interfaces/ilogger.md#log)*
 
-*Defined in [loggers/nullLogger.ts:20](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/nullLogger.ts#L20)*
+*Defined in [loggers/nullLogger.ts:20](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/loggers/nullLogger.ts#L20)*
 
 
 
@@ -180,7 +180,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[warning](../interfaces/ilogger.md#warning)*
 
-*Defined in [loggers/nullLogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/loggers/nullLogger.ts#L36)*
+*Defined in [loggers/nullLogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/loggers/nullLogger.ts#L36)*
 
 
 

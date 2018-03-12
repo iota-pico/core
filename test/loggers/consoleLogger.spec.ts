@@ -59,13 +59,13 @@ describe("ConsoleLogger", () => {
         it("can be called with null args", () => {
             const obj = new ConsoleLogger(consoleStub);
             obj.log("message", null);
-            chai.expect(logs.length).to.be.equal(1);
+            chai.expect(logs.length).to.be.equal(2);
         });
 
         it("can be called with undefined args", () => {
             const obj = new ConsoleLogger(consoleStub);
             obj.log("message", undefined);
-            chai.expect(logs.length).to.be.equal(1);
+            chai.expect(logs.length).to.be.equal(2);
         });
 
         it("can be called with string arg", () => {
@@ -77,25 +77,31 @@ describe("ConsoleLogger", () => {
         it("can be called with multiple arg", () => {
             const obj = new ConsoleLogger(consoleStub);
             obj.log("message", "foo", true);
-            chai.expect(logs.length).to.be.equal(3);
+            chai.expect(logs.length).to.be.equal(2);
         });
 
         it("can be called with array", () => {
             const obj = new ConsoleLogger(consoleStub);
             obj.log("message", [1, 2, 3]);
-            chai.expect(logs.length).to.be.equal(6);
+            chai.expect(logs.length).to.be.equal(2);
         });
 
         it("can be called with object", () => {
             const obj = new ConsoleLogger(consoleStub);
             obj.log("message", { foo: 1234, bar: true});
-            chai.expect(logs.length).to.be.equal(5);
+            chai.expect(logs.length).to.be.equal(2);
         });
 
         it("can be called nested object", () => {
             const obj = new ConsoleLogger(consoleStub);
             obj.log("message", { foo: [1, 2, 3, 4], bar: { bing: true, bong: false}});
-            chai.expect(logs.length).to.be.equal(13);
+            chai.expect(logs.length).to.be.equal(2);
+        });
+
+        it("can be called with empty object", () => {
+            const obj = new ConsoleLogger(consoleStub);
+            obj.log("message", { foo: [1, 2, 3, 4], bar: { bing: null, bong: false}});
+            chai.expect(logs.length).to.be.equal(2);
         });
     });
 

@@ -23,7 +23,7 @@ Represents the configuration for a network endpoint.
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/interfaces/INetworkEndPoint.ts#L17)*
+*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/interfaces/INetworkEndPoint.ts#L17)*
 
 
 
@@ -42,33 +42,6 @@ The host.
 
 ___
 
-<a id="getpath"></a>
-
-###  getPath
-
-► **getPath**(): `string`
-
-
-
-*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/interfaces/INetworkEndPoint.ts#L22)*
-
-
-
-The path to the endpoint.
-
-
-
-
-**Returns:** `string`
-The path.
-
-
-
-
-
-
-___
-
 <a id="getport"></a>
 
 ###  getPort
@@ -77,7 +50,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/interfaces/INetworkEndPoint.ts#L27)*
+*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/interfaces/INetworkEndPoint.ts#L22)*
 
 
 
@@ -104,7 +77,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/interfaces/INetworkEndPoint.ts#L12)*
+*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/interfaces/INetworkEndPoint.ts#L12)*
 
 
 
@@ -123,6 +96,33 @@ The protocol.
 
 ___
 
+<a id="getrootpath"></a>
+
+###  getRootPath
+
+► **getRootPath**(): `string`
+
+
+
+*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/interfaces/INetworkEndPoint.ts#L27)*
+
+
+
+The path to the endpoint.
+
+
+
+
+**Returns:** `string`
+The path.
+
+
+
+
+
+
+___
+
 <a id="geturi"></a>
 
 ###  getUri
@@ -131,7 +131,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/interfaces/INetworkEndPoint.ts#L32)*
+*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/interfaces/INetworkEndPoint.ts#L32)*
 
 
 

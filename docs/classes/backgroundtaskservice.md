@@ -29,7 +29,7 @@ Default implementation of background task service.
 
 
 
-*Defined in [services/backgroundTaskService.ts:12](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/services/backgroundTaskService.ts#L12)*
+*Defined in [services/backgroundTaskService.ts:12](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/services/backgroundTaskService.ts#L12)*
 
 
 

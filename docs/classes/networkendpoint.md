@@ -21,9 +21,9 @@ Default implementation of a network endpoint.
 ### Methods
 
 * [getHost](networkendpoint.md#gethost)
-* [getPath](networkendpoint.md#getpath)
 * [getPort](networkendpoint.md#getport)
 * [getProtocol](networkendpoint.md#getprotocol)
+* [getRootPath](networkendpoint.md#getrootpath)
 * [getUri](networkendpoint.md#geturi)
 
 
@@ -33,10 +33,10 @@ Default implementation of a network endpoint.
 <a id="constructor"></a>
 
 
-### ⊕ **new NetworkEndPoint**(protocol: *[NetworkProtocol](../#networkprotocol)*, host: *`string`*, path: *`string`*, port: *`number`*): [NetworkEndPoint](networkendpoint.md)
+### ⊕ **new NetworkEndPoint**(protocol: *[NetworkProtocol](../#networkprotocol)*, host: *`string`*, port: *`number`*, rootPath?: *`string`*): [NetworkEndPoint](networkendpoint.md)
 
 
-*Defined in [network/networkEndPoint.ts:19](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/network/networkEndPoint.ts#L19)*
+*Defined in [network/networkEndPoint.ts:19](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/network/networkEndPoint.ts#L19)*
 
 
 
@@ -49,8 +49,8 @@ Create an instance of NetworkEndPoint.
 | ------ | ------ | ------ |
 | protocol | [NetworkProtocol](../#networkprotocol)   |  The protocol to access the endpoint with. |
 | host | `string`   |  The host name or ip of the endpoint. |
-| path | `string`   |  The path to the endpoint. |
 | port | `number`   |  The port of the endpoint. |
+| rootPath | `string`   |  The path to the endpoint. |
 
 
 
@@ -72,7 +72,7 @@ Create an instance of NetworkEndPoint.
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getHost](../interfaces/inetworkendpoint.md#gethost)*
 
-*Defined in [network/networkEndPoint.ts:59](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/network/networkEndPoint.ts#L59)*
+*Defined in [network/networkEndPoint.ts:59](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/network/networkEndPoint.ts#L59)*
 
 
 
@@ -91,35 +91,6 @@ The host.
 
 ___
 
-<a id="getpath"></a>
-
-###  getPath
-
-► **getPath**(): `string`
-
-
-
-*Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getPath](../interfaces/inetworkendpoint.md#getpath)*
-
-*Defined in [network/networkEndPoint.ts:67](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/network/networkEndPoint.ts#L67)*
-
-
-
-The path to the endpoint.
-
-
-
-
-**Returns:** `string`
-The path.
-
-
-
-
-
-
-___
-
 <a id="getport"></a>
 
 ###  getPort
@@ -130,7 +101,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getPort](../interfaces/inetworkendpoint.md#getport)*
 
-*Defined in [network/networkEndPoint.ts:75](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/network/networkEndPoint.ts#L75)*
+*Defined in [network/networkEndPoint.ts:75](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/network/networkEndPoint.ts#L75)*
 
 
 
@@ -159,7 +130,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getProtocol](../interfaces/inetworkendpoint.md#getprotocol)*
 
-*Defined in [network/networkEndPoint.ts:51](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/network/networkEndPoint.ts#L51)*
+*Defined in [network/networkEndPoint.ts:51](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/network/networkEndPoint.ts#L51)*
 
 
 
@@ -178,6 +149,35 @@ The protocol.
 
 ___
 
+<a id="getrootpath"></a>
+
+###  getRootPath
+
+► **getRootPath**(): `string`
+
+
+
+*Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getRootPath](../interfaces/inetworkendpoint.md#getrootpath)*
+
+*Defined in [network/networkEndPoint.ts:67](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/network/networkEndPoint.ts#L67)*
+
+
+
+The path to the endpoint.
+
+
+
+
+**Returns:** `string`
+The path.
+
+
+
+
+
+
+___
+
 <a id="geturi"></a>
 
 ###  getUri
@@ -188,7 +188,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getUri](../interfaces/inetworkendpoint.md#geturi)*
 
-*Defined in [network/networkEndPoint.ts:83](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/network/networkEndPoint.ts#L83)*
+*Defined in [network/networkEndPoint.ts:83](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/network/networkEndPoint.ts#L83)*
 
 
 

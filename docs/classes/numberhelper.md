@@ -25,7 +25,7 @@ Number helper methods.
 
 
 
-*Defined in [helpers/numberHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/c0570fd/src/helpers/numberHelper.ts#L10)*
+*Defined in [helpers/numberHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/060c306/src/helpers/numberHelper.ts#L10)*
 
 
 
