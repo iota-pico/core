@@ -42,31 +42,31 @@ describe("ErrorHelper", () => {
 
         it("can return the message when called with an Error with stack", () => {
             const obj = new Error("the message");
-            obj.stack = "the message\nstack2";
-            chai.expect(ErrorHelper.format(obj, true)).to.equal("the message\nstack2");
+            obj.stack = "Core: the message\nstack2";
+            chai.expect(ErrorHelper.format(obj, true)).to.equal("Core: the message\nstack2");
         });
 
         it("can return the message when called with an CoreError no stack", () => {
             const obj = new CoreError("the message");
-            chai.expect(ErrorHelper.format(obj, false)).to.equal("the message");
+            chai.expect(ErrorHelper.format(obj, false)).to.equal("Core: the message");
         });
 
         it("can return the message when called with an CoreError including stack but none", () => {
             const obj = new CoreError("the message");
             obj.stack = undefined;
-            chai.expect(ErrorHelper.format(obj, true)).to.equal("the message");
+            chai.expect(ErrorHelper.format(obj, true)).to.equal("Core: the message");
         });
 
         it("can return the message when called with an CoreError including stack", () => {
             const obj = new CoreError("the message");
             obj.stack = "stack 1\nstack 2";
-            chai.expect(ErrorHelper.format(obj, true)).to.equal("the message\nStack Trace\nstack 2");
+            chai.expect(ErrorHelper.format(obj, true)).to.equal("Core: the message\nStack Trace\nstack 2");
         });
 
         it("can return the message when called with an CoreError and inner no stack", () => {
             const obj = new CoreError("the message");
             obj.innerError = new Error("inner message");
-            chai.expect(ErrorHelper.format(obj, false)).to.equal("the message\nInner Error: inner message\n");
+            chai.expect(ErrorHelper.format(obj, false)).to.equal("Core: the message\nInner Error: inner message\n");
         });
 
         it("can return the message when called with an CoreError and inner including stack but none", () => {
@@ -74,16 +74,16 @@ describe("ErrorHelper", () => {
             obj.stack = undefined;
             obj.innerError = new Error("inner message");
             obj.innerError.stack = undefined;
-            chai.expect(ErrorHelper.format(obj, true)).to.equal("the message\nInner Error: inner message\n");
+            chai.expect(ErrorHelper.format(obj, true)).to.equal("Core: the message\nInner Error: inner message\n");
         });
 
-        it("can return the message when called with an CoreError and inner  including stack", () => {
+        it("can return the message when called with an CoreError and inner including stack", () => {
             const obj = new CoreError("the message");
             obj.stack = "stack 1\nstack 2";
             obj.innerError = new Error("inner message");
             obj.innerError.stack = "stack 3\nstack 4";
             // tslint:disable-next-line:max-line-length
-            chai.expect(ErrorHelper.format(obj, true)).to.equal("the message\nStack Trace\nstack 2\n\n-----------------------------------------------\nInner Stack Trace\nstack 3\nstack 4");
+            chai.expect(ErrorHelper.format(obj, true)).to.equal("Core: the message\nStack Trace\nstack 2\n\n-----------------------------------------------\nInner Stack Trace\nstack 3\nstack 4");
         });
     });
 });

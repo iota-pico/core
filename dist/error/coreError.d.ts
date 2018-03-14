@@ -3,6 +3,10 @@
  */
 export declare class CoreError extends Error {
     /**
+     * The domain of the error.
+     */
+    domain: string;
+    /**
      * Additional details about the error.
      */
     additional?: {

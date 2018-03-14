@@ -2,6 +2,7 @@
  * Combined index of all the modules.
  */
 export * from "./error/coreError";
+export * from "./error/networkError";
 export * from "./factories/factoryBase";
 export * from "./factories/networkClientFactory";
 export * from "./helpers/arrayHelper";

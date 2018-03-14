@@ -1,4 +1,4 @@
-import { CoreError } from "../error/coreError";
+import { NetworkError } from "../error/networkError";
 import { NumberHelper } from "../helpers/numberHelper";
 import { ObjectHelper } from "../helpers/objectHelper";
 import { StringHelper } from "../helpers/stringHelper";
@@ -27,16 +27,16 @@ export class NetworkEndPoint implements INetworkEndPoint {
      */
     constructor(protocol: NetworkProtocol, host: string, port: number, rootPath?: string) {
         if (!StringHelper.isString(protocol) || !/http|https/.test(protocol)) {
-            throw new CoreError("The protocol must be defined as http or https");
+            throw new NetworkError("The protocol must be defined as http or https");
         }
         if (!StringHelper.isString(host)) {
-            throw new CoreError("The host must be defined");
+            throw new NetworkError("The host must be defined");
         }
         if (!NumberHelper.isInteger(port) || port <= 0) {
-            throw new CoreError("The port must be a number greater than zero");
+            throw new NetworkError("The port must be a number greater than zero");
         }
         if (!ObjectHelper.isEmpty(rootPath) && !StringHelper.isString(rootPath)) {
-            throw new CoreError("The rootPath must be a valid string");
+            throw new NetworkError("The rootPath must be a valid string");
         }
         this._protocol = protocol;
         this._host = host.replace(/^\/*/, "").replace(/\/*$/, "");

@@ -123,7 +123,7 @@ export class ConsoleLogger implements ILogger {
                 });
                 output += `${indent}}\n`;
             } else {
-                output += this.createItem(indent, key, obString, "\n");
+                output += this.createItem(indent, key, obString.replace(/\n/g, `\n${indent}`), singleItemLineBreak);
             }
         } else {
             if (StringHelper.isEmpty(key)) {

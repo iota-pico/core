@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/services/timeService.ts</title>
+    <title>Code coverage report for src/error/networkError.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/services</a> timeService.ts
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/error</a> networkError.ts
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>2/2</span>
+        <span class='fraction'>4/4</span>
       </div>
     </div>
   </div>
@@ -57,7 +57,10 @@
 12
 13
 14
-15</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+15
+16
+17
+18</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -68,21 +71,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ITimeService } from "../interfaces/ITimeService";
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { CoreError } from "./coreError";
 &nbsp;
 /**
- * Represents a class which can provide the time.
+ * A network implementation of an error.
  */
-export class TimeService implements ITimeService {
+export class NetworkError extends CoreError {
     /**
-     * Returns the number of milliseconds since 1970/01/01.
-     * @returns Number of milliseconds.
+     * Create an instance of NetworkError.
+     * @param message The message for the error.
+     * @param additional Additional details about the error.
+     * @param innerError Add information from inner error if there was one.
      */
-    public msSinceEpoch(): number {
-        return Date.now();
+    constructor(message: string, additional?: { [id: string]: any }, innerError?: Error) {
+        super(message, additional, innerError);
+        this.domain = "Network";
     }
 }
 &nbsp;</pre></td></tr>

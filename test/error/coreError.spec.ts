@@ -24,16 +24,17 @@ describe("CoreError", () => {
     describe("format", () => {
         it("can be created with message", () => {
             const obj = new CoreError("hello");
-            chai.expect(obj.format()).to.be.equal("hello");
+            chai.expect(obj.format()).to.be.equal("Core: hello");
         });
 
         it("can be created with message and additional", () => {
             const obj = new CoreError("hello", { a: 1, b: true });
-            chai.expect(obj.format()).to.be.equal("hello\n\ta: 1\n\tb: true\n");
+            chai.expect(obj.format()).to.be.equal("Core: hello\n\ta: 1\n\tb: true\n");
         });
 
-        it("can be created with no message", () => {
+        it("can be created with no message or domain", () => {
             const obj = new CoreError(undefined, { a: 1, b: true });
+            obj.domain = undefined;
             chai.expect(obj.format()).to.be.equal("\ta: 1\n\tb: true\n");
         });
     });

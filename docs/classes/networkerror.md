@@ -1,23 +1,18 @@
-[@iota-pico/core](../README.md) > [CoreError](../classes/coreerror.md)
+[@iota-pico/core](../README.md) > [NetworkError](../classes/networkerror.md)
 
 
 
-# Class: CoreError
+# Class: NetworkError
 
 
-A core implementation of an error.
+A network implementation of an error.
 
 ## Hierarchy
 
 
- `Error`
+↳  [CoreError](coreerror.md)
 
-**↳ CoreError**
-
-↳  [NetworkError](networkerror.md)
-
-
-
+**↳ NetworkError**
 
 
 
@@ -29,24 +24,23 @@ A core implementation of an error.
 
 ### Constructors
 
-* [constructor](coreerror.md#constructor)
+* [constructor](networkerror.md#constructor)
 
 
 ### Properties
 
-* [additional](coreerror.md#additional)
-* [domain](coreerror.md#domain)
-* [innerError](coreerror.md#innererror)
-* [Error](coreerror.md#error)
-* [message](coreerror.md#message)
-* [name](coreerror.md#name)
-* [stack](coreerror.md#stack)
+* [additional](networkerror.md#additional)
+* [domain](networkerror.md#domain)
+* [innerError](networkerror.md#innererror)
+* [message](networkerror.md#message)
+* [name](networkerror.md#name)
+* [stack](networkerror.md#stack)
 
 
 ### Methods
 
-* [format](coreerror.md#format)
-* [isError](coreerror.md#iserror)
+* [format](networkerror.md#format)
+* [isError](networkerror.md#iserror)
 
 
 
@@ -55,14 +49,16 @@ A core implementation of an error.
 <a id="constructor"></a>
 
 
-### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
+### ⊕ **new NetworkError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [NetworkError](networkerror.md)
 
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/error/coreError.ts#L21)*
+*Overrides [CoreError](coreerror.md).[constructor](coreerror.md#constructor)*
+
+*Defined in error/networkError.ts:6*
 
 
 
-Create an instance of CoreError.
+Create an instance of NetworkError.
 
 
 **Parameters:**
@@ -77,7 +73,7 @@ Create an instance of CoreError.
 
 
 
-**Returns:** [CoreError](coreerror.md)
+**Returns:** [NetworkError](networkerror.md)
 
 ---
 
@@ -88,6 +84,8 @@ Create an instance of CoreError.
 ### «Optional» additional
 
 **●  additional**:  *`object`* 
+
+*Inherited from [CoreError](coreerror.md).[additional](coreerror.md#additional)*
 
 *Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/error/coreError.ts#L16)*
 
@@ -113,6 +111,8 @@ ___
 
 **●  domain**:  *`string`* 
 
+*Inherited from [CoreError](coreerror.md).[domain](coreerror.md#domain)*
+
 *Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/error/coreError.ts#L11)*
 
 
@@ -130,25 +130,13 @@ ___
 
 **●  innerError**:  *`Error`* 
 
+*Inherited from [CoreError](coreerror.md).[innerError](coreerror.md#innererror)*
+
 *Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/error/coreError.ts#L21)*
 
 
 
 The inner error if there was one.
-
-
-
-
-___
-
-<a id="error"></a>
-
-### «Static» Error
-
-**●  Error**:  *`ErrorConstructor`* 
-
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:896*
-
 
 
 
@@ -213,6 +201,8 @@ ___
 
 
 
+*Inherited from [CoreError](coreerror.md).[format](coreerror.md#format)*
+
 *Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/error/coreError.ts#L48)*
 
 
@@ -237,6 +227,8 @@ ___
 ► **isError**(obj: *`any`*): `boolean`
 
 
+
+*Inherited from [CoreError](coreerror.md).[isError](coreerror.md#iserror)*
 
 *Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/error/coreError.ts#L41)*
 

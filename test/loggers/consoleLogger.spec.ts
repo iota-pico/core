@@ -103,6 +103,12 @@ describe("ConsoleLogger", () => {
             obj.log("message", { foo: [1, 2, 3, 4], bar: { bing: null, bong: false}});
             chai.expect(logs.length).to.be.equal(2);
         });
+
+        it("can be called with object that has toString()", () => {
+            const obj = new ConsoleLogger(consoleStub);
+            obj.log("message", { foo: [1, 2, 3, 4], bar: { bing: null, bong: new Date() }});
+            chai.expect(logs.length).to.be.equal(2);
+        });
     });
 
     describe("info", () => {

@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.7.0
+## v0.9.0
 
 * Fixed ErrorHelper.format ordering of CoreError types
 * Added optional innerError for CoreError constructor
@@ -8,6 +8,9 @@
 * Added ITimeService and TimeService implementation
 * Added IBackgroundTaskService and BackgroundTaskService implementation
 * Added code coverage to testing
+* Added ILogger interface
+* Added ConsoleLogger
+* Added NullLogger
 
 ## v0.6.1
 

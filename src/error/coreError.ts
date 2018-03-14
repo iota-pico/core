@@ -1,9 +1,15 @@
 import { JsonHelper } from "../helpers/jsonHelper";
+import { StringHelper } from "../helpers/stringHelper";
 
 /**
  * A core implementation of an error.
  */
 export class CoreError extends Error {
+    /**
+     * The domain of the error.
+     */
+    public domain: string;
+
     /**
      * Additional details about the error.
      */
@@ -24,6 +30,7 @@ export class CoreError extends Error {
         super(message);
         this.additional = additional ? additional : {};
         this.innerError = innerError;
+        this.domain = "Core";
     }
 
     /**
@@ -39,7 +46,14 @@ export class CoreError extends Error {
      * Format the error to a readable version.
      */
     public format(): string {
-        let out = this.message || "";
+        let out = "";
+
+        if (!StringHelper.isEmpty(this.domain)) {
+            out += `${this.domain}: `;
+        }
+        if (!StringHelper.isEmpty(this.message)) {
+            out += `${this.message}`;
+        }
 
         const keys = Object.keys(this.additional);
         if (keys.length > 0) {
