@@ -31,7 +31,7 @@ Represents a class which can provide the time.
 
 *Implementation of [ITimeService](../interfaces/itimeservice.md).[msSinceEpoch](../interfaces/itimeservice.md#mssinceepoch)*
 
-*Defined in [services/timeService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/8dad1d3/src/services/timeService.ts#L11)*
+*Defined in [services/timeService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/4d99e90/src/services/timeService.ts#L11)*
 
 
 
