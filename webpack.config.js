@@ -19,8 +19,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './pkg'),
         filename: pkgName + (isProd ? '.min' : '') + '.js',
-        libraryTarget: 'umd',
-        libraryExport: 'default',
+        libraryTarget: "umd",
+        libraryExport: undefined,
         library: {
             root: rootName,
             amd: packageJson.name,

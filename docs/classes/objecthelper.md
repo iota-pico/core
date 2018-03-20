@@ -28,7 +28,7 @@ Object helper methods.
 
 
 
-*Defined in [helpers/objectHelper.ts:40](https://github.com/iotaeco/iota-pico-core/blob/e0d8965/src/helpers/objectHelper.ts#L40)*
+*Defined in [helpers/objectHelper.ts:40](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/objectHelper.ts#L40)*
 
 
 
@@ -63,7 +63,7 @@ ___
 
 
 
-*Defined in [helpers/objectHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/e0d8965/src/helpers/objectHelper.ts#L10)*
+*Defined in [helpers/objectHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/objectHelper.ts#L10)*
 
 
 
@@ -98,7 +98,7 @@ ___
 
 
 
-*Defined in [helpers/objectHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/e0d8965/src/helpers/objectHelper.ts#L19)*
+*Defined in [helpers/objectHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/objectHelper.ts#L19)*
 
 
 
@@ -133,7 +133,7 @@ ___
 
 
 
-*Defined in [helpers/objectHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/e0d8965/src/helpers/objectHelper.ts#L30)*
+*Defined in [helpers/objectHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/objectHelper.ts#L30)*
 
 
 
