@@ -23,7 +23,7 @@ Represents a class which can provide the time.
 
 
 
-*Defined in [interfaces/ITimeService.ts:10](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/interfaces/ITimeService.ts#L10)*
+*Defined in [interfaces/ITimeService.ts:10](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/ITimeService.ts#L10)*
 
 
 

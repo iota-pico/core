@@ -23,7 +23,7 @@ Represents the configuration for a network endpoint.
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/interfaces/INetworkEndPoint.ts#L17)*
+*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/INetworkEndPoint.ts#L17)*
 
 
 
@@ -50,7 +50,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/interfaces/INetworkEndPoint.ts#L22)*
+*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/INetworkEndPoint.ts#L22)*
 
 
 
@@ -77,7 +77,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/interfaces/INetworkEndPoint.ts#L12)*
+*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/INetworkEndPoint.ts#L12)*
 
 
 
@@ -104,7 +104,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/interfaces/INetworkEndPoint.ts#L27)*
+*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/INetworkEndPoint.ts#L27)*
 
 
 
@@ -131,7 +131,7 @@ ___
 
 
 
-*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/interfaces/INetworkEndPoint.ts#L32)*
+*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/INetworkEndPoint.ts#L32)*
 
 
 

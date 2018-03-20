@@ -27,7 +27,7 @@ Array helper methods.
 
 
 
-*Defined in [helpers/arrayHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/arrayHelper.ts#L12)*
+*Defined in [helpers/arrayHelper.ts:12](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/helpers/arrayHelper.ts#L12)*
 
 
 
@@ -62,7 +62,7 @@ ___
 
 
 
-*Defined in [helpers/arrayHelper.ts:22](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/arrayHelper.ts#L22)*
+*Defined in [helpers/arrayHelper.ts:22](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/helpers/arrayHelper.ts#L22)*
 
 
 
@@ -97,7 +97,7 @@ ___
 
 
 
-*Defined in [helpers/arrayHelper.ts:32](https://github.com/iotaeco/iota-pico-core/blob/73a2e5a/src/helpers/arrayHelper.ts#L32)*
+*Defined in [helpers/arrayHelper.ts:32](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/helpers/arrayHelper.ts#L32)*
 
 
 
