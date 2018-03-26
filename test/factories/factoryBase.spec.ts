@@ -33,12 +33,20 @@ class TestFactory extends FactoryBase<TestClass> {
         return TestFactory._instance;
     }
 
+    public static reset(): void {
+        TestFactory._instance = undefined;
+    }
+
     protected getInstance(): FactoryBase<TestClass> {
         return TestFactory.instance();
     }
 }
 
 describe("FactoryBase", () => {
+    beforeEach(() => {
+        TestFactory.reset();
+    });
+
     it("can be created", () => {
         const obj = TestFactory.instance();
         chai.should().exist(obj);
@@ -97,6 +105,18 @@ describe("FactoryBase", () => {
             const obj2 = obj.create("test", 5, 7);
             chai.expect(obj2.value1).to.be.equal(5);
             chai.expect(obj2.value2).to.be.equal(7);
+        });
+    });
+
+    describe("types", () => {
+        it("can get not types with nothing registered", () => {
+            const obj = TestFactory.instance();
+            chai.expect(obj.types()).to.be.deep.equal([]);
+        });
+        it("can get types when they are registered", () => {
+            const obj = TestFactory.instance();
+            obj.register("test", (...args) => new TestClass(args[0], args[1]));
+            chai.expect(obj.types()).to.be.deep.equal(["test"]);
         });
     });
 });

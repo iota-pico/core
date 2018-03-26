@@ -21,6 +21,11 @@ The generic type for the object types in the factory.
 
 
 
+↳  [RngServiceFactory](rngservicefactory.md)
+
+
+
+
 
 
 
@@ -33,6 +38,7 @@ The generic type for the object types in the factory.
 * [exists](factorybase.md#exists)
 * [getInstance](factorybase.md#getinstance)
 * [register](factorybase.md#register)
+* [types](factorybase.md#types)
 * [unregister](factorybase.md#unregister)
 
 
@@ -47,7 +53,7 @@ The generic type for the object types in the factory.
 
 
 
-*Defined in [factories/factoryBase.ts:41](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/factories/factoryBase.ts#L41)*
+*Defined in [factories/factoryBase.ts:50](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L50)*
 
 
 
@@ -83,7 +89,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/factories/factoryBase.ts#L31)*
+*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L31)*
 
 
 
@@ -118,7 +124,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:51](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/factories/factoryBase.ts#L51)*
+*Defined in [factories/factoryBase.ts:60](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L60)*
 
 
 
@@ -140,7 +146,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L14)*
 
 
 
@@ -166,6 +172,33 @@ Register a new type with the factory.
 
 ___
 
+<a id="types"></a>
+
+###  types
+
+► **types**(): `string`[]
+
+
+
+*Defined in [factories/factoryBase.ts:40](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L40)*
+
+
+
+List the types in the factory.
+
+
+
+
+**Returns:** `string`[]
+True if the type exists.
+
+
+
+
+
+
+___
+
 <a id="unregister"></a>
 
 ###  unregister
@@ -174,7 +207,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L22)*
 
 
 

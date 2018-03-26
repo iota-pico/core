@@ -1,18 +1,18 @@
-[@iota-pico/core](../README.md) > [NetworkClientFactory](../classes/networkclientfactory.md)
+[@iota-pico/core](../README.md) > [RngServiceFactory](../classes/rngservicefactory.md)
 
 
 
-# Class: NetworkClientFactory
+# Class: RngServiceFactory
 
 
-Factory to generate network clients.
+Factory to generate rng service.
 
 ## Hierarchy
 
 
- [FactoryBase](factorybase.md)[INetworkClient](../interfaces/inetworkclient.md)
+ [FactoryBase](factorybase.md)[IRngService](../interfaces/irngservice.md)
 
-**↳ NetworkClientFactory**
+**↳ RngServiceFactory**
 
 
 
@@ -24,13 +24,13 @@ Factory to generate network clients.
 
 ### Methods
 
-* [create](networkclientfactory.md#create)
-* [exists](networkclientfactory.md#exists)
-* [getInstance](networkclientfactory.md#getinstance)
-* [register](networkclientfactory.md#register)
-* [types](networkclientfactory.md#types)
-* [unregister](networkclientfactory.md#unregister)
-* [instance](networkclientfactory.md#instance)
+* [create](rngservicefactory.md#create)
+* [exists](rngservicefactory.md#exists)
+* [getInstance](rngservicefactory.md#getinstance)
+* [register](rngservicefactory.md#register)
+* [types](rngservicefactory.md#types)
+* [unregister](rngservicefactory.md#unregister)
+* [instance](rngservicefactory.md#instance)
 
 
 
@@ -40,7 +40,7 @@ Factory to generate network clients.
 
 ###  create
 
-► **create**(name: *`string`*, ...args: *`any`[]*): [INetworkClient](../interfaces/inetworkclient.md)
+► **create**(name: *`string`*, ...args: *`any`[]*): [IRngService](../interfaces/irngservice.md)
 
 
 
@@ -64,7 +64,7 @@ Create an instance of an object from the factory.
 
 
 
-**Returns:** [INetworkClient](../interfaces/inetworkclient.md)
+**Returns:** [IRngService](../interfaces/irngservice.md)
 A new instance of the type if it exists, or undefined if it does not.
 
 
@@ -115,19 +115,19 @@ ___
 
 ### «Protected» getInstance
 
-► **getInstance**(): [FactoryBase](factorybase.md)[INetworkClient](../interfaces/inetworkclient.md)
+► **getInstance**(): [FactoryBase](factorybase.md)[IRngService](../interfaces/irngservice.md)
 
 
 
 *Overrides [FactoryBase](factorybase.md).[getInstance](factorybase.md#getinstance)*
 
-*Defined in [factories/networkClientFactory.ts:31](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/networkClientFactory.ts#L31)*
+*Defined in factories/rngServiceFactory.ts:31*
 
 
 
 
 
-**Returns:** [FactoryBase](factorybase.md)[INetworkClient](../interfaces/inetworkclient.md)
+**Returns:** [FactoryBase](factorybase.md)[IRngService](../interfaces/irngservice.md)
 
 
 
@@ -239,11 +239,11 @@ ___
 
 ### «Static» instance
 
-► **instance**(): [FactoryBase](factorybase.md)[INetworkClient](../interfaces/inetworkclient.md)
+► **instance**(): [FactoryBase](factorybase.md)[IRngService](../interfaces/irngservice.md)
 
 
 
-*Defined in [factories/networkClientFactory.ts:23](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/networkClientFactory.ts#L23)*
+*Defined in factories/rngServiceFactory.ts:23*
 
 
 
@@ -252,7 +252,7 @@ Get the instance of the factory.
 
 
 
-**Returns:** [FactoryBase](factorybase.md)[INetworkClient](../interfaces/inetworkclient.md)
+**Returns:** [FactoryBase](factorybase.md)[IRngService](../interfaces/irngservice.md)
 The factory instance.
 
 

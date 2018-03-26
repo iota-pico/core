@@ -1,5 +1,9 @@
 # Changelog
 
+* Added types() method to FactoryBase
+* Added IRngService
+* Added RngServiceFactory
+
 ## v0.9.2
 
 * Added UMD version of library in pkg folder

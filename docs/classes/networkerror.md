@@ -54,7 +54,7 @@ A network implementation of an error.
 
 *Overrides [CoreError](coreerror.md).[constructor](coreerror.md#constructor)*
 
-*Defined in [error/networkError.ts:6](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/error/networkError.ts#L6)*
+*Defined in [error/networkError.ts:6](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/networkError.ts#L6)*
 
 
 
@@ -87,7 +87,7 @@ Create an instance of NetworkError.
 
 *Inherited from [CoreError](coreerror.md).[additional](coreerror.md#additional)*
 
-*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/error/coreError.ts#L16)*
+*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L16)*
 
 
 
@@ -113,7 +113,7 @@ ___
 
 *Inherited from [CoreError](coreerror.md).[domain](coreerror.md#domain)*
 
-*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/error/coreError.ts#L11)*
+*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L11)*
 
 
 
@@ -132,7 +132,7 @@ ___
 
 *Inherited from [CoreError](coreerror.md).[innerError](coreerror.md#innererror)*
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L21)*
 
 
 
@@ -203,7 +203,7 @@ ___
 
 *Inherited from [CoreError](coreerror.md).[format](coreerror.md#format)*
 
-*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/error/coreError.ts#L48)*
+*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L48)*
 
 
 
@@ -230,7 +230,7 @@ ___
 
 *Inherited from [CoreError](coreerror.md).[isError](coreerror.md#iserror)*
 
-*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/error/coreError.ts#L41)*
+*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L41)*
 
 
 

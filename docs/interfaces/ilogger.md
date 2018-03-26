@@ -24,7 +24,7 @@ Represents a class which can provide logging.
 
 
 
-*Defined in [interfaces/ILogger.ts:11](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/ILogger.ts#L11)*
+*Defined in [interfaces/ILogger.ts:11](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/interfaces/ILogger.ts#L11)*
 
 
 
@@ -58,7 +58,7 @@ ___
 
 
 
-*Defined in [interfaces/ILogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/ILogger.ts#L36)*
+*Defined in [interfaces/ILogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/interfaces/ILogger.ts#L36)*
 
 
 
@@ -93,7 +93,7 @@ ___
 
 
 
-*Defined in [interfaces/ILogger.ts:23](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/ILogger.ts#L23)*
+*Defined in [interfaces/ILogger.ts:23](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/interfaces/ILogger.ts#L23)*
 
 
 
@@ -127,7 +127,7 @@ ___
 
 
 
-*Defined in [interfaces/ILogger.ts:17](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/ILogger.ts#L17)*
+*Defined in [interfaces/ILogger.ts:17](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/interfaces/ILogger.ts#L17)*
 
 
 
@@ -161,7 +161,7 @@ ___
 
 
 
-*Defined in [interfaces/ILogger.ts:29](https://github.com/iotaeco/iota-pico-core/blob/512f87a/src/interfaces/ILogger.ts#L29)*
+*Defined in [interfaces/ILogger.ts:29](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/interfaces/ILogger.ts#L29)*
 
 
 

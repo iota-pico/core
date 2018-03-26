@@ -3,7 +3,7 @@
     "version": "0.9.2",
     "description": "IOTA Pico Framework Core",
     "typings": "dist/index.d.ts",
-    "main": "pkg/iota-pico-core.js",
+    "main": "dist/index.js",
     "module": "dist/index.js",
     "keywords": [
         "iota",

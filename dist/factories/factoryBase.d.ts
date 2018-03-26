@@ -21,6 +21,12 @@ export declare abstract class FactoryBase<T> {
      */
     exists(name: string): boolean;
     /**
+     * List the types in the factory.
+     * @param name The name of the type to look for.
+     * @returns True if the type exists.
+     */
+    types(): string[];
+    /**
      * Create an instance of an object from the factory.
      * @param name The name of the type to create.
      * @param args Any parameters to pass to the constructor.
