@@ -34,7 +34,7 @@ class NetworkEndPoint {
     }
     /**
      * The protocol to access the endpoint with.
-     * @return The protocol.
+     * @returns The protocol.
      */
     getProtocol() {
         return this._protocol;

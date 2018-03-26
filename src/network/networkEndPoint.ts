@@ -46,7 +46,7 @@ export class NetworkEndPoint implements INetworkEndPoint {
 
     /**
      * The protocol to access the endpoint with.
-     * @return The protocol.
+     * @returns The protocol.
      */
     public getProtocol(): NetworkProtocol {
         return this._protocol;

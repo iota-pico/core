@@ -23,7 +23,7 @@ export class NumberHelper {
     /**
      * Is the value a float number formatted as a string, can be used for big numbers that would overflow parseFloat.
      * @param value The value to check
-     * @return True if the number is formatted correctly.
+     * @returns True if the number is formatted correctly.
      */
     public static isFloatString(value: string): boolean {
         return /^-?\d*\.?\d+$/.test(value);
@@ -32,7 +32,7 @@ export class NumberHelper {
     /**
      * Is the value a integer number formatted as a string, can be used for big numbers that would overflow parseInt.
      * @param value The value to check
-     * @return True if the number is formatted correctly.
+     * @returns True if the number is formatted correctly.
      */
     public static isIntegerString(value: string): boolean {
         return /^-?\d+$/.test(value);

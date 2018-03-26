@@ -58,7 +58,7 @@ A core implementation of an error.
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
 
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/error/coreError.ts#L21)*
 
 
 
@@ -89,7 +89,7 @@ Create an instance of CoreError.
 
 **●  additional**:  *`object`* 
 
-*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L16)*
+*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/error/coreError.ts#L16)*
 
 
 
@@ -113,7 +113,7 @@ ___
 
 **●  domain**:  *`string`* 
 
-*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L11)*
+*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/error/coreError.ts#L11)*
 
 
 
@@ -130,7 +130,7 @@ ___
 
 **●  innerError**:  *`Error`* 
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/error/coreError.ts#L21)*
 
 
 
@@ -213,7 +213,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L48)*
+*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/error/coreError.ts#L48)*
 
 
 
@@ -238,7 +238,7 @@ ___
 
 
 
-*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/error/coreError.ts#L41)*
+*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/error/coreError.ts#L41)*
 
 
 

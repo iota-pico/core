@@ -7,7 +7,7 @@ import { NetworkProtocol } from "./networkProtocol";
 export interface INetworkEndPoint {
     /**
      * The protocol to access the endpoint with.
-     * @return The protocol.
+     * @returns The protocol.
      */
     getProtocol(): NetworkProtocol;
     /**

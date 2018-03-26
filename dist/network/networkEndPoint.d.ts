@@ -14,7 +14,7 @@ export declare class NetworkEndPoint implements INetworkEndPoint {
     constructor(protocol: NetworkProtocol, host: string, port: number, rootPath?: string);
     /**
      * The protocol to access the endpoint with.
-     * @return The protocol.
+     * @returns The protocol.
      */
     getProtocol(): NetworkProtocol;
     /**

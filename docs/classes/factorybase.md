@@ -53,7 +53,7 @@ The generic type for the object types in the factory.
 
 
 
-*Defined in [factories/factoryBase.ts:50](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L50)*
+*Defined in [factories/factoryBase.ts:50](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/factories/factoryBase.ts#L50)*
 
 
 
@@ -89,7 +89,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L31)*
+*Defined in [factories/factoryBase.ts:31](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/factories/factoryBase.ts#L31)*
 
 
 
@@ -124,7 +124,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:60](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L60)*
+*Defined in [factories/factoryBase.ts:60](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/factories/factoryBase.ts#L60)*
 
 
 
@@ -146,7 +146,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/factories/factoryBase.ts#L14)*
 
 
 
@@ -180,7 +180,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:40](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L40)*
+*Defined in [factories/factoryBase.ts:40](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/factories/factoryBase.ts#L40)*
 
 
 
@@ -207,7 +207,7 @@ ___
 
 
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/512592b/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/factories/factoryBase.ts#L22)*
 
 
 
