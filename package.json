@@ -4,7 +4,6 @@
     "description": "IOTA Pico Framework Core",
     "typings": "dist/index.d.ts",
     "main": "dist/index.js",
-    "module": "dist/index.js",
     "keywords": [
         "iota",
         "pico",

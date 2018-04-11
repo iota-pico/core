@@ -20,6 +20,8 @@
 * [NullLogger](classes/nulllogger.md)
 * [NumberHelper](classes/numberhelper.md)
 * [ObjectHelper](classes/objecthelper.md)
+* [PlatformCryptoFactory](classes/platformcryptofactory.md)
+* [PlatformError](classes/platformerror.md)
 * [RngServiceFactory](classes/rngservicefactory.md)
 * [StringHelper](classes/stringhelper.md)
 * [TimeService](classes/timeservice.md)
@@ -31,6 +33,7 @@
 * [ILogger](interfaces/ilogger.md)
 * [INetworkClient](interfaces/inetworkclient.md)
 * [INetworkEndPoint](interfaces/inetworkendpoint.md)
+* [IPlatformCrypto](interfaces/iplatformcrypto.md)
 * [IRngService](interfaces/irngservice.md)
 * [ITimeService](interfaces/itimeservice.md)
 
@@ -49,7 +52,7 @@
 
 **Τ NetworkProtocol**:  *"http"⎮"https"* 
 
-*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/interfaces/networkProtocol.ts#L4)*
+*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/networkProtocol.ts#L4)*
 
 
 

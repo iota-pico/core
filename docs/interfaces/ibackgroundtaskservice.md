@@ -23,7 +23,7 @@ Represents a class which can provide background tasks.
 
 
 
-*Defined in [interfaces/IBackgroundTaskService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/interfaces/IBackgroundTaskService.ts#L11)*
+*Defined in [interfaces/IBackgroundTaskService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/IBackgroundTaskService.ts#L11)*
 
 
 

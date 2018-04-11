@@ -3,6 +3,8 @@
 * Added types() method to FactoryBase
 * Added IRngService
 * Added RngServiceFactory
+* Added IPlatformCrypto
+* Added PlatformCryptoFactory
 
 ## v0.9.2
 

@@ -19,7 +19,7 @@ Represents a service to perform random number generation.
 
 
 
-*Defined in [interfaces/IRngService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/interfaces/IRngService.ts#L11)*
+*Defined in [interfaces/IRngService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/IRngService.ts#L11)*
 
 
 

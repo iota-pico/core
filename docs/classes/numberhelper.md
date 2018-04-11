@@ -28,7 +28,7 @@ Number helper methods.
 
 
 
-*Defined in [helpers/numberHelper.ts:28](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/helpers/numberHelper.ts#L28)*
+*Defined in [helpers/numberHelper.ts:28](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/numberHelper.ts#L28)*
 
 
 
@@ -63,7 +63,7 @@ ___
 
 
 
-*Defined in [helpers/numberHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/helpers/numberHelper.ts#L10)*
+*Defined in [helpers/numberHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/numberHelper.ts#L10)*
 
 
 
@@ -98,7 +98,7 @@ ___
 
 
 
-*Defined in [helpers/numberHelper.ts:37](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/helpers/numberHelper.ts#L37)*
+*Defined in [helpers/numberHelper.ts:37](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/numberHelper.ts#L37)*
 
 
 
@@ -133,7 +133,7 @@ ___
 
 
 
-*Defined in [helpers/numberHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/b4ee75f/src/helpers/numberHelper.ts#L19)*
+*Defined in [helpers/numberHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/numberHelper.ts#L19)*
 
 
 
