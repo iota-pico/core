@@ -1,10 +1,13 @@
 # Changelog
 
+## v0.9.3
+
 * Added types() method to FactoryBase
 * Added IRngService
 * Added RngServiceFactory
 * Added IPlatformCrypto
 * Added PlatformCryptoFactory
+* Fixed NetworkEndPoint double slash on getUri
 
 ## v0.9.2
 

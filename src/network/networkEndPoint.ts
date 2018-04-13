@@ -81,6 +81,12 @@ export class NetworkEndPoint implements INetworkEndPoint {
      * @returns The uri.
      */
     public getUri(): string {
-        return `${this._protocol}://${this._host}:${this._port}/${this._rootPath}`;
+        let uri = `${this._protocol}://${this._host}:${this._port}`;
+
+        if (this._rootPath.length > 0) {
+            uri += `/${this._rootPath}`;
+        }
+
+        return uri;
     }
 }

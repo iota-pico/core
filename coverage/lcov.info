@@ -690,8 +690,11 @@ DA:60,2
 DA:68,3
 DA:76,1
 DA:84,3
-LF:22
-LH:22
+DA:86,3
+DA:87,2
+DA:90,3
+LF:25
+LH:25
 BRDA:29,0,0,2
 BRDA:29,0,1,14
 BRDA:29,1,0,16
@@ -708,8 +711,10 @@ BRDA:38,6,0,12
 BRDA:38,6,1,10
 BRDA:44,7,0,11
 BRDA:44,7,1,2
-BRF:16
-BRH:16
+BRDA:86,8,0,2
+BRDA:86,8,1,1
+BRF:18
+BRH:18
 end_of_record
 TN:
 SF:D:\Workarea\iotaeco\iota-pico-core\src\services\backgroundTaskService.ts
