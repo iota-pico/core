@@ -1,11 +1,12 @@
 [@iota-pico/core](../README.md) > [ObjectHelper](../classes/objecthelper.md)
 
-
-
 # Class: ObjectHelper
 
-
 Object helper methods.
+
+## Hierarchy
+
+**ObjectHelper**
 
 ## Index
 
@@ -16,24 +17,19 @@ Object helper methods.
 * [isObject](objecthelper.md#isobject)
 * [isType](objecthelper.md#istype)
 
-
-
 ---
+
 ## Methods
+
 <a id="getclassname"></a>
 
-### «Static» getClassName
+### `<Static>` getClassName
 
-► **getClassName**(object: *`any`*): `string`
+▸ **getClassName**(object: *`any`*): `string`
 
-
-
-*Defined in [helpers/objectHelper.ts:40](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/objectHelper.ts#L40)*
-
-
+*Defined in [helpers/objectHelper.ts:40](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/objectHelper.ts#L40)*
 
 Get the class name of an object if it has one.
-
 
 **Parameters:**
 
@@ -41,34 +37,20 @@ Get the class name of an object if it has one.
 | ------ | ------ | ------ |
 | object | `any`   |  The object to get the class name for. |
 
-
-
-
-
 **Returns:** `string`
 The class name if it has one or undefined if not.
-
-
-
-
-
 
 ___
 
 <a id="isempty"></a>
 
-### «Static» isEmpty
+### `<Static>` isEmpty
 
-► **isEmpty**(value: *`any`*): `boolean`
+▸ **isEmpty**(value: *`any`*): `boolean`
 
-
-
-*Defined in [helpers/objectHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/objectHelper.ts#L10)*
-
-
+*Defined in [helpers/objectHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/objectHelper.ts#L10)*
 
 Is the value empty.
-
 
 **Parameters:**
 
@@ -76,34 +58,20 @@ Is the value empty.
 | ------ | ------ | ------ |
 | value | `any`   |  Object to test. |
 
-
-
-
-
 **Returns:** `boolean`
 True if the value is empty.
-
-
-
-
-
 
 ___
 
 <a id="isobject"></a>
 
-### «Static» isObject
+### `<Static>` isObject
 
-► **isObject**(value: *`any`*): `boolean`
+▸ **isObject**(value: *`any`*): `boolean`
 
-
-
-*Defined in [helpers/objectHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/objectHelper.ts#L19)*
-
-
+*Defined in [helpers/objectHelper.ts:19](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/objectHelper.ts#L19)*
 
 Is the value an object.
-
 
 **Parameters:**
 
@@ -111,34 +79,20 @@ Is the value an object.
 | ------ | ------ | ------ |
 | value | `any`   |  Object to test. |
 
-
-
-
-
 **Returns:** `boolean`
 True if the value is an object.
-
-
-
-
-
 
 ___
 
 <a id="istype"></a>
 
-### «Static» isType
+### `<Static>` isType
 
-► **isType**(value: *`any`*, typeConstructor: *`Function`*): `boolean`
+▸ **isType**(value: *`any`*, typeConstructor: *`Function`*): `boolean`
 
-
-
-*Defined in [helpers/objectHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/objectHelper.ts#L30)*
-
-
+*Defined in [helpers/objectHelper.ts:30](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/objectHelper.ts#L30)*
 
 Is the value an object if given type.
-
 
 **Parameters:**
 
@@ -147,18 +101,8 @@ Is the value an object if given type.
 | value | `any`   |  Object to test. |
 | typeConstructor | `Function`   |  - |
 
-
-
-
-
 **Returns:** `boolean`
 True if the value is an object of the specified type.
 
-
-
-
-
-
 ___
-
 

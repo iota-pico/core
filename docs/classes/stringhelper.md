@@ -1,11 +1,12 @@
 [@iota-pico/core](../README.md) > [StringHelper](../classes/stringhelper.md)
 
-
-
 # Class: StringHelper
 
-
 String helper methods.
+
+## Hierarchy
+
+**StringHelper**
 
 ## Index
 
@@ -17,24 +18,19 @@ String helper methods.
 * [isEmpty](stringhelper.md#isempty)
 * [isString](stringhelper.md#isstring)
 
-
-
 ---
+
 ## Methods
+
 <a id="decodenonascii"></a>
 
-### «Static» decodeNonASCII
+### `<Static>` decodeNonASCII
 
-► **decodeNonASCII**(value: *`string`*): `string`
+▸ **decodeNonASCII**(value: *`string`*): `string`
 
-
-
-*Defined in [helpers/stringHelper.ts:48](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/stringHelper.ts#L48)*
-
-
+*Defined in [helpers/stringHelper.ts:48](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/stringHelper.ts#L48)*
 
 Decode control characters to ASCII.
-
 
 **Parameters:**
 
@@ -42,34 +38,20 @@ Decode control characters to ASCII.
 | ------ | ------ | ------ |
 | value | `string`   |  The encoded string to convert back to ASCII. |
 
-
-
-
-
 **Returns:** `string`
 The decoded version of the string.
-
-
-
-
-
 
 ___
 
 <a id="encodenonascii"></a>
 
-### «Static» encodeNonASCII
+### `<Static>` encodeNonASCII
 
-► **encodeNonASCII**(value: *`string`*): `string`
+▸ **encodeNonASCII**(value: *`string`*): `string`
 
-
-
-*Defined in [helpers/stringHelper.ts:39](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/stringHelper.ts#L39)*
-
-
+*Defined in [helpers/stringHelper.ts:39](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/stringHelper.ts#L39)*
 
 Encode non ASCII characters with control characters.
-
 
 **Parameters:**
 
@@ -77,34 +59,20 @@ Encode non ASCII characters with control characters.
 | ------ | ------ | ------ |
 | value | `string`   |  The string value to escape. |
 
-
-
-
-
 **Returns:** `string`
 The escaped version of the string.
-
-
-
-
-
 
 ___
 
 <a id="isascii"></a>
 
-### «Static» isAscii
+### `<Static>` isAscii
 
-► **isAscii**(value: *`string`*): `boolean`
+▸ **isAscii**(value: *`string`*): `boolean`
 
-
-
-*Defined in [helpers/stringHelper.ts:29](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/stringHelper.ts#L29)*
-
-
+*Defined in [helpers/stringHelper.ts:29](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/stringHelper.ts#L29)*
 
 Is the string all ASCII characters.
-
 
 **Parameters:**
 
@@ -112,34 +80,20 @@ Is the string all ASCII characters.
 | ------ | ------ | ------ |
 | value | `string`   |  string to test if is is ASCII. |
 
-
-
-
-
 **Returns:** `boolean`
 True if the object is all ASCII.
-
-
-
-
-
 
 ___
 
 <a id="isempty"></a>
 
-### «Static» isEmpty
+### `<Static>` isEmpty
 
-► **isEmpty**(value: *`any`*): `boolean`
+▸ **isEmpty**(value: *`any`*): `boolean`
 
-
-
-*Defined in [helpers/stringHelper.ts:20](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/stringHelper.ts#L20)*
-
-
+*Defined in [helpers/stringHelper.ts:20](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/stringHelper.ts#L20)*
 
 Is the value a string that is empty.
-
 
 **Parameters:**
 
@@ -147,34 +101,20 @@ Is the value a string that is empty.
 | ------ | ------ | ------ |
 | value | `any`   |  Object to test for its no emptyness. |
 
-
-
-
-
 **Returns:** `boolean`
 True if the object is an empty string.
-
-
-
-
-
 
 ___
 
 <a id="isstring"></a>
 
-### «Static» isString
+### `<Static>` isString
 
-► **isString**(value: *`any`*): `boolean`
+▸ **isString**(value: *`any`*): `boolean`
 
-
-
-*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/stringHelper.ts#L10)*
-
-
+*Defined in [helpers/stringHelper.ts:10](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/stringHelper.ts#L10)*
 
 Is the value a string.
-
 
 **Parameters:**
 
@@ -182,18 +122,8 @@ Is the value a string.
 | ------ | ------ | ------ |
 | value | `any`   |  Object to test for its stringyness. |
 
-
-
-
-
 **Returns:** `boolean`
 True if the object is a string.
 
-
-
-
-
-
 ___
-
 

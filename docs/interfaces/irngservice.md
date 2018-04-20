@@ -1,30 +1,33 @@
 [@iota-pico/core](../README.md) > [IRngService](../interfaces/irngservice.md)
 
-
-
 # Interface: IRngService
-
 
 Represents a service to perform random number generation.
 *__interface__*: 
 
+## Hierarchy
 
+**IRngService**
+
+## Index
+
+### Methods
+
+* [generate](irngservice.md#generate)
+
+---
 
 ## Methods
+
 <a id="generate"></a>
 
 ###  generate
 
-► **generate**(length: *`number`*): `Uint8Array`
+▸ **generate**(length: *`number`*): `Uint8Array`
 
-
-
-*Defined in [interfaces/IRngService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/IRngService.ts#L11)*
-
-
+*Defined in [interfaces/IRngService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/IRngService.ts#L11)*
 
 Generate an array of random numbers.
-
 
 **Parameters:**
 
@@ -32,18 +35,8 @@ Generate an array of random numbers.
 | ------ | ------ | ------ |
 | length | `number`   |  The number of numbers to generate. |
 
-
-
-
-
 **Returns:** `Uint8Array`
 Array of random number generators.
 
-
-
-
-
-
 ___
-
 

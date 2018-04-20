@@ -80,7 +80,7 @@ describe("NetworkEndPoint", () => {
         });
         it("can be called with no path", () => {
             const obj = new NetworkEndPoint("http", "localhost", 443, undefined);
-            chai.expect(obj.getUri()).to.be.equal("http://localhost:443/");
+            chai.expect(obj.getUri()).to.be.equal("http://localhost:443");
         });
         it("can be called with preceeding and trailing slashes removed", () => {
             const obj = new NetworkEndPoint("http", "//localhost//", 443, "//api//");

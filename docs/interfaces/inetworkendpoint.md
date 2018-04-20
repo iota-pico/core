@@ -1,44 +1,44 @@
 [@iota-pico/core](../README.md) > [INetworkEndPoint](../interfaces/inetworkendpoint.md)
 
-
-
 # Interface: INetworkEndPoint
-
 
 Represents the configuration for a network endpoint.
 *__interface__*: 
 
+## Hierarchy
+
+**INetworkEndPoint**
 
 ## Implemented by
 
 * [NetworkEndPoint](../classes/networkendpoint.md)
 
+## Index
+
+### Methods
+
+* [getHost](inetworkendpoint.md#gethost)
+* [getPort](inetworkendpoint.md#getport)
+* [getProtocol](inetworkendpoint.md#getprotocol)
+* [getRootPath](inetworkendpoint.md#getrootpath)
+* [getUri](inetworkendpoint.md#geturi)
+
+---
 
 ## Methods
+
 <a id="gethost"></a>
 
 ###  getHost
 
-► **getHost**(): `string`
+▸ **getHost**(): `string`
 
-
-
-*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkEndPoint.ts#L17)*
-
-
+*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkEndPoint.ts#L17)*
 
 The host name or ip of the endpoint.
 
-
-
-
 **Returns:** `string`
 The host.
-
-
-
-
-
 
 ___
 
@@ -46,26 +46,14 @@ ___
 
 ###  getPort
 
-► **getPort**(): `number`
+▸ **getPort**(): `number`
 
-
-
-*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkEndPoint.ts#L22)*
-
-
+*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkEndPoint.ts#L22)*
 
 The port of the endpoint.
 
-
-
-
 **Returns:** `number`
 The port.
-
-
-
-
-
 
 ___
 
@@ -73,26 +61,14 @@ ___
 
 ###  getProtocol
 
-► **getProtocol**(): [NetworkProtocol](../#networkprotocol)
+▸ **getProtocol**(): [NetworkProtocol](../#networkprotocol)
 
-
-
-*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkEndPoint.ts#L12)*
-
-
+*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkEndPoint.ts#L12)*
 
 The protocol to access the endpoint with.
 
-
-
-
 **Returns:** [NetworkProtocol](../#networkprotocol)
 The protocol.
-
-
-
-
-
 
 ___
 
@@ -100,26 +76,14 @@ ___
 
 ###  getRootPath
 
-► **getRootPath**(): `string`
+▸ **getRootPath**(): `string`
 
-
-
-*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkEndPoint.ts#L27)*
-
-
+*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkEndPoint.ts#L27)*
 
 The path to the endpoint.
 
-
-
-
 **Returns:** `string`
 The path.
-
-
-
-
-
 
 ___
 
@@ -127,27 +91,14 @@ ___
 
 ###  getUri
 
-► **getUri**(): `string`
+▸ **getUri**(): `string`
 
-
-
-*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkEndPoint.ts#L32)*
-
-
+*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkEndPoint.ts#L32)*
 
 The complete uri.
-
-
-
 
 **Returns:** `string`
 The uri.
 
-
-
-
-
-
 ___
-
 

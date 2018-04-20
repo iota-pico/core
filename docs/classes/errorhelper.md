@@ -1,11 +1,12 @@
 [@iota-pico/core](../README.md) > [ErrorHelper](../classes/errorhelper.md)
 
-
-
 # Class: ErrorHelper
 
-
 Handle errors as gracefully as possible.
+
+## Hierarchy
+
+**ErrorHelper**
 
 ## Index
 
@@ -13,24 +14,19 @@ Handle errors as gracefully as possible.
 
 * [format](errorhelper.md#format)
 
-
-
 ---
+
 ## Methods
+
 <a id="format"></a>
 
-### «Static» format
+### `<Static>` format
 
-► **format**(err: *`any`*, includeStack: *`boolean`*): `string`
+▸ **format**(err: *`any`*, includeStack: *`boolean`*): `string`
 
-
-
-*Defined in [helpers/errorHelper.ts:16](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/helpers/errorHelper.ts#L16)*
-
-
+*Defined in [helpers/errorHelper.ts:16](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/helpers/errorHelper.ts#L16)*
 
 Format an error object into something readable.
-
 
 **Parameters:**
 
@@ -39,18 +35,8 @@ Format an error object into something readable.
 | err | `any`   |  The object to format. |
 | includeStack | `boolean`   |  Include the stack trace if there is one. |
 
-
-
-
-
 **Returns:** `string`
 Formatted version of the error object.
 
-
-
-
-
-
 ___
-
 

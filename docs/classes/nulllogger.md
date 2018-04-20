@@ -1,11 +1,12 @@
 [@iota-pico/core](../README.md) > [NullLogger](../classes/nulllogger.md)
 
-
-
 # Class: NullLogger
 
-
 Implementation of ILogger which is silent.
+
+## Hierarchy
+
+**NullLogger**
 
 ## Implements
 
@@ -21,26 +22,21 @@ Implementation of ILogger which is silent.
 * [log](nulllogger.md#log)
 * [warning](nulllogger.md#warning)
 
-
-
 ---
+
 ## Methods
+
 <a id="banner"></a>
 
 ###  banner
 
-► **banner**(message: *`string`*, ...args: *`any`[]*): `void`
-
-
+▸ **banner**(message: *`string`*, ...args: *`any`[]*): `void`
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[banner](../interfaces/ilogger.md#banner)*
 
-*Defined in [loggers/nullLogger.ts:12](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/loggers/nullLogger.ts#L12)*
-
-
+*Defined in [loggers/nullLogger.ts:12](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/loggers/nullLogger.ts#L12)*
 
 Send banner to the logger.
-
 
 **Parameters:**
 
@@ -49,15 +45,7 @@ Send banner to the logger.
 | message | `string`   |  The message to log. |
 | args | `any`[]   |  Additional parameters to log. |
 
-
-
-
-
 **Returns:** `void`
-
-
-
-
 
 ___
 
@@ -65,18 +53,13 @@ ___
 
 ###  error
 
-► **error**(message: *`string`*, err?: *`any`*, ...args: *`any`[]*): `void`
-
-
+▸ **error**(message: *`string`*, err?: *`any`*, ...args: *`any`[]*): `void`
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[error](../interfaces/ilogger.md#error)*
 
-*Defined in [loggers/nullLogger.ts:45](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/loggers/nullLogger.ts#L45)*
-
-
+*Defined in [loggers/nullLogger.ts:45](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/loggers/nullLogger.ts#L45)*
 
 Send error to the logger.
-
 
 **Parameters:**
 
@@ -86,15 +69,7 @@ Send error to the logger.
 | err | `any`   |  An error object to log. |
 | args | `any`[]   |  Additional parameters to log. |
 
-
-
-
-
 **Returns:** `void`
-
-
-
-
 
 ___
 
@@ -102,18 +77,13 @@ ___
 
 ###  info
 
-► **info**(message: *`string`*, ...args: *`any`[]*): `void`
-
-
+▸ **info**(message: *`string`*, ...args: *`any`[]*): `void`
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[info](../interfaces/ilogger.md#info)*
 
-*Defined in [loggers/nullLogger.ts:28](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/loggers/nullLogger.ts#L28)*
-
-
+*Defined in [loggers/nullLogger.ts:28](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/loggers/nullLogger.ts#L28)*
 
 Send information to the logger.
-
 
 **Parameters:**
 
@@ -122,15 +92,7 @@ Send information to the logger.
 | message | `string`   |  The message to log. |
 | args | `any`[]   |  Additional parameters to log. |
 
-
-
-
-
 **Returns:** `void`
-
-
-
-
 
 ___
 
@@ -138,18 +100,13 @@ ___
 
 ###  log
 
-► **log**(message: *`string`*, ...args: *`any`[]*): `void`
-
-
+▸ **log**(message: *`string`*, ...args: *`any`[]*): `void`
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[log](../interfaces/ilogger.md#log)*
 
-*Defined in [loggers/nullLogger.ts:20](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/loggers/nullLogger.ts#L20)*
-
-
+*Defined in [loggers/nullLogger.ts:20](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/loggers/nullLogger.ts#L20)*
 
 Send log to the logger.
-
 
 **Parameters:**
 
@@ -158,15 +115,7 @@ Send log to the logger.
 | message | `string`   |  The message to log. |
 | args | `any`[]   |  Additional parameters to log. |
 
-
-
-
-
 **Returns:** `void`
-
-
-
-
 
 ___
 
@@ -174,18 +123,13 @@ ___
 
 ###  warning
 
-► **warning**(message: *`string`*, ...args: *`any`[]*): `void`
-
-
+▸ **warning**(message: *`string`*, ...args: *`any`[]*): `void`
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[warning](../interfaces/ilogger.md#warning)*
 
-*Defined in [loggers/nullLogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/loggers/nullLogger.ts#L36)*
-
-
+*Defined in [loggers/nullLogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/loggers/nullLogger.ts#L36)*
 
 Send warning to the logger.
-
 
 **Parameters:**
 
@@ -194,16 +138,7 @@ Send warning to the logger.
 | message | `string`   |  The message to log. |
 | args | `any`[]   |  Additional parameters to log. |
 
-
-
-
-
 **Returns:** `void`
 
-
-
-
-
 ___
-
 

@@ -1,30 +1,36 @@
 [@iota-pico/core](../README.md) > [INetworkClient](../interfaces/inetworkclient.md)
 
-
-
 # Interface: INetworkClient
-
 
 Represents a client for performing communication.
 *__interface__*: 
 
+## Hierarchy
 
+**INetworkClient**
+
+## Index
+
+### Methods
+
+* [get](inetworkclient.md#get)
+* [getJson](inetworkclient.md#getjson)
+* [post](inetworkclient.md#post)
+* [postJson](inetworkclient.md#postjson)
+
+---
 
 ## Methods
+
 <a id="get"></a>
 
 ###  get
 
-► **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+▸ **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
 
-
-
-*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkClient.ts#L12)*
-
-
+*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkClient.ts#L12)*
 
 Get data asynchronously.
-
 
 **Parameters:**
 
@@ -33,17 +39,8 @@ Get data asynchronously.
 | additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
-
-
-
-
 **Returns:** `Promise`.<`string`>
 Promise which resolves to the object returned or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -51,16 +48,11 @@ ___
 
 ###  getJson
 
-► **getJson**U(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
+▸ **getJson**U(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
 
-
-
-*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkClient.ts#L30)*
-
-
+*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkClient.ts#L30)*
 
 Get data as JSON asynchronously.
-
 
 **Type parameters:**
 
@@ -75,17 +67,8 @@ The generic type for the returned object.
 | additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
-
-
-
-
 **Returns:** `Promise`.<`U`>
 Promise which resolves to the object returned or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -93,16 +76,11 @@ ___
 
 ###  post
 
-► **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+▸ **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
 
-
-
-*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkClient.ts#L21)*
-
-
+*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkClient.ts#L21)*
 
 Post data asynchronously.
-
 
 **Parameters:**
 
@@ -112,17 +90,8 @@ Post data asynchronously.
 | additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
-
-
-
-
 **Returns:** `Promise`.<`string`>
 Promise which resolves to the object returned or rejects with error.
-
-
-
-
-
 
 ___
 
@@ -130,16 +99,11 @@ ___
 
 ###  postJson
 
-► **postJson**T,U(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
+▸ **postJson**T,U(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
 
-
-
-*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/interfaces/INetworkClient.ts#L41)*
-
-
+*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/INetworkClient.ts#L41)*
 
 Post data as JSON asynchronously.
-
 
 **Type parameters:**
 
@@ -159,18 +123,8 @@ The generic type for the returned object.
 | additionalPath | `string`   |  An additional path append to the endpoint path. |
 | additionalHeaders | `object`   |  Extra headers to send with the request. |
 
-
-
-
-
 **Returns:** `Promise`.<`U`>
 Promise which resolves to the object returned or rejects with error.
 
-
-
-
-
-
 ___
-
 

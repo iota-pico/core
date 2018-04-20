@@ -1,14 +1,10 @@
 [@iota-pico/core](../README.md) > [CoreError](../classes/coreerror.md)
 
-
-
 # Class: CoreError
-
 
 A core implementation of an error.
 
 ## Hierarchy
-
 
  `Error`
 
@@ -16,26 +12,13 @@ A core implementation of an error.
 
 ↳  [NetworkError](networkerror.md)
 
-
-
-
 ↳  [PlatformError](platformerror.md)
-
-
-
-
-
-
-
-
-
 
 ## Index
 
 ### Constructors
 
 * [constructor](coreerror.md#constructor)
-
 
 ### Properties
 
@@ -47,28 +30,22 @@ A core implementation of an error.
 * [name](coreerror.md#name)
 * [stack](coreerror.md#stack)
 
-
 ### Methods
 
 * [format](coreerror.md#format)
 * [isError](coreerror.md#iserror)
 
-
-
 ---
-## Constructors
-<a id="constructor"></a>
 
+## Constructors
+
+<a id="constructor"></a>
 
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
 
-
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/error/coreError.ts#L21)*
-
-
+*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L21)*
 
 Create an instance of CoreError.
-
 
 **Parameters:**
 
@@ -78,37 +55,25 @@ Create an instance of CoreError.
 | additional | `object`   |  Additional details about the error. |
 | innerError | `Error`   |  Add information from inner error if there was one. |
 
-
-
-
-
 **Returns:** [CoreError](coreerror.md)
 
 ---
 
-
 ## Properties
+
 <a id="additional"></a>
 
-### «Optional» additional
+### `<Optional>` additional
 
 **●  additional**:  *`object`* 
 
-*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/error/coreError.ts#L16)*
-
-
+*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L16)*
 
 Additional details about the error.
 
 #### Type declaration
 
-
 [id: `string`]: `any`
-
-
-
-
-
 
 ___
 
@@ -118,137 +83,95 @@ ___
 
 **●  domain**:  *`string`* 
 
-*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/error/coreError.ts#L11)*
-
-
+*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L11)*
 
 The domain of the error.
-
-
-
 
 ___
 
 <a id="innererror"></a>
 
-### «Optional» innerError
+### `<Optional>` innerError
 
 **●  innerError**:  *`Error`* 
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/error/coreError.ts#L21)*
-
-
+*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L21)*
 
 The inner error if there was one.
-
-
-
 
 ___
 
 <a id="error"></a>
 
-### «Static» Error
+### `<Static>` Error
 
 **●  Error**:  *`ErrorConstructor`* 
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:896*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:896*
 
 ___
 
 <a id="message"></a>
 
-### «Static» message
+### `<Static>` message
 
 **●  message**:  *`string`* 
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:886*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 ___
 
 <a id="name"></a>
 
-### «Static» name
+### `<Static>` name
 
 **●  name**:  *`string`* 
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:885*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 ___
 
 <a id="stack"></a>
 
-### «Static»«Optional» stack
+### `<Static>``<Optional>` stack
 
 **●  stack**:  *`string`* 
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typescript/lib/lib.es5.d.ts:887*
-
-
-
-
+*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887*
 
 ___
 
-
 ## Methods
+
 <a id="format"></a>
 
 ###  format
 
-► **format**(): `string`
+▸ **format**(): `string`
 
-
-
-*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/error/coreError.ts#L48)*
-
-
+*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L48)*
 
 Format the error to a readable version.
 
-
-
-
 **Returns:** `string`
-
-
-
-
 
 ___
 
 <a id="iserror"></a>
 
-### «Static» isError
+### `<Static>` isError
 
-► **isError**(obj: *`any`*): `boolean`
+▸ **isError**(obj: *`any`*): `boolean`
 
-
-
-*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/d1dc07c/src/error/coreError.ts#L41)*
-
-
+*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L41)*
 
 Check if an object could be a CoreError.
-
 
 **Parameters:**
 
@@ -256,18 +179,8 @@ Check if an object could be a CoreError.
 | ------ | ------ | ------ |
 | obj | `any`   |  The object to check if it is a CoreError. |
 
-
-
-
-
 **Returns:** `boolean`
 true If the tested object is a CoreError.
 
-
-
-
-
-
 ___
-
 
