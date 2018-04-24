@@ -1,5 +1,5 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iotaeco/iota-pico-core/master/LICENSE) [![Build Status](https://travis-ci.org/iotaeco/iota-pico-core.svg?branch=master)](https://travis-ci.org/iotaeco/iota-pico-core) [![NSP Status](https://nodesecurity.io/orgs/iotaeco/projects/9794846f-f5bf-4099-af2e-57edbbe2359f/badge)](https://nodesecurity.io/orgs/iotaeco/projects/9794846f-f5bf-4099-af2e-57edbbe2359f)
-[![Coveralls](https://img.shields.io/coveralls/iotaeco/iota-pico-core.svg)](https://coveralls.io/github/iotaeco/iota-pico-core)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/https://github.com/iota-pico/core/master/LICENSE) [![Build Status](https://travis-ci.org/https://github.com/iota-pico/core.svg?branch=master)](https://travis-ci.org/https://github.com/iota-pico/core) [![NSP Status](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/e20fc901-e307-497a-82d0-e53689af9b02/badge)](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/e20fc901-e307-497a-82d0-e53689af9b02)
+[![Coveralls](https://img.shields.io/coveralls/https://github.com/iota-pico/core.svg)](https://coveralls.io/github/https://github.com/iota-pico/core)
 
 # IOTA Pico Framework Core
 
@@ -20,8 +20,8 @@ Documentation for the code can be found in [docs](./docs/README.md) folder.
 The IOTA Pico Framework is a multi-layered set of object oriented JavaScript libraries for use with the IOTA tangle.
 
 If you don't want to use the layered versions of the libraries consider using the  ready bundled versions:
-* [@iota-pico/lib-browser](https://github.com/iotaeco/iota-pico-lib-browser)
-* [@iota-pico/lib-nodejs](https://github.com/iotaeco/iota-pico-lib-nodejs)
+* [@iota-pico/lib-browser](https://github.com/iota-pico/lib-browser)
+* [@iota-pico/lib-nodejs](https://github.com/iota-pico/lib-nodejs)
 
 Each layer is fully abstracted allowing you to replace components with your own implementations very easily.
 
@@ -29,7 +29,7 @@ The layered libraries are written in TypeScript so are all strongly typed. The m
 
 # Tutorials
 
-Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iotaeco/iota-pico-tutorials)
+Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iota-pico/tutorials)
 
 
 # Contributing

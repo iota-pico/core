@@ -43,7 +43,7 @@ A core implementation of an error.
 
 ### ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iota-pico/core/blob/86c99bb/src/error/coreError.ts#L21)*
 
 Create an instance of CoreError.
 
@@ -67,7 +67,7 @@ Create an instance of CoreError.
 
 **●  additional**:  *`object`* 
 
-*Defined in [error/coreError.ts:16](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L16)*
+*Defined in [error/coreError.ts:16](https://github.com/iota-pico/core/blob/86c99bb/src/error/coreError.ts#L16)*
 
 Additional details about the error.
 
@@ -83,7 +83,7 @@ ___
 
 **●  domain**:  *`string`* 
 
-*Defined in [error/coreError.ts:11](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L11)*
+*Defined in [error/coreError.ts:11](https://github.com/iota-pico/core/blob/86c99bb/src/error/coreError.ts#L11)*
 
 The domain of the error.
 
@@ -95,7 +95,7 @@ ___
 
 **●  innerError**:  *`Error`* 
 
-*Defined in [error/coreError.ts:21](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iota-pico/core/blob/86c99bb/src/error/coreError.ts#L21)*
 
 The inner error if there was one.
 
@@ -107,7 +107,7 @@ ___
 
 **●  Error**:  *`ErrorConstructor`* 
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:896*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:896*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885*
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iotaeco/iota-pico-core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887*
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 ▸ **format**(): `string`
 
-*Defined in [error/coreError.ts:48](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L48)*
+*Defined in [error/coreError.ts:48](https://github.com/iota-pico/core/blob/86c99bb/src/error/coreError.ts#L48)*
 
 Format the error to a readable version.
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **isError**(obj: *`any`*): `boolean`
 
-*Defined in [error/coreError.ts:41](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/error/coreError.ts#L41)*
+*Defined in [error/coreError.ts:41](https://github.com/iota-pico/core/blob/86c99bb/src/error/coreError.ts#L41)*
 
 Check if an object could be a CoreError.
 

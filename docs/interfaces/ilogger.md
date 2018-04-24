@@ -34,7 +34,7 @@ Represents a class which can provide logging.
 
 ▸ **banner**(message: *`string`*, ...args: *`any`[]*): `void`
 
-*Defined in [interfaces/ILogger.ts:11](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/ILogger.ts#L11)*
+*Defined in [interfaces/ILogger.ts:11](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/ILogger.ts#L11)*
 
 Send banner to the logger.
 
@@ -55,7 +55,7 @@ ___
 
 ▸ **error**(message: *`string`*, err?: *`any`*, ...args: *`any`[]*): `void`
 
-*Defined in [interfaces/ILogger.ts:36](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/ILogger.ts#L36)*
+*Defined in [interfaces/ILogger.ts:36](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/ILogger.ts#L36)*
 
 Send error to the logger.
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **info**(message: *`string`*, ...args: *`any`[]*): `void`
 
-*Defined in [interfaces/ILogger.ts:23](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/ILogger.ts#L23)*
+*Defined in [interfaces/ILogger.ts:23](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/ILogger.ts#L23)*
 
 Send information to the logger.
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **log**(message: *`string`*, ...args: *`any`[]*): `void`
 
-*Defined in [interfaces/ILogger.ts:17](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/ILogger.ts#L17)*
+*Defined in [interfaces/ILogger.ts:17](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/ILogger.ts#L17)*
 
 Send log to the logger.
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **warning**(message: *`string`*, ...args: *`any`[]*): `void`
 
-*Defined in [interfaces/ILogger.ts:29](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/ILogger.ts#L29)*
+*Defined in [interfaces/ILogger.ts:29](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/ILogger.ts#L29)*
 
 Send warning to the logger.
 

@@ -29,7 +29,7 @@ Represents a class which can provide background tasks.
 
 ▸ **create**T(task: *`function`*, delay: *`number`*): `Promise`.<`T`>
 
-*Defined in [interfaces/IBackgroundTaskService.ts:11](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/IBackgroundTaskService.ts#L11)*
+*Defined in [interfaces/IBackgroundTaskService.ts:11](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/IBackgroundTaskService.ts#L11)*
 
 Create a background task.
 

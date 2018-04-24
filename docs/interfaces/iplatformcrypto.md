@@ -28,7 +28,7 @@ Represents an object that can perform crypto operations.
 
 ▸ **decrypt**(data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:18](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/IPlatformCrypto.ts#L18)*
+*Defined in [interfaces/IPlatformCrypto.ts:18](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/IPlatformCrypto.ts#L18)*
 
 Decrypt the given data.
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **encrypt**(data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:11](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/IPlatformCrypto.ts#L11)*
+*Defined in [interfaces/IPlatformCrypto.ts:11](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/IPlatformCrypto.ts#L11)*
 
 Encrypt the given data.
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **sign**(data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:25](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/IPlatformCrypto.ts#L25)*
+*Defined in [interfaces/IPlatformCrypto.ts:25](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/IPlatformCrypto.ts#L25)*
 
 Sign the given data.
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **verify**(data: *`string`*, signature: *`string`*): `boolean`
 
-*Defined in [interfaces/IPlatformCrypto.ts:33](https://github.com/iotaeco/iota-pico-core/blob/1ab2281/src/interfaces/IPlatformCrypto.ts#L33)*
+*Defined in [interfaces/IPlatformCrypto.ts:33](https://github.com/iota-pico/core/blob/86c99bb/src/interfaces/IPlatformCrypto.ts#L33)*
 
 Verify the given data with the signature.
 
