@@ -27,7 +27,7 @@ Number helper methods.
 
 ▸ **isFloatString**(value: *`string`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:28](https://github.com/iota-pico/core/blob/86c99bb/src/helpers/numberHelper.ts#L28)*
+*Defined in [helpers/numberHelper.ts:28](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/numberHelper.ts#L28)*
 
 Is the value a float number formatted as a string, can be used for big numbers that would overflow parseFloat.
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **isInteger**(value: *`any`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:10](https://github.com/iota-pico/core/blob/86c99bb/src/helpers/numberHelper.ts#L10)*
+*Defined in [helpers/numberHelper.ts:10](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/numberHelper.ts#L10)*
 
 Is the value an integer.
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **isIntegerString**(value: *`string`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:37](https://github.com/iota-pico/core/blob/86c99bb/src/helpers/numberHelper.ts#L37)*
+*Defined in [helpers/numberHelper.ts:37](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/numberHelper.ts#L37)*
 
 Is the value a integer number formatted as a string, can be used for big numbers that would overflow parseInt.
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **isNumber**(value: *`any`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:19](https://github.com/iota-pico/core/blob/86c99bb/src/helpers/numberHelper.ts#L19)*
+*Defined in [helpers/numberHelper.ts:19](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/numberHelper.ts#L19)*
 
 Is the value a number.
 

@@ -8,6 +8,8 @@
 * Added IPlatformCrypto
 * Added PlatformCryptoFactory
 * Fixed NetworkEndPoint double slash on getUri
+* Repo rename
+* Updated webpack major ver
 
 ## v0.9.2
 
