@@ -5,7 +5,7 @@
 * Added types() method to FactoryBase
 * Added IRngService
 * Added RngServiceFactory
-* Added IPlatformCrypto
+* Added IPlatformCrypto with sign, verify, encrypt, decrypt, hash and hmac
 * Added PlatformCryptoFactory
 * Fixed NetworkEndPoint double slash on getUri
 * Repo rename

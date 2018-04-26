@@ -34,7 +34,7 @@ Implementation of ILogger which sends to the this._loggingObject.
 
 ### ⊕ **new ConsoleLogger**(loggingObject?: *`Console`*): [ConsoleLogger](consolelogger.md)
 
-*Defined in [loggers/consoleLogger.ts:13](https://github.com/iota-pico/core/blob/938a9ad/src/loggers/consoleLogger.ts#L13)*
+*Defined in [loggers/consoleLogger.ts:13](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L13)*
 
 Create and instance of the console logger.
 
@@ -42,9 +42,10 @@ Create and instance of the console logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| loggingObject | `Console`   |  - |
+| loggingObject | `Console`   |  The object to send all the logging to. |
 
 **Returns:** [ConsoleLogger](consolelogger.md)
+A new instance of ConsoleLogger.
 
 ---
 
@@ -58,7 +59,7 @@ Create and instance of the console logger.
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[banner](../interfaces/ilogger.md#banner)*
 
-*Defined in [loggers/consoleLogger.ts:27](https://github.com/iota-pico/core/blob/938a9ad/src/loggers/consoleLogger.ts#L27)*
+*Defined in [loggers/consoleLogger.ts:29](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L29)*
 
 Send banner to the logger.
 
@@ -81,7 +82,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[error](../interfaces/ilogger.md#error)*
 
-*Defined in [loggers/consoleLogger.ts:70](https://github.com/iota-pico/core/blob/938a9ad/src/loggers/consoleLogger.ts#L70)*
+*Defined in [loggers/consoleLogger.ts:72](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L72)*
 
 Send error to the logger.
 
@@ -105,7 +106,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[info](../interfaces/ilogger.md#info)*
 
-*Defined in [loggers/consoleLogger.ts:49](https://github.com/iota-pico/core/blob/938a9ad/src/loggers/consoleLogger.ts#L49)*
+*Defined in [loggers/consoleLogger.ts:51](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L51)*
 
 Send information to the logger.
 
@@ -128,7 +129,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[log](../interfaces/ilogger.md#log)*
 
-*Defined in [loggers/consoleLogger.ts:39](https://github.com/iota-pico/core/blob/938a9ad/src/loggers/consoleLogger.ts#L39)*
+*Defined in [loggers/consoleLogger.ts:41](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L41)*
 
 Send log to the logger.
 
@@ -151,7 +152,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[warning](../interfaces/ilogger.md#warning)*
 
-*Defined in [loggers/consoleLogger.ts:59](https://github.com/iota-pico/core/blob/938a9ad/src/loggers/consoleLogger.ts#L59)*
+*Defined in [loggers/consoleLogger.ts:61](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L61)*
 
 Send warning to the logger.
 

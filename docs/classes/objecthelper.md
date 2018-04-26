@@ -27,7 +27,7 @@ Object helper methods.
 
 ▸ **getClassName**(object: *`any`*): `string`
 
-*Defined in [helpers/objectHelper.ts:40](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/objectHelper.ts#L40)*
+*Defined in [helpers/objectHelper.ts:40](https://github.com/iota-pico/core/blob/35412fd/src/helpers/objectHelper.ts#L40)*
 
 Get the class name of an object if it has one.
 
@@ -48,7 +48,7 @@ ___
 
 ▸ **isEmpty**(value: *`any`*): `boolean`
 
-*Defined in [helpers/objectHelper.ts:10](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/objectHelper.ts#L10)*
+*Defined in [helpers/objectHelper.ts:10](https://github.com/iota-pico/core/blob/35412fd/src/helpers/objectHelper.ts#L10)*
 
 Is the value empty.
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **isObject**(value: *`any`*): `boolean`
 
-*Defined in [helpers/objectHelper.ts:19](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/objectHelper.ts#L19)*
+*Defined in [helpers/objectHelper.ts:19](https://github.com/iota-pico/core/blob/35412fd/src/helpers/objectHelper.ts#L19)*
 
 Is the value an object.
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **isType**(value: *`any`*, typeConstructor: *`Function`*): `boolean`
 
-*Defined in [helpers/objectHelper.ts:30](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/objectHelper.ts#L30)*
+*Defined in [helpers/objectHelper.ts:30](https://github.com/iota-pico/core/blob/35412fd/src/helpers/objectHelper.ts#L30)*
 
 Is the value an object if given type.
 
@@ -99,7 +99,7 @@ Is the value an object if given type.
 | Param | Type | Description |
 | ------ | ------ | ------ |
 | value | `any`   |  Object to test. |
-| typeConstructor | `Function`   |  - |
+| typeConstructor | `Function`   |  A callback method which returns an instance of the object. |
 
 **Returns:** `boolean`
 True if the value is an object of the specified type.

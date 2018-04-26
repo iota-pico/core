@@ -80,7 +80,71 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -121,32 +185,64 @@
 export interface IPlatformCrypto {
     /**
      * Encrypt the given data.
+     * @param privateKey The key to use for encrypting data.
      * @param data The data to encrypt.
      * @returns The encrypted data.
      */
-    encrypt(data: string): string;
+    encrypt(privateKey: string, data: string): string;
 &nbsp;
     /**
      * Decrypt the given data.
+     * @param publicKey The key to use for decrypting data.
      * @param data The data to decrypt.
      * @returns The decrypted data.
      */
-    decrypt(data: string): string;
+    decrypt(publicKey: string, data: string): string;
 &nbsp;
     /**
      * Sign the given data.
+     * @param privateKey The key to use for signing data.
      * @param data The data to sign.
      * @returns The signature.
      */
-    sign(data: string): string;
+    sign(privateKey: string, data: string): string;
 &nbsp;
     /**
      * Verify the given data with the signature.
+     * @param publicKey The key to use for verifying data.
      * @param data The data to verify.
      * @param signature The signature to verify againt the data.
      * @returns True if the verification is successful.
      */
-    verify(data: string, signature: string): boolean;
+    verify(publicKey: string, data: string, signature: string): boolean;
+&nbsp;
+    /**
+     * Hash the data.
+     * @param algo The algorithm to use.
+     * @param data The data to hash.
+     * @param dataType The type of the input data utf8, ascii, latin1.
+     * @param encoding The encoding to return the data latin1, hex, base64.
+     * @returns The hash of the data.
+     */
+    hash(algo: string,
+         data: any,
+         dataType?: "utf8" | "ascii" | "latin1",
+         encoding?: "latin1" | "hex" | "base64"): any;
+&nbsp;
+    /**
+     * HMAC the data.
+     * @param algo The algorithm to use.
+     * @param key The key to hash the data with.
+     * @param data The data to hash.
+     * @param dataType The type of the input data utf8, ascii, latin1.
+     * @param encoding The encoding to return the data latin1, hex, base64.
+     * @returns The hmac of the data.
+     */
+    hmac(algo: string,
+         key: any,
+         data: any,
+         dataType?: "utf8" | "ascii" | "latin1",
+         encoding?: "latin1" | "hex" | "base64"): any;
 }
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -154,7 +250,7 @@ export interface IPlatformCrypto {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Apr 24 2018 16:11:17 GMT+0300 (E. Africa Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Apr 26 2018 17:25:41 GMT+0300 (E. Africa Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

@@ -24,7 +24,7 @@ export class ObjectHelper {
     /**
      * Is the value an object if given type.
      * @param value Object to test.
-     * @param type The type of the object
+     * @param typeConstructor A callback method which returns an instance of the object.
      * @returns True if the value is an object of the specified type.
      */
     public static isType(value: any, typeConstructor: Function): boolean {

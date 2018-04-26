@@ -1,10 +1,8 @@
 {
     "extends": [
         "tslint:all",
-        "tslint-microsoft-contrib"
-    ],
-    "rulesDirectory": [
-        "node_modules/tslint-microsoft-contrib"
+        "tslint-microsoft-contrib",
+        "tslint-eslint-rules"
     ],
     "rules": {
         "insecure-random": true,
@@ -322,6 +320,19 @@
         "valid-typeof": false,
         "no-switch-case-fall-through": false,
         "typeof-compare": false,
-        "no-dynamic-delete": false
+        "no-dynamic-delete": false,
+        "valid-jsdoc": [
+            true,
+            {
+                "requireParamType": false,
+                "prefer": {
+                    "return": "returns"
+                },
+                "requireReturn": false,
+                "requireReturnType": false,
+                "requireParamDescription": true,
+                "requireReturnDescription": true
+            }
+        ]
     }
 }

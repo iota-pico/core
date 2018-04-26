@@ -5,6 +5,8 @@ import { ILogger } from "../interfaces/ILogger";
 export declare class ConsoleLogger implements ILogger {
     /**
      * Create and instance of the console logger.
+     * @param loggingObject The object to send all the logging to.
+     * @returns A new instance of ConsoleLogger.
      */
     constructor(loggingObject?: Console);
     /**

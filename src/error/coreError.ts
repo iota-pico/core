@@ -44,6 +44,7 @@ export class CoreError extends Error {
 
     /**
      * Format the error to a readable version.
+     * @returns Formatted version of the error.
      */
     public format(): string {
         let out = "";

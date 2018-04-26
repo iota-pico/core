@@ -33,6 +33,7 @@ export declare class CoreError extends Error {
     static isError(obj: any): obj is CoreError;
     /**
      * Format the error to a readable version.
+     * @returns Formatted version of the error.
      */
     format(): string;
 }

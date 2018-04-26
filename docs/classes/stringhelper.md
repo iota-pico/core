@@ -28,7 +28,7 @@ String helper methods.
 
 ▸ **decodeNonASCII**(value: *`string`*): `string`
 
-*Defined in [helpers/stringHelper.ts:48](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/stringHelper.ts#L48)*
+*Defined in [helpers/stringHelper.ts:48](https://github.com/iota-pico/core/blob/35412fd/src/helpers/stringHelper.ts#L48)*
 
 Decode control characters to ASCII.
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **encodeNonASCII**(value: *`string`*): `string`
 
-*Defined in [helpers/stringHelper.ts:39](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/stringHelper.ts#L39)*
+*Defined in [helpers/stringHelper.ts:39](https://github.com/iota-pico/core/blob/35412fd/src/helpers/stringHelper.ts#L39)*
 
 Encode non ASCII characters with control characters.
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **isAscii**(value: *`string`*): `boolean`
 
-*Defined in [helpers/stringHelper.ts:29](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/stringHelper.ts#L29)*
+*Defined in [helpers/stringHelper.ts:29](https://github.com/iota-pico/core/blob/35412fd/src/helpers/stringHelper.ts#L29)*
 
 Is the string all ASCII characters.
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **isEmpty**(value: *`any`*): `boolean`
 
-*Defined in [helpers/stringHelper.ts:20](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/stringHelper.ts#L20)*
+*Defined in [helpers/stringHelper.ts:20](https://github.com/iota-pico/core/blob/35412fd/src/helpers/stringHelper.ts#L20)*
 
 Is the value a string that is empty.
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **isString**(value: *`any`*): `boolean`
 
-*Defined in [helpers/stringHelper.ts:10](https://github.com/iota-pico/core/blob/938a9ad/src/helpers/stringHelper.ts#L10)*
+*Defined in [helpers/stringHelper.ts:10](https://github.com/iota-pico/core/blob/35412fd/src/helpers/stringHelper.ts#L10)*
 
 Is the value a string.
 
