@@ -1,5 +1,5 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/https://github.com/iota-pico/core/master/LICENSE) [![Build Status](https://travis-ci.org/https://github.com/iota-pico/core.svg?branch=master)](https://travis-ci.org/https://github.com/iota-pico/core) [![NSP Status](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/e20fc901-e307-497a-82d0-e53689af9b02/badge)](https://nodesecurity.io/orgs/https://github.com/iota-pico/projects/e20fc901-e307-497a-82d0-e53689af9b02)
-[![Coveralls](https://img.shields.io/coveralls/https://github.com/iota-pico/core.svg)](https://coveralls.io/github/https://github.com/iota-pico/core)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/iota-pico/core/master/LICENSE) [![Build Status](https://travis-ci.org/iota-pico/core.svg?branch=master)](https://travis-ci.org/iota-pico/core) [![NSP Status](https://nodesecurity.io/orgs/iota-pico/projects/e20fc901-e307-497a-82d0-e53689af9b02/badge)](https://nodesecurity.io/orgs/iota-pico/projects/e20fc901-e307-497a-82d0-e53689af9b02)
+[![Coveralls](https://img.shields.io/coveralls/iota-pico/core.svg)](https://coveralls.io/github/iota-pico/core)
 
 # IOTA Pico Framework Core
 

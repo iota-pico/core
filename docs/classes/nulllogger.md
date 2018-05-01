@@ -34,7 +34,7 @@ Implementation of ILogger which is silent.
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[banner](../interfaces/ilogger.md#banner)*
 
-*Defined in [loggers/nullLogger.ts:12](https://github.com/iota-pico/core/blob/35412fd/src/loggers/nullLogger.ts#L12)*
+*Defined in [loggers/nullLogger.ts:12](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/nullLogger.ts#L12)*
 
 Send banner to the logger.
 
@@ -42,13 +42,12 @@ Send banner to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="error"></a>
 
 ###  error
@@ -57,7 +56,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[error](../interfaces/ilogger.md#error)*
 
-*Defined in [loggers/nullLogger.ts:45](https://github.com/iota-pico/core/blob/35412fd/src/loggers/nullLogger.ts#L45)*
+*Defined in [loggers/nullLogger.ts:45](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/nullLogger.ts#L45)*
 
 Send error to the logger.
 
@@ -65,14 +64,13 @@ Send error to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| err | `any`   |  An error object to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Optional` err | `any` |  An error object to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="info"></a>
 
 ###  info
@@ -81,7 +79,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[info](../interfaces/ilogger.md#info)*
 
-*Defined in [loggers/nullLogger.ts:28](https://github.com/iota-pico/core/blob/35412fd/src/loggers/nullLogger.ts#L28)*
+*Defined in [loggers/nullLogger.ts:28](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/nullLogger.ts#L28)*
 
 Send information to the logger.
 
@@ -89,13 +87,12 @@ Send information to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="log"></a>
 
 ###  log
@@ -104,7 +101,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[log](../interfaces/ilogger.md#log)*
 
-*Defined in [loggers/nullLogger.ts:20](https://github.com/iota-pico/core/blob/35412fd/src/loggers/nullLogger.ts#L20)*
+*Defined in [loggers/nullLogger.ts:20](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/nullLogger.ts#L20)*
 
 Send log to the logger.
 
@@ -112,13 +109,12 @@ Send log to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="warning"></a>
 
 ###  warning
@@ -127,7 +123,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[warning](../interfaces/ilogger.md#warning)*
 
-*Defined in [loggers/nullLogger.ts:36](https://github.com/iota-pico/core/blob/35412fd/src/loggers/nullLogger.ts#L36)*
+*Defined in [loggers/nullLogger.ts:36](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/nullLogger.ts#L36)*
 
 Send warning to the logger.
 
@@ -135,8 +131,8 @@ Send warning to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 

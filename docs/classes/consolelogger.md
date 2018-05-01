@@ -32,9 +32,11 @@ Implementation of ILogger which sends to the this._loggingObject.
 
 <a id="constructor"></a>
 
-### ⊕ **new ConsoleLogger**(loggingObject?: *`Console`*): [ConsoleLogger](consolelogger.md)
+###  constructor
 
-*Defined in [loggers/consoleLogger.ts:13](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L13)*
+⊕ **new ConsoleLogger**(loggingObject?: *`Console`*): [ConsoleLogger](consolelogger.md)
+
+*Defined in [loggers/consoleLogger.ts:13](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/consoleLogger.ts#L13)*
 
 Create and instance of the console logger.
 
@@ -42,12 +44,12 @@ Create and instance of the console logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| loggingObject | `Console`   |  The object to send all the logging to. |
+| `Optional` loggingObject | `Console` |  The object to send all the logging to. |
 
 **Returns:** [ConsoleLogger](consolelogger.md)
 A new instance of ConsoleLogger.
 
----
+___
 
 ## Methods
 
@@ -59,7 +61,7 @@ A new instance of ConsoleLogger.
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[banner](../interfaces/ilogger.md#banner)*
 
-*Defined in [loggers/consoleLogger.ts:29](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L29)*
+*Defined in [loggers/consoleLogger.ts:29](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/consoleLogger.ts#L29)*
 
 Send banner to the logger.
 
@@ -67,13 +69,12 @@ Send banner to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="error"></a>
 
 ###  error
@@ -82,7 +83,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[error](../interfaces/ilogger.md#error)*
 
-*Defined in [loggers/consoleLogger.ts:72](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L72)*
+*Defined in [loggers/consoleLogger.ts:72](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/consoleLogger.ts#L72)*
 
 Send error to the logger.
 
@@ -90,14 +91,13 @@ Send error to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| err | `any`   |  An error object to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Optional` err | `any` |  An error object to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="info"></a>
 
 ###  info
@@ -106,7 +106,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[info](../interfaces/ilogger.md#info)*
 
-*Defined in [loggers/consoleLogger.ts:51](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L51)*
+*Defined in [loggers/consoleLogger.ts:51](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/consoleLogger.ts#L51)*
 
 Send information to the logger.
 
@@ -114,13 +114,12 @@ Send information to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="log"></a>
 
 ###  log
@@ -129,7 +128,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[log](../interfaces/ilogger.md#log)*
 
-*Defined in [loggers/consoleLogger.ts:41](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L41)*
+*Defined in [loggers/consoleLogger.ts:41](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/consoleLogger.ts#L41)*
 
 Send log to the logger.
 
@@ -137,13 +136,12 @@ Send log to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 
 ___
-
 <a id="warning"></a>
 
 ###  warning
@@ -152,7 +150,7 @@ ___
 
 *Implementation of [ILogger](../interfaces/ilogger.md).[warning](../interfaces/ilogger.md#warning)*
 
-*Defined in [loggers/consoleLogger.ts:61](https://github.com/iota-pico/core/blob/35412fd/src/loggers/consoleLogger.ts#L61)*
+*Defined in [loggers/consoleLogger.ts:61](https://github.com/iota-pico/core/blob/0ebbbcc/src/loggers/consoleLogger.ts#L61)*
 
 Send warning to the logger.
 
@@ -160,8 +158,8 @@ Send warning to the logger.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| message | `string`   |  The message to log. |
-| args | `any`[]   |  Additional parameters to log. |
+| message | `string` |  The message to log. |
+| `Rest` args | `any`[] |  Additional parameters to log. |
 
 **Returns:** `void`
 

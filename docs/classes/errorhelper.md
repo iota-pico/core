@@ -24,7 +24,7 @@ Handle errors as gracefully as possible.
 
 ▸ **format**(err: *`any`*, includeStack: *`boolean`*): `string`
 
-*Defined in [helpers/errorHelper.ts:16](https://github.com/iota-pico/core/blob/35412fd/src/helpers/errorHelper.ts#L16)*
+*Defined in [helpers/errorHelper.ts:16](https://github.com/iota-pico/core/blob/0ebbbcc/src/helpers/errorHelper.ts#L16)*
 
 Format an error object into something readable.
 
@@ -32,8 +32,8 @@ Format an error object into something readable.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| err | `any`   |  The object to format. |
-| includeStack | `boolean`   |  Include the stack trace if there is one. |
+| err | `any` |  The object to format. |
+| includeStack | `boolean` |  Include the stack trace if there is one. |
 
 **Returns:** `string`
 Formatted version of the error object.

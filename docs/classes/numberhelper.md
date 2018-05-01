@@ -27,7 +27,7 @@ Number helper methods.
 
 ▸ **isFloatString**(value: *`string`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:28](https://github.com/iota-pico/core/blob/35412fd/src/helpers/numberHelper.ts#L28)*
+*Defined in [helpers/numberHelper.ts:28](https://github.com/iota-pico/core/blob/0ebbbcc/src/helpers/numberHelper.ts#L28)*
 
 Is the value a float number formatted as a string, can be used for big numbers that would overflow parseFloat.
 
@@ -35,20 +35,19 @@ Is the value a float number formatted as a string, can be used for big numbers t
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| value | `string`   |  The value to check |
+| value | `string` |  The value to check |
 
 **Returns:** `boolean`
 True if the number is formatted correctly.
 
 ___
-
 <a id="isinteger"></a>
 
 ### `<Static>` isInteger
 
 ▸ **isInteger**(value: *`any`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:10](https://github.com/iota-pico/core/blob/35412fd/src/helpers/numberHelper.ts#L10)*
+*Defined in [helpers/numberHelper.ts:10](https://github.com/iota-pico/core/blob/0ebbbcc/src/helpers/numberHelper.ts#L10)*
 
 Is the value an integer.
 
@@ -56,20 +55,19 @@ Is the value an integer.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| value | `any`   |  Object to test for its integerness. |
+| value | `any` |  Object to test for its integerness. |
 
 **Returns:** `boolean`
 True if the object is a integer.
 
 ___
-
 <a id="isintegerstring"></a>
 
 ### `<Static>` isIntegerString
 
 ▸ **isIntegerString**(value: *`string`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:37](https://github.com/iota-pico/core/blob/35412fd/src/helpers/numberHelper.ts#L37)*
+*Defined in [helpers/numberHelper.ts:37](https://github.com/iota-pico/core/blob/0ebbbcc/src/helpers/numberHelper.ts#L37)*
 
 Is the value a integer number formatted as a string, can be used for big numbers that would overflow parseInt.
 
@@ -77,20 +75,19 @@ Is the value a integer number formatted as a string, can be used for big numbers
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| value | `string`   |  The value to check |
+| value | `string` |  The value to check |
 
 **Returns:** `boolean`
 True if the number is formatted correctly.
 
 ___
-
 <a id="isnumber"></a>
 
 ### `<Static>` isNumber
 
 ▸ **isNumber**(value: *`any`*): `boolean`
 
-*Defined in [helpers/numberHelper.ts:19](https://github.com/iota-pico/core/blob/35412fd/src/helpers/numberHelper.ts#L19)*
+*Defined in [helpers/numberHelper.ts:19](https://github.com/iota-pico/core/blob/0ebbbcc/src/helpers/numberHelper.ts#L19)*
 
 Is the value a number.
 
@@ -98,7 +95,7 @@ Is the value a number.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| value | `any`   |  Object to test for its numberyness. |
+| value | `any` |  Object to test for its numberyness. |
 
 **Returns:** `boolean`
 True if the object is a number.

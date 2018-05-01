@@ -33,7 +33,7 @@ Represents the configuration for a network endpoint.
 
 ▸ **getHost**(): `string`
 
-*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkEndPoint.ts#L17)*
+*Defined in [interfaces/INetworkEndPoint.ts:17](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkEndPoint.ts#L17)*
 
 The host name or ip of the endpoint.
 
@@ -41,14 +41,13 @@ The host name or ip of the endpoint.
 The host.
 
 ___
-
 <a id="getport"></a>
 
 ###  getPort
 
 ▸ **getPort**(): `number`
 
-*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkEndPoint.ts#L22)*
+*Defined in [interfaces/INetworkEndPoint.ts:22](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkEndPoint.ts#L22)*
 
 The port of the endpoint.
 
@@ -56,14 +55,13 @@ The port of the endpoint.
 The port.
 
 ___
-
 <a id="getprotocol"></a>
 
 ###  getProtocol
 
 ▸ **getProtocol**(): [NetworkProtocol](../#networkprotocol)
 
-*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkEndPoint.ts#L12)*
+*Defined in [interfaces/INetworkEndPoint.ts:12](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkEndPoint.ts#L12)*
 
 The protocol to access the endpoint with.
 
@@ -71,14 +69,13 @@ The protocol to access the endpoint with.
 The protocol.
 
 ___
-
 <a id="getrootpath"></a>
 
 ###  getRootPath
 
 ▸ **getRootPath**(): `string`
 
-*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkEndPoint.ts#L27)*
+*Defined in [interfaces/INetworkEndPoint.ts:27](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkEndPoint.ts#L27)*
 
 The path to the endpoint.
 
@@ -86,14 +83,13 @@ The path to the endpoint.
 The path.
 
 ___
-
 <a id="geturi"></a>
 
 ###  getUri
 
 ▸ **getUri**(): `string`
 
-*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkEndPoint.ts#L32)*
+*Defined in [interfaces/INetworkEndPoint.ts:32](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkEndPoint.ts#L32)*
 
 The complete uri.
 

@@ -27,9 +27,9 @@ Represents a class which can provide background tasks.
 
 ###  create
 
-▸ **create**T(task: *`function`*, delay: *`number`*): `Promise`.<`T`>
+▸ **create**T(task: *`function`*, delay: *`number`*): `Promise`<`T`>
 
-*Defined in [interfaces/IBackgroundTaskService.ts:11](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/IBackgroundTaskService.ts#L11)*
+*Defined in [interfaces/IBackgroundTaskService.ts:11](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IBackgroundTaskService.ts#L11)*
 
 Create a background task.
 
@@ -40,10 +40,10 @@ Create a background task.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| task | `function`   |  The task to run in the background. |
-| delay | `number`   |  The delay before running the task. |
+| task | `function` |  The task to run in the background. |
+| delay | `number` |  The delay before running the task. |
 
-**Returns:** `Promise`.<`T`>
+**Returns:** `Promise`<`T`>
 
 ___
 

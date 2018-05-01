@@ -27,9 +27,9 @@ Represents a client for performing communication.
 
 ###  doRequest
 
-▸ **doRequest**(method: *`string`*, data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+▸ **doRequest**(method: *`string`*, data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:51](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkClient.ts#L51)*
+*Defined in [interfaces/INetworkClient.ts:51](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkClient.ts#L51)*
 
 Perform a request asynchronously.
 
@@ -37,23 +37,22 @@ Perform a request asynchronously.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| method | `string`   |  The method to send the data with. |
-| data | `string`   |  The data to send. |
-| additionalPath | `string`   |  An additional path append to the endpoint path. |
-| additionalHeaders | `object`   |  Extra headers to send with the request. |
+| method | `string` |  The method to send the data with. |
+| data | `string` |  The data to send. |
+| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
+| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
-**Returns:** `Promise`.<`string`>
+**Returns:** `Promise`<`string`>
 Promise which resolves to the object returned or rejects with error.
 
 ___
-
 <a id="get"></a>
 
 ###  get
 
-▸ **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+▸ **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkClient.ts#L12)*
+*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkClient.ts#L12)*
 
 Get data asynchronously.
 
@@ -61,21 +60,20 @@ Get data asynchronously.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| additionalPath | `string`   |  An additional path append to the endpoint path. |
-| additionalHeaders | `object`   |  Extra headers to send with the request. |
+| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
+| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
-**Returns:** `Promise`.<`string`>
+**Returns:** `Promise`<`string`>
 Promise which resolves to the object returned or rejects with error.
 
 ___
-
 <a id="getjson"></a>
 
 ###  getJson
 
-▸ **getJson**U(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
+▸ **getJson**U(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
 
-*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkClient.ts#L30)*
+*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkClient.ts#L30)*
 
 Get data as JSON asynchronously.
 
@@ -89,21 +87,20 @@ The generic type for the returned object.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| additionalPath | `string`   |  An additional path append to the endpoint path. |
-| additionalHeaders | `object`   |  Extra headers to send with the request. |
+| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
+| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
-**Returns:** `Promise`.<`U`>
+**Returns:** `Promise`<`U`>
 Promise which resolves to the object returned or rejects with error.
 
 ___
-
 <a id="post"></a>
 
 ###  post
 
-▸ **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`string`>
+▸ **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkClient.ts#L21)*
+*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkClient.ts#L21)*
 
 Post data asynchronously.
 
@@ -111,22 +108,21 @@ Post data asynchronously.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| data | `string`   |  The data to send. |
-| additionalPath | `string`   |  An additional path append to the endpoint path. |
-| additionalHeaders | `object`   |  Extra headers to send with the request. |
+| data | `string` |  The data to send. |
+| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
+| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
-**Returns:** `Promise`.<`string`>
+**Returns:** `Promise`<`string`>
 Promise which resolves to the object returned or rejects with error.
 
 ___
-
 <a id="postjson"></a>
 
 ###  postJson
 
-▸ **postJson**T,U(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`.<`U`>
+▸ **postJson**T,U(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
 
-*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iota-pico/core/blob/35412fd/src/interfaces/INetworkClient.ts#L41)*
+*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/INetworkClient.ts#L41)*
 
 Post data as JSON asynchronously.
 
@@ -144,11 +140,11 @@ The generic type for the returned object.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| data | `T`   |  The data to send. |
-| additionalPath | `string`   |  An additional path append to the endpoint path. |
-| additionalHeaders | `object`   |  Extra headers to send with the request. |
+| data | `T` |  The data to send. |
+| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
+| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
-**Returns:** `Promise`.<`U`>
+**Returns:** `Promise`<`U`>
 Promise which resolves to the object returned or rejects with error.
 
 ___
