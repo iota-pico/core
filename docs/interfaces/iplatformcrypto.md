@@ -30,7 +30,7 @@ Represents an object that can perform crypto operations.
 
 ▸ **decrypt**(publicKey: *`string`*, data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:20](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IPlatformCrypto.ts#L20)*
+*Defined in [interfaces/IPlatformCrypto.ts:20](https://github.com/iota-pico/core/blob/561586d/src/interfaces/IPlatformCrypto.ts#L20)*
 
 Decrypt the given data.
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **encrypt**(privateKey: *`string`*, data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:12](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IPlatformCrypto.ts#L12)*
+*Defined in [interfaces/IPlatformCrypto.ts:12](https://github.com/iota-pico/core/blob/561586d/src/interfaces/IPlatformCrypto.ts#L12)*
 
 Encrypt the given data.
 
@@ -70,9 +70,9 @@ ___
 
 ###  hash
 
-▸ **hash**(algo: *`string`*, data: *`any`*, dataType?: *"utf8" |"ascii" |"latin1"*, encoding?: *"latin1" |"hex" |"base64"*): `any`
+▸ **hash**(algo: *`string`*, data: *`any`*, dataType?: * "utf8" &#124; "ascii" &#124; "latin1"*, encoding?: * "latin1" &#124; "hex" &#124; "base64"*): `any`
 
-*Defined in [interfaces/IPlatformCrypto.ts:47](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IPlatformCrypto.ts#L47)*
+*Defined in [interfaces/IPlatformCrypto.ts:47](https://github.com/iota-pico/core/blob/561586d/src/interfaces/IPlatformCrypto.ts#L47)*
 
 Hash the data.
 
@@ -82,14 +82,8 @@ Hash the data.
 | ------ | ------ | ------ |
 | algo | `string` |  The algorithm to use. |
 | data | `any` |  The data to hash. |
-| `Optional` dataType | "utf8" |
-"ascii" |
-"latin1"
- |  The type of the input data utf8, ascii, latin1. |
-| `Optional` encoding | "latin1" |
-"hex" |
-"base64"
- |  The encoding to return the data latin1, hex, base64. |
+| `Optional` dataType |  "utf8" &#124; "ascii" &#124; "latin1"|  The type of the input data utf8, ascii, latin1. |
+| `Optional` encoding |  "latin1" &#124; "hex" &#124; "base64"|  The encoding to return the data latin1, hex, base64. |
 
 **Returns:** `any`
 The hash of the data.
@@ -99,9 +93,9 @@ ___
 
 ###  hmac
 
-▸ **hmac**(algo: *`string`*, key: *`any`*, data: *`any`*, dataType?: *"utf8" |"ascii" |"latin1"*, encoding?: *"latin1" |"hex" |"base64"*): `any`
+▸ **hmac**(algo: *`string`*, key: *`any`*, data: *`any`*, dataType?: * "utf8" &#124; "ascii" &#124; "latin1"*, encoding?: * "latin1" &#124; "hex" &#124; "base64"*): `any`
 
-*Defined in [interfaces/IPlatformCrypto.ts:61](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IPlatformCrypto.ts#L61)*
+*Defined in [interfaces/IPlatformCrypto.ts:61](https://github.com/iota-pico/core/blob/561586d/src/interfaces/IPlatformCrypto.ts#L61)*
 
 HMAC the data.
 
@@ -112,14 +106,8 @@ HMAC the data.
 | algo | `string` |  The algorithm to use. |
 | key | `any` |  The key to hash the data with. |
 | data | `any` |  The data to hash. |
-| `Optional` dataType | "utf8" |
-"ascii" |
-"latin1"
- |  The type of the input data utf8, ascii, latin1. |
-| `Optional` encoding | "latin1" |
-"hex" |
-"base64"
- |  The encoding to return the data latin1, hex, base64. |
+| `Optional` dataType |  "utf8" &#124; "ascii" &#124; "latin1"|  The type of the input data utf8, ascii, latin1. |
+| `Optional` encoding |  "latin1" &#124; "hex" &#124; "base64"|  The encoding to return the data latin1, hex, base64. |
 
 **Returns:** `any`
 The hmac of the data.
@@ -131,7 +119,7 @@ ___
 
 ▸ **sign**(privateKey: *`string`*, data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:28](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IPlatformCrypto.ts#L28)*
+*Defined in [interfaces/IPlatformCrypto.ts:28](https://github.com/iota-pico/core/blob/561586d/src/interfaces/IPlatformCrypto.ts#L28)*
 
 Sign the given data.
 
@@ -152,7 +140,7 @@ ___
 
 ▸ **verify**(publicKey: *`string`*, data: *`string`*, signature: *`string`*): `boolean`
 
-*Defined in [interfaces/IPlatformCrypto.ts:37](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/IPlatformCrypto.ts#L37)*
+*Defined in [interfaces/IPlatformCrypto.ts:37](https://github.com/iota-pico/core/blob/561586d/src/interfaces/IPlatformCrypto.ts#L37)*
 
 Verify the given data with the signature.
 

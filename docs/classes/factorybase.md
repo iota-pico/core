@@ -40,7 +40,7 @@ The generic type for the object types in the factory.
 
 ▸ **create**(name: *`string`*, ...args: *`any`[]*): `T`
 
-*Defined in [factories/factoryBase.ts:50](https://github.com/iota-pico/core/blob/0ebbbcc/src/factories/factoryBase.ts#L50)*
+*Defined in [factories/factoryBase.ts:50](https://github.com/iota-pico/core/blob/561586d/src/factories/factoryBase.ts#L50)*
 
 Create an instance of an object from the factory.
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **exists**(name: *`string`*): `boolean`
 
-*Defined in [factories/factoryBase.ts:31](https://github.com/iota-pico/core/blob/0ebbbcc/src/factories/factoryBase.ts#L31)*
+*Defined in [factories/factoryBase.ts:31](https://github.com/iota-pico/core/blob/561586d/src/factories/factoryBase.ts#L31)*
 
 Does the factory contain a specific type.
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **getInstance**(): [FactoryBase](factorybase.md)<`T`>
 
-*Defined in [factories/factoryBase.ts:60](https://github.com/iota-pico/core/blob/0ebbbcc/src/factories/factoryBase.ts#L60)*
+*Defined in [factories/factoryBase.ts:60](https://github.com/iota-pico/core/blob/561586d/src/factories/factoryBase.ts#L60)*
 
 **Returns:** [FactoryBase](factorybase.md)<`T`>
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **register**(name: *`string`*, typeConstructor: *`function`*): `void`
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iota-pico/core/blob/0ebbbcc/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iota-pico/core/blob/561586d/src/factories/factoryBase.ts#L14)*
 
 Register a new type with the factory.
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **types**(): `string`[]
 
-*Defined in [factories/factoryBase.ts:40](https://github.com/iota-pico/core/blob/0ebbbcc/src/factories/factoryBase.ts#L40)*
+*Defined in [factories/factoryBase.ts:40](https://github.com/iota-pico/core/blob/561586d/src/factories/factoryBase.ts#L40)*
 
 List the types in the factory.
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **unregister**(name: *`string`*): `void`
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iota-pico/core/blob/0ebbbcc/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iota-pico/core/blob/561586d/src/factories/factoryBase.ts#L22)*
 
 Unregister a type from the factory.
 

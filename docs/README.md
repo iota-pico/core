@@ -46,11 +46,10 @@
 
 ###  NetworkProtocol
 
-**ΤNetworkProtocol**: *"http" |
-"https"
+**ΤNetworkProtocol**: * "http" &#124; "https"
 *
 
-*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iota-pico/core/blob/0ebbbcc/src/interfaces/networkProtocol.ts#L4)*
+*Defined in [interfaces/networkProtocol.ts:4](https://github.com/iota-pico/core/blob/561586d/src/interfaces/networkProtocol.ts#L4)*
 
 Represents the protocols for communicating.
 
