@@ -29,7 +29,7 @@ Represents a client for performing communication.
 
 ▸ **doRequest**(method: *`string`*, data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:51](https://github.com/iota-pico/core/blob/561586d/src/interfaces/INetworkClient.ts#L51)*
+*Defined in [interfaces/INetworkClient.ts:51](https://github.com/iota-pico/core/blob/36f6f34/src/interfaces/INetworkClient.ts#L51)*
 
 Perform a request asynchronously.
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iota-pico/core/blob/561586d/src/interfaces/INetworkClient.ts#L12)*
+*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iota-pico/core/blob/36f6f34/src/interfaces/INetworkClient.ts#L12)*
 
 Get data asynchronously.
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **getJson**U(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
 
-*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iota-pico/core/blob/561586d/src/interfaces/INetworkClient.ts#L30)*
+*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iota-pico/core/blob/36f6f34/src/interfaces/INetworkClient.ts#L30)*
 
 Get data as JSON asynchronously.
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iota-pico/core/blob/561586d/src/interfaces/INetworkClient.ts#L21)*
+*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iota-pico/core/blob/36f6f34/src/interfaces/INetworkClient.ts#L21)*
 
 Post data asynchronously.
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **postJson**T,U(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
 
-*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iota-pico/core/blob/561586d/src/interfaces/INetworkClient.ts#L41)*
+*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iota-pico/core/blob/36f6f34/src/interfaces/INetworkClient.ts#L41)*
 
 Post data as JSON asynchronously.
 

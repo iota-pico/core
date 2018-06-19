@@ -24,7 +24,7 @@ Json helper methods.
 
 ▸ **stringify**(value: *`any`*, replacer?: *`function`*, space?: * `string` &#124; `number`*): `string`
 
-*Defined in [helpers/jsonHelper.ts:12](https://github.com/iota-pico/core/blob/561586d/src/helpers/jsonHelper.ts#L12)*
+*Defined in [helpers/jsonHelper.ts:12](https://github.com/iota-pico/core/blob/36f6f34/src/helpers/jsonHelper.ts#L12)*
 
 Stringify an object with recursion breaking.
 

@@ -30,7 +30,7 @@ Represents a class which can provide the time.
 
 *Implementation of [ITimeService](../interfaces/itimeservice.md).[msSinceEpoch](../interfaces/itimeservice.md#mssinceepoch)*
 
-*Defined in [services/timeService.ts:11](https://github.com/iota-pico/core/blob/561586d/src/services/timeService.ts#L11)*
+*Defined in [services/timeService.ts:11](https://github.com/iota-pico/core/blob/36f6f34/src/services/timeService.ts#L11)*
 
 Returns the number of milliseconds since 1970/01/01.
 
