@@ -29,7 +29,7 @@ Represents a class which can provide the time.
 
 ▸ **msSinceEpoch**(): `number`
 
-*Defined in [interfaces/ITimeService.ts:10](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/ITimeService.ts#L10)*
+*Defined in [interfaces/ITimeService.ts:10](https://github.com/iota-pico/core/tree/master/src/interfaces/ITimeService.ts#L10*
 
 Returns the number of milliseconds since 1970/01/01.
 

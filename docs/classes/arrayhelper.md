@@ -26,7 +26,7 @@ Array helper methods.
 
 ▸ **isArray**(value: *`any`*): `boolean`
 
-*Defined in [helpers/arrayHelper.ts:12](https://github.com/iota-pico/core/blob/ab219f5/src/helpers/arrayHelper.ts#L12)*
+*Defined in [helpers/arrayHelper.ts:12](https://github.com/iota-pico/core/tree/master/src/helpers/arrayHelper.ts#L12*
 
 Is the value an array.
 
@@ -46,7 +46,7 @@ ___
 
 ▸ **isEmpty**(value: *`any`*): `boolean`
 
-*Defined in [helpers/arrayHelper.ts:22](https://github.com/iota-pico/core/blob/ab219f5/src/helpers/arrayHelper.ts#L22)*
+*Defined in [helpers/arrayHelper.ts:22](https://github.com/iota-pico/core/tree/master/src/helpers/arrayHelper.ts#L22*
 
 Is the value a empty array.
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **isTyped**(value: *`any`*, type: *`Function`*): `boolean`
 
-*Defined in [helpers/arrayHelper.ts:32](https://github.com/iota-pico/core/blob/ab219f5/src/helpers/arrayHelper.ts#L32)*
+*Defined in [helpers/arrayHelper.ts:32](https://github.com/iota-pico/core/tree/master/src/helpers/arrayHelper.ts#L32*
 
 Is the value a non empty array of specific type.
 

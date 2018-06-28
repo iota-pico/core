@@ -30,7 +30,7 @@ Represents an object that can perform crypto operations.
 
 ▸ **decrypt**(publicKey: *`string`*, data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:20](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IPlatformCrypto.ts#L20)*
+*Defined in [interfaces/IPlatformCrypto.ts:20](https://github.com/iota-pico/core/tree/master/src/interfaces/IPlatformCrypto.ts#L20*
 
 Decrypt the given data.
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **encrypt**(privateKey: *`string`*, data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:12](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IPlatformCrypto.ts#L12)*
+*Defined in [interfaces/IPlatformCrypto.ts:12](https://github.com/iota-pico/core/tree/master/src/interfaces/IPlatformCrypto.ts#L12*
 
 Encrypt the given data.
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **hash**(algo: *`string`*, data: *`any`*, dataType?: * "utf8" &#124; "ascii" &#124; "latin1"*, encoding?: * "latin1" &#124; "hex" &#124; "base64"*): `any`
 
-*Defined in [interfaces/IPlatformCrypto.ts:47](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IPlatformCrypto.ts#L47)*
+*Defined in [interfaces/IPlatformCrypto.ts:47](https://github.com/iota-pico/core/tree/master/src/interfaces/IPlatformCrypto.ts#L47*
 
 Hash the data.
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **hmac**(algo: *`string`*, key: *`any`*, data: *`any`*, dataType?: * "utf8" &#124; "ascii" &#124; "latin1"*, encoding?: * "latin1" &#124; "hex" &#124; "base64"*): `any`
 
-*Defined in [interfaces/IPlatformCrypto.ts:61](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IPlatformCrypto.ts#L61)*
+*Defined in [interfaces/IPlatformCrypto.ts:61](https://github.com/iota-pico/core/tree/master/src/interfaces/IPlatformCrypto.ts#L61*
 
 HMAC the data.
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **sign**(privateKey: *`string`*, data: *`string`*): `string`
 
-*Defined in [interfaces/IPlatformCrypto.ts:28](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IPlatformCrypto.ts#L28)*
+*Defined in [interfaces/IPlatformCrypto.ts:28](https://github.com/iota-pico/core/tree/master/src/interfaces/IPlatformCrypto.ts#L28*
 
 Sign the given data.
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **verify**(publicKey: *`string`*, data: *`string`*, signature: *`string`*): `boolean`
 
-*Defined in [interfaces/IPlatformCrypto.ts:37](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IPlatformCrypto.ts#L37)*
+*Defined in [interfaces/IPlatformCrypto.ts:37](https://github.com/iota-pico/core/tree/master/src/interfaces/IPlatformCrypto.ts#L37*
 
 Verify the given data with the signature.
 

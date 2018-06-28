@@ -34,7 +34,7 @@ Factory to generate network clients.
 
 *Inherited from [FactoryBase](factorybase.md).[create](factorybase.md#create)*
 
-*Defined in [factories/factoryBase.ts:50](https://github.com/iota-pico/core/blob/ab219f5/src/factories/factoryBase.ts#L50)*
+*Defined in [factories/factoryBase.ts:50](https://github.com/iota-pico/core/tree/master/src/factories/factoryBase.ts#L50*
 
 Create an instance of an object from the factory.
 
@@ -57,7 +57,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[exists](factorybase.md#exists)*
 
-*Defined in [factories/factoryBase.ts:31](https://github.com/iota-pico/core/blob/ab219f5/src/factories/factoryBase.ts#L31)*
+*Defined in [factories/factoryBase.ts:31](https://github.com/iota-pico/core/tree/master/src/factories/factoryBase.ts#L31*
 
 Does the factory contain a specific type.
 
@@ -79,7 +79,7 @@ ___
 
 *Overrides [FactoryBase](factorybase.md).[getInstance](factorybase.md#getinstance)*
 
-*Defined in [factories/networkClientFactory.ts:31](https://github.com/iota-pico/core/blob/ab219f5/src/factories/networkClientFactory.ts#L31)*
+*Defined in [factories/networkClientFactory.ts:31](https://github.com/iota-pico/core/tree/master/src/factories/networkClientFactory.ts#L31*
 
 **Returns:** [FactoryBase](factorybase.md)<[INetworkClient](../interfaces/inetworkclient.md)>
 
@@ -92,7 +92,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[register](factorybase.md#register)*
 
-*Defined in [factories/factoryBase.ts:14](https://github.com/iota-pico/core/blob/ab219f5/src/factories/factoryBase.ts#L14)*
+*Defined in [factories/factoryBase.ts:14](https://github.com/iota-pico/core/tree/master/src/factories/factoryBase.ts#L14*
 
 Register a new type with the factory.
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[types](factorybase.md#types)*
 
-*Defined in [factories/factoryBase.ts:40](https://github.com/iota-pico/core/blob/ab219f5/src/factories/factoryBase.ts#L40)*
+*Defined in [factories/factoryBase.ts:40](https://github.com/iota-pico/core/tree/master/src/factories/factoryBase.ts#L40*
 
 List the types in the factory.
 
@@ -130,7 +130,7 @@ ___
 
 *Inherited from [FactoryBase](factorybase.md).[unregister](factorybase.md#unregister)*
 
-*Defined in [factories/factoryBase.ts:22](https://github.com/iota-pico/core/blob/ab219f5/src/factories/factoryBase.ts#L22)*
+*Defined in [factories/factoryBase.ts:22](https://github.com/iota-pico/core/tree/master/src/factories/factoryBase.ts#L22*
 
 Unregister a type from the factory.
 
@@ -149,7 +149,7 @@ ___
 
 ▸ **instance**(): [FactoryBase](factorybase.md)<[INetworkClient](../interfaces/inetworkclient.md)>
 
-*Defined in [factories/networkClientFactory.ts:23](https://github.com/iota-pico/core/blob/ab219f5/src/factories/networkClientFactory.ts#L23)*
+*Defined in [factories/networkClientFactory.ts:23](https://github.com/iota-pico/core/tree/master/src/factories/networkClientFactory.ts#L23*
 
 Get the instance of the factory.
 
