@@ -35,7 +35,7 @@ class StringHelper {
      * @returns The escaped version of the string.
      */
     static encodeNonASCII(value) {
-        return StringHelper.isString(value) ? value.replace(/[\u007F-\uFFFF]/g, (chr) => `\\u${(`0000${chr.charCodeAt(0).toString(16)}`).substr(-4)}`) : undefined;
+        return StringHelper.isString(value) ? value.replace(/[\u0100-\uFFFF]/g, (chr) => `\\u${(`0000${chr.charCodeAt(0).toString(16)}`).substr(-4)}`) : undefined;
     }
     /**
      * Decode control characters to ASCII.

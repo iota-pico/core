@@ -45,7 +45,7 @@ A core implementation of an error.
 
 ⊕ **new CoreError**(message: *`string`*, additional?: *`object`*, innerError?: *`Error`*): [CoreError](coreerror.md)
 
-*Defined in [error/coreError.ts:21](https://github.com/iota-pico/core/blob/36f6f34/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iota-pico/core/blob/ab219f5/src/error/coreError.ts#L21)*
 
 Create an instance of CoreError.
 
@@ -69,7 +69,7 @@ ___
 
 **● additional**: *`object`*
 
-*Defined in [error/coreError.ts:16](https://github.com/iota-pico/core/blob/36f6f34/src/error/coreError.ts#L16)*
+*Defined in [error/coreError.ts:16](https://github.com/iota-pico/core/blob/ab219f5/src/error/coreError.ts#L16)*
 
 Additional details about the error.
 
@@ -84,7 +84,7 @@ ___
 
 **● domain**: *`string`*
 
-*Defined in [error/coreError.ts:11](https://github.com/iota-pico/core/blob/36f6f34/src/error/coreError.ts#L11)*
+*Defined in [error/coreError.ts:11](https://github.com/iota-pico/core/blob/ab219f5/src/error/coreError.ts#L11)*
 
 The domain of the error.
 
@@ -95,7 +95,7 @@ ___
 
 **● innerError**: *`Error`*
 
-*Defined in [error/coreError.ts:21](https://github.com/iota-pico/core/blob/36f6f34/src/error/coreError.ts#L21)*
+*Defined in [error/coreError.ts:21](https://github.com/iota-pico/core/blob/ab219f5/src/error/coreError.ts#L21)*
 
 The inner error if there was one.
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **format**(): `string`
 
-*Defined in [error/coreError.ts:49](https://github.com/iota-pico/core/blob/36f6f34/src/error/coreError.ts#L49)*
+*Defined in [error/coreError.ts:49](https://github.com/iota-pico/core/blob/ab219f5/src/error/coreError.ts#L49)*
 
 Format the error to a readable version.
 
@@ -165,7 +165,7 @@ ___
 
 ▸ **isError**(obj: *`any`*): `boolean`
 
-*Defined in [error/coreError.ts:41](https://github.com/iota-pico/core/blob/36f6f34/src/error/coreError.ts#L41)*
+*Defined in [error/coreError.ts:41](https://github.com/iota-pico/core/blob/ab219f5/src/error/coreError.ts#L41)*
 
 Check if an object could be a CoreError.
 

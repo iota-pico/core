@@ -25,7 +25,7 @@ Represents a service to perform random number generation.
 
 ▸ **generate**(length: *`number`*): `Uint8Array`
 
-*Defined in [interfaces/IRngService.ts:11](https://github.com/iota-pico/core/blob/36f6f34/src/interfaces/IRngService.ts#L11)*
+*Defined in [interfaces/IRngService.ts:11](https://github.com/iota-pico/core/blob/ab219f5/src/interfaces/IRngService.ts#L11)*
 
 Generate an array of random numbers.
 

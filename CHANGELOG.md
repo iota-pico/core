@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.9.7
+
+* Reduced umd module size with externals
+* Extended the range of ASCII characters that can keep their default values in StringHelper:encodeNonAscii
+
 ## v0.9.6
 
 * Dependency Updates
