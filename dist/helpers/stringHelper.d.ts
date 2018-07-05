@@ -19,7 +19,7 @@ export declare class StringHelper {
      * @param value string to test if is is ASCII.
      * @returns True if the object is all ASCII.
      */
-    static isAscii(value: string): boolean;
+    static isASCII(value: string): boolean;
     /**
      * Encode non ASCII characters with control characters.
      * @param value The string value to escape.

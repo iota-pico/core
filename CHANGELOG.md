@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.9.8
+
+* Revert ASCII extension to retain compatibility with official libs
+
 ## v0.9.7
 
 * Reduced umd module size with externals

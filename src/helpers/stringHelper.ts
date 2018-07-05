@@ -26,9 +26,9 @@ export class StringHelper {
      * @param value string to test if is is ASCII.
      * @returns True if the object is all ASCII.
      */
-    public static isAscii(value: string): boolean {
+    public static isASCII(value: string): boolean {
         return value === null || value === undefined
-            ? false : /^[\x00-\xFF]*$/.test(value);
+            ? false : /^[\x00-\x7F]*$/.test(value);
     }
 
     /**
@@ -37,7 +37,7 @@ export class StringHelper {
      * @returns The escaped version of the string.
      */
     public static encodeNonASCII(value: string): string {
-        return StringHelper.isString(value) ? value.replace(/[\u0100-\uFFFF]/g, (chr) => `\\u${(`0000${chr.charCodeAt(0).toString(16)}`).substr(-4)}`) : undefined;
+        return StringHelper.isString(value) ? value.replace(/[\u0080-\uFFFF]/g, (chr) => `\\u${(`0000${chr.charCodeAt(0).toString(16)}`).substr(-4)}`) : undefined;
     }
 
     /**

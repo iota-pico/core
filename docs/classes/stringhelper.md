@@ -14,7 +14,7 @@ String helper methods.
 
 * [decodeNonASCII](stringhelper.md#decodenonascii)
 * [encodeNonASCII](stringhelper.md#encodenonascii)
-* [isAscii](stringhelper.md#isascii)
+* [isASCII](stringhelper.md#isascii)
 * [isEmpty](stringhelper.md#isempty)
 * [isString](stringhelper.md#isstring)
 
@@ -64,9 +64,9 @@ The escaped version of the string.
 ___
 <a id="isascii"></a>
 
-### `<Static>` isAscii
+### `<Static>` isASCII
 
-▸ **isAscii**(value: *`string`*): `boolean`
+▸ **isASCII**(value: *`string`*): `boolean`
 
 *Defined in [helpers/stringHelper.ts:29](https://github.com/iota-pico/core/tree/master/src/helpers/stringHelper.ts#L29*
 

@@ -57,21 +57,25 @@ describe("StringHelper", () => {
         });
     });
 
-    describe("isAscii", () => {
+    describe("isASCII", () => {
         it("can return false if passed undefined", () => {
-            chai.expect(StringHelper.isAscii(undefined)).to.equal(false);
+            chai.expect(StringHelper.isASCII(undefined)).to.equal(false);
         });
 
         it("can return false if passed null", () => {
-            chai.expect(StringHelper.isAscii(null)).to.equal(false);
+            chai.expect(StringHelper.isASCII(null)).to.equal(false);
         });
 
         it("can return false if non ascii", () => {
-            chai.expect(StringHelper.isAscii("🎺")).to.equal(false);
+            chai.expect(StringHelper.isASCII("🎺")).to.equal(false);
+        });
+
+        it("can return false if extended ascii", () => {
+            chai.expect(StringHelper.isASCII(String.fromCharCode(128))).to.equal(false);
         });
 
         it("can return true if ascii", () => {
-            chai.expect(StringHelper.isAscii("$")).to.equal(true);
+            chai.expect(StringHelper.isASCII("$")).to.equal(true);
         });
     });
 
@@ -88,6 +92,10 @@ describe("StringHelper", () => {
             chai.expect(StringHelper.encodeNonASCII("🎺⚽")).to.equal("\\ud83c\\udfba\\u26bd");
         });
 
+        it("can return encoded if ascii extended", () => {
+            chai.expect(StringHelper.encodeNonASCII(String.fromCharCode(128))).to.equal("\\u0080");
+        });
+
         it("can return same string if all ascii", () => {
             chai.expect(StringHelper.encodeNonASCII("$ABCD")).to.equal("$ABCD");
         });
@@ -102,7 +110,11 @@ describe("StringHelper", () => {
             chai.expect(StringHelper.decodeNonASCII(null)).to.equal(undefined);
         });
 
-        it("can return encoded string if non ascii", () => {
+        it("can return decoded if ascii extended", () => {
+            chai.expect(StringHelper.decodeNonASCII("\\u0080")).to.equal(String.fromCharCode(128));
+        });
+
+        it("can return decoded string if non ascii", () => {
             chai.expect(StringHelper.decodeNonASCII("\\ud83c\\udfba\\u26bd")).to.equal("🎺⚽");
         });
 
