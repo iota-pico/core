@@ -13,7 +13,7 @@ npm install @iota-pico/core --save
 
 # Documentation
 
-Documentation for the code can be found in [docs](./docs/README.md) folder.
+Documentation for the code can be found in [docs](https://github.com/iota-pico/core/blob/master/docs/README.md) folder.
 
 # Library
 
@@ -32,7 +32,6 @@ The layered libraries are written in TypeScript so are all strongly typed. The m
 
 Some tutorials can be found in the following repo [@iota-pico/tutorials](https://github.com/iota-pico/tutorials)
 
-
 # Contributing
 
 Contributions are always welcome to the project. Feel free to raise issues, create pull requests or just make suggestions.
@@ -46,10 +45,13 @@ Come and find us on the IOTA [Discord](https://discordapp.com/invite/fNGZXvh) de
 # Donations
 
 IOTA donations are always welcome :smile:
+
+![QR Code for Trinity](https://raw.githubusercontent.com/iota-pico/core/master/donation.png)
+
 ```shell
 QWJXX99QDEYWUWXEGA9QXSNOWOKHMFKCMSZTXDFLRZAFQRPQTHQDXSZWQQTAHNDNRYHMIKJYWQLKTFHBWSAOJDHAMB
 ```
 
 # License
 
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/iota-pico/core/blob/master/LICENSE) file for details.
