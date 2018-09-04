@@ -105,35 +105,35 @@ The inner error if there was one.
 ___
 <a id="message"></a>
 
-### `<Static>` message
+###  message
 
 **● message**: *`string`*
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:886*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:904*
 
 ___
 <a id="name"></a>
 
-### `<Static>` name
+###  name
 
 **● name**: *`string`*
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:885*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:903*
 
 ___
 <a id="stack"></a>
 
-### `<Static>``<Optional>` stack
+### `<Optional>` stack
 
 **● stack**: *`string`*
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:887*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:905*
 
 ___
 

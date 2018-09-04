@@ -26,7 +26,7 @@ Default implementation of background task service.
 
 ###  create
 
-▸ **create**T(task: *`function`*, delay: *`number`*): `Promise`<`T`>
+▸ **create**<`T`>(task: *`function`*, delay: *`number`*): `Promise`<`T`>
 
 *Defined in [services/backgroundTaskService.ts:13](https://github.com/iota-pico/core/tree/master/src/services/backgroundTaskService.ts#L13*
 

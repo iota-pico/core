@@ -25,10 +25,10 @@ A core implementation of an error.
 * [additional](coreerror.md#additional)
 * [domain](coreerror.md#domain)
 * [innerError](coreerror.md#innererror)
-* [Error](coreerror.md#error)
 * [message](coreerror.md#message)
 * [name](coreerror.md#name)
 * [stack](coreerror.md#stack)
+* [Error](coreerror.md#error)
 
 ### Methods
 
@@ -100,46 +100,46 @@ ___
 The inner error if there was one.
 
 ___
+<a id="message"></a>
+
+###  message
+
+**● message**: *`string`*
+
+*Inherited from Error.message*
+
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:904*
+
+___
+<a id="name"></a>
+
+###  name
+
+**● name**: *`string`*
+
+*Inherited from Error.name*
+
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:903*
+
+___
+<a id="stack"></a>
+
+### `<Optional>` stack
+
+**● stack**: *`string`*
+
+*Inherited from Error.stack*
+
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:905*
+
+___
 <a id="error"></a>
 
 ### `<Static>` Error
 
 **● Error**: *`ErrorConstructor`*
 
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:896*
-
-___
-<a id="message"></a>
-
-### `<Static>` message
-
-**● message**: *`string`*
-
-*Inherited from Error.message*
-
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:886*
-
-___
-<a id="name"></a>
-
-### `<Static>` name
-
-**● name**: *`string`*
-
-*Inherited from Error.name*
-
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:885*
-
-___
-<a id="stack"></a>
-
-### `<Static>``<Optional>` stack
-
-**● stack**: *`string`*
-
-*Inherited from Error.stack*
-
-*Defined in D:/Workarea/iota-pico/core/node_modules/.registry.npmjs.org/typescript/2.7.2/node_modules/typescript/lib/lib.es5.d.ts:887*
+*Defined in D:/Workarea/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:914*
 
 ___
 

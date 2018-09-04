@@ -46,7 +46,7 @@
 
 ###  NetworkProtocol
 
-**ΤNetworkProtocol**: * "http" &#124; "https"
+**Ƭ NetworkProtocol**: * "http" &#124; "https"
 *
 
 *Defined in [interfaces/networkProtocol.ts:4](https://github.com/iota-pico/core/tree/master/src/interfaces/networkProtocol.ts#L4*
