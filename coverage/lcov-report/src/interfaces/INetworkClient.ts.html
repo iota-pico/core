@@ -93,12 +93,7 @@
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,52 +140,42 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { NetworkMethod } from "./networkMethod";
+&nbsp;
+/**
  * Represents a client for performing communication.
  * @interface
  */
 export interface INetworkClient {
     /**
      * Get data asynchronously.
+     * @param data The data to send.
      * @param additionalPath An additional path append to the endpoint path.
      * @param additionalHeaders Extra headers to send with the request.
      * @returns Promise which resolves to the object returned or rejects with error.
      */
-    get(additionalPath?: string, additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
+    get(data: { [key: string]: any }, additionalPath?: string, additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
 &nbsp;
     /**
      * Post data asynchronously.
-     * @param additionalPath An additional path append to the endpoint path.
      * @param data The data to send.
+     * @param additionalPath An additional path append to the endpoint path.
      * @param additionalHeaders Extra headers to send with the request.
      * @returns Promise which resolves to the object returned or rejects with error.
      */
     post(data: string, additionalPath?: string, additionalHeaders?: { [header: string]: string }): Promise&lt;string&gt;;
 &nbsp;
     /**
-     * Get data as JSON asynchronously.
-     * @typeparam U The generic type for the returned object.
-     * @param additionalPath An additional path append to the endpoint path.
-     * @param additionalHeaders Extra headers to send with the request.
-     * @returns Promise which resolves to the object returned or rejects with error.
-     */
-    getJson&lt;U&gt;(additionalPath?: string, additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
-&nbsp;
-    /**
-     * Post data as JSON asynchronously.
+     * Request data as JSON asynchronously.
      * @typeparam T The generic type for the object to send.
      * @typeparam U The generic type for the returned object.
-     * @param data The data to send.
+     * @param data The data to send as the JSON body.
+     * @param method The method to send with the request.
      * @param additionalPath An additional path append to the endpoint path.
      * @param additionalHeaders Extra headers to send with the request.
      * @returns Promise which resolves to the object returned or rejects with error.
      */
-    postJson&lt;T, U&gt;(data: T, additionalPath?: string, additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
+    json&lt;T, U&gt;(data?: T, method?: NetworkMethod, additionalPath?: string, additionalHeaders?: { [header: string]: string }): Promise&lt;U&gt;;
 &nbsp;
     /**
      * Perform a request asynchronously.

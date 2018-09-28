@@ -13,6 +13,12 @@ export declare class NetworkEndPoint implements INetworkEndPoint {
      */
     constructor(protocol: NetworkProtocol, host: string, port: number, rootPath?: string);
     /**
+     * Create a network endpoint by parsing a uri.
+     * @param uri The uri to parse.
+     * @returns The network endpoint.
+     */
+    static fromUri(uri: string): INetworkEndPoint;
+    /**
      * The protocol to access the endpoint with.
      * @returns The protocol.
      */

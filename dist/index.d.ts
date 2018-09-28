@@ -21,6 +21,7 @@ export * from "./interfaces/INetworkEndPoint";
 export * from "./interfaces/IPlatformCrypto";
 export * from "./interfaces/IRngService";
 export * from "./interfaces/ITimeService";
+export * from "./interfaces/networkMethod";
 export * from "./interfaces/networkProtocol";
 export * from "./loggers/consoleLogger";
 export * from "./loggers/nullLogger";

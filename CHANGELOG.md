@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.1
+
+* Refactored NetworkClient to make it more versatile
+* Added fromUri to NetworkEndPoint
+* Webpack bundling switch from Uglify to Terser
+
 ## v1.0.0
 
 * Final 1.0.0 Release

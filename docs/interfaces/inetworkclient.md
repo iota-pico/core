@@ -15,9 +15,8 @@ Represents a client for performing communication.
 
 * [doRequest](inetworkclient.md#dorequest)
 * [get](inetworkclient.md#get)
-* [getJson](inetworkclient.md#getjson)
+* [json](inetworkclient.md#json)
 * [post](inetworkclient.md#post)
-* [postJson](inetworkclient.md#postjson)
 
 ---
 
@@ -29,7 +28,7 @@ Represents a client for performing communication.
 
 ▸ **doRequest**(method: *`string`*, data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:51](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L51*
+*Defined in [interfaces/INetworkClient.ts:46](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L46*
 
 Perform a request asynchronously.
 
@@ -50,9 +49,9 @@ ___
 
 ###  get
 
-▸ **get**(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
+▸ **get**(data: *`object`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
 
-*Defined in [interfaces/INetworkClient.ts:12](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L12*
+*Defined in [interfaces/INetworkClient.ts:15](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L15*
 
 Get data asynchronously.
 
@@ -60,6 +59,7 @@ Get data asynchronously.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
+| data | `object` |  The data to send. |
 | `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
 | `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
@@ -67,64 +67,15 @@ Get data asynchronously.
 Promise which resolves to the object returned or rejects with error.
 
 ___
-<a id="getjson"></a>
+<a id="json"></a>
 
-###  getJson
+###  json
 
-▸ **getJson**<`U`>(additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
+▸ **json**<`T`,`U`>(data?: *`T`*, method?: *[NetworkMethod](../#networkmethod)*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
 
-*Defined in [interfaces/INetworkClient.ts:30](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L30*
+*Defined in [interfaces/INetworkClient.ts:36](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L36*
 
-Get data as JSON asynchronously.
-
-**Type parameters:**
-
-#### U 
-
-The generic type for the returned object.
-
-**Parameters:**
-
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
-| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
-
-**Returns:** `Promise`<`U`>
-Promise which resolves to the object returned or rejects with error.
-
-___
-<a id="post"></a>
-
-###  post
-
-▸ **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
-
-*Defined in [interfaces/INetworkClient.ts:21](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L21*
-
-Post data asynchronously.
-
-**Parameters:**
-
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| data | `string` |  The data to send. |
-| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
-| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
-
-**Returns:** `Promise`<`string`>
-Promise which resolves to the object returned or rejects with error.
-
-___
-<a id="postjson"></a>
-
-###  postJson
-
-▸ **postJson**<`T`,`U`>(data: *`T`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`U`>
-
-*Defined in [interfaces/INetworkClient.ts:41](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L41*
-
-Post data as JSON asynchronously.
+Request data as JSON asynchronously.
 
 **Type parameters:**
 
@@ -140,11 +91,34 @@ The generic type for the returned object.
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| data | `T` |  The data to send. |
+| `Optional` data | `T` |  The data to send as the JSON body. |
+| `Optional` method | [NetworkMethod](../#networkmethod) |  The method to send with the request. |
 | `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
 | `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
 
 **Returns:** `Promise`<`U`>
+Promise which resolves to the object returned or rejects with error.
+
+___
+<a id="post"></a>
+
+###  post
+
+▸ **post**(data: *`string`*, additionalPath?: *`string`*, additionalHeaders?: *`object`*): `Promise`<`string`>
+
+*Defined in [interfaces/INetworkClient.ts:24](https://github.com/iota-pico/core/tree/master/src/interfaces/INetworkClient.ts#L24*
+
+Post data asynchronously.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| data | `string` |  The data to send. |
+| `Optional` additionalPath | `string` |  An additional path append to the endpoint path. |
+| `Optional` additionalHeaders | `object` |  Extra headers to send with the request. |
+
+**Returns:** `Promise`<`string`>
 Promise which resolves to the object returned or rejects with error.
 
 ___

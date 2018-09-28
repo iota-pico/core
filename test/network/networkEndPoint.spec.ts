@@ -35,6 +35,40 @@ describe("NetworkEndPoint", () => {
         chai.expect(obj.getRootPath()).to.be.equal("");
     });
 
+    describe("fromUri", () => {
+        it("can fail with no uri", () => {
+            chai.expect(() => NetworkEndPoint.fromUri("")).to.throw("The uri can not");
+        });
+
+        it("can fail with invalid format", () => {
+            chai.expect(() => NetworkEndPoint.fromUri("http")).to.throw("The uri is not");
+        });
+
+        it("can be called with all parts", () => {
+            const obj = NetworkEndPoint.fromUri("http://localhost:443/api");
+            chai.expect(obj.getProtocol()).to.be.equal("http");
+            chai.expect(obj.getHost()).to.be.equal("localhost");
+            chai.expect(obj.getPort()).to.be.equal(443);
+            chai.expect(obj.getRootPath()).to.be.equal("api");
+        });
+
+        it("can be called with no port", () => {
+            const obj = NetworkEndPoint.fromUri("http://localhost/api");
+            chai.expect(obj.getProtocol()).to.be.equal("http");
+            chai.expect(obj.getHost()).to.be.equal("localhost");
+            chai.expect(obj.getPort()).to.be.equal(80);
+            chai.expect(obj.getRootPath()).to.be.equal("api");
+        });
+
+        it("can be called with no path", () => {
+            const obj = NetworkEndPoint.fromUri("https://localhost");
+            chai.expect(obj.getProtocol()).to.be.equal("https");
+            chai.expect(obj.getHost()).to.be.equal("localhost");
+            chai.expect(obj.getPort()).to.be.equal(80);
+            chai.expect(obj.getRootPath()).to.be.equal("");
+        });
+    });
+
     describe("getProtocol", () => {
         it("can be called", () => {
             const obj = new NetworkEndPoint("http", "localhost", 443, "api");

@@ -25,6 +25,7 @@ Default implementation of a network endpoint.
 * [getProtocol](networkendpoint.md#getprotocol)
 * [getRootPath](networkendpoint.md#getrootpath)
 * [getUri](networkendpoint.md#geturi)
+* [fromUri](networkendpoint.md#fromuri)
 
 ---
 
@@ -63,7 +64,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getHost](../interfaces/inetworkendpoint.md#gethost)*
 
-*Defined in [network/networkEndPoint.ts:59](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L59*
+*Defined in [network/networkEndPoint.ts:82](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L82*
 
 The host name or ip of the endpoint.
 
@@ -79,7 +80,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getPort](../interfaces/inetworkendpoint.md#getport)*
 
-*Defined in [network/networkEndPoint.ts:75](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L75*
+*Defined in [network/networkEndPoint.ts:98](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L98*
 
 The port of the endpoint.
 
@@ -95,7 +96,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getProtocol](../interfaces/inetworkendpoint.md#getprotocol)*
 
-*Defined in [network/networkEndPoint.ts:51](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L51*
+*Defined in [network/networkEndPoint.ts:74](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L74*
 
 The protocol to access the endpoint with.
 
@@ -111,7 +112,7 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getRootPath](../interfaces/inetworkendpoint.md#getrootpath)*
 
-*Defined in [network/networkEndPoint.ts:67](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L67*
+*Defined in [network/networkEndPoint.ts:90](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L90*
 
 The path to the endpoint.
 
@@ -127,12 +128,32 @@ ___
 
 *Implementation of [INetworkEndPoint](../interfaces/inetworkendpoint.md).[getUri](../interfaces/inetworkendpoint.md#geturi)*
 
-*Defined in [network/networkEndPoint.ts:83](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L83*
+*Defined in [network/networkEndPoint.ts:106](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L106*
 
 The complete uri.
 
 **Returns:** `string`
 The uri.
+
+___
+<a id="fromuri"></a>
+
+### `<Static>` fromUri
+
+▸ **fromUri**(uri: *`string`*): [INetworkEndPoint](../interfaces/inetworkendpoint.md)
+
+*Defined in [network/networkEndPoint.ts:52](https://github.com/iota-pico/core/tree/master/src/network/networkEndPoint.ts#L52*
+
+Create a network endpoint by parsing a uri.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| uri | `string` |  The uri to parse. |
+
+**Returns:** [INetworkEndPoint](../interfaces/inetworkendpoint.md)
+The network endpoint.
 
 ___
 

@@ -45,6 +45,29 @@ export class NetworkEndPoint implements INetworkEndPoint {
     }
 
     /**
+     * Create a network endpoint by parsing a uri.
+     * @param uri The uri to parse.
+     * @returns The network endpoint.
+     */
+    public static fromUri(uri: string): INetworkEndPoint {
+        if (StringHelper.isEmpty(uri)) {
+            throw new NetworkError("The uri can not be empty");
+        }
+
+        const parts = /^(https?):\/\/(.*?)(:\d+)?(\/.*)?$/.exec(uri);
+
+        if (ObjectHelper.isEmpty(parts) || parts.length !== 5) {
+            throw new NetworkError(`The uri is not in the correct format '${uri}'`);
+        }
+
+        return new NetworkEndPoint(
+            <NetworkProtocol>parts[1],
+            parts[2],
+            parts[3] ? parseInt(parts[3].substr(1), 10) : 80,
+            parts[4]);
+    }
+
+    /**
      * The protocol to access the endpoint with.
      * @returns The protocol.
      */

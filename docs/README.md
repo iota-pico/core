@@ -36,12 +36,25 @@
 
 ### Type aliases
 
+* [NetworkMethod](#networkmethod)
 * [NetworkProtocol](#networkprotocol)
 
 ---
 
 ## Type aliases
 
+<a id="networkmethod"></a>
+
+###  NetworkMethod
+
+**Ƭ NetworkMethod**: * "GET" &#124; "POST" &#124; "PUT" &#124; "DELETE" &#124; "PATCH"
+*
+
+*Defined in interfaces/networkMethod.ts:4*
+
+Represents the http request methods.
+
+___
 <a id="networkprotocol"></a>
 
 ###  NetworkProtocol
