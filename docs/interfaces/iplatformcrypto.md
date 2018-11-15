@@ -36,7 +36,7 @@ Decrypt the given data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | publicKey | `string` |  The key to use for decrypting data. |
 | data | `string` |  The data to decrypt. |
@@ -57,7 +57,7 @@ Encrypt the given data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | privateKey | `string` |  The key to use for encrypting data. |
 | data | `string` |  The data to encrypt. |
@@ -78,7 +78,7 @@ Hash the data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | algo | `string` |  The algorithm to use. |
 | data | `any` |  The data to hash. |
@@ -101,7 +101,7 @@ HMAC the data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | algo | `string` |  The algorithm to use. |
 | key | `any` |  The key to hash the data with. |
@@ -125,7 +125,7 @@ Sign the given data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | privateKey | `string` |  The key to use for signing data. |
 | data | `string` |  The data to sign. |
@@ -146,7 +146,7 @@ Verify the given data with the signature.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | publicKey | `string` |  The key to use for verifying data. |
 | data | `string` |  The data to verify. |

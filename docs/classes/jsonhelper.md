@@ -30,7 +30,7 @@ Stringify an object with recursion breaking.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  A JavaScript value, usually an object or array, to be converted. |
 | `Optional` replacer | `function` |  A function that transforms the results. |

@@ -32,7 +32,7 @@ Is the value an array.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test. |
 
@@ -52,7 +52,7 @@ Is the value a empty array.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test. |
 
@@ -72,7 +72,7 @@ Is the value a non empty array of specific type.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test. |
 | type | `Function` |  The type of the object |

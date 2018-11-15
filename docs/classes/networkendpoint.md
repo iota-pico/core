@@ -43,7 +43,7 @@ Create an instance of NetworkEndPoint.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | protocol | [NetworkProtocol](../#networkprotocol) |  The protocol to access the endpoint with. |
 | host | `string` |  The host name or ip of the endpoint. |
@@ -148,7 +148,7 @@ Create a network endpoint by parsing a uri.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | uri | `string` |  The uri to parse. |
 

@@ -50,7 +50,7 @@
 **Ƭ NetworkMethod**: * "GET" &#124; "POST" &#124; "PUT" &#124; "DELETE" &#124; "PATCH"
 *
 
-*Defined in interfaces/networkMethod.ts:4*
+*Defined in [interfaces/networkMethod.ts:4](https://github.com/iota-pico/core/tree/master/src/interfaces/networkMethod.ts#L4*
 
 Represents the http request methods.
 

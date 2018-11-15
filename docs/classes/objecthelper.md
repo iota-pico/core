@@ -33,7 +33,7 @@ Get the class name of an object if it has one.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | object | `any` |  The object to get the class name for. |
 
@@ -53,7 +53,7 @@ Is the value empty.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test. |
 
@@ -73,7 +73,7 @@ Is the value an object.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test. |
 
@@ -93,7 +93,7 @@ Is the value an object if given type.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test. |
 | typeConstructor | `Function` |  A callback method which returns an instance of the object. |

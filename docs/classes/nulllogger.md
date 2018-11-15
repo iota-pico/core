@@ -40,7 +40,7 @@ Send banner to the logger.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | message | `string` |  The message to log. |
 | `Rest` args | `any`[] |  Additional parameters to log. |
@@ -62,7 +62,7 @@ Send error to the logger.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | message | `string` |  The message to log. |
 | `Optional` err | `any` |  An error object to log. |
@@ -85,7 +85,7 @@ Send information to the logger.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | message | `string` |  The message to log. |
 | `Rest` args | `any`[] |  Additional parameters to log. |
@@ -107,7 +107,7 @@ Send log to the logger.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | message | `string` |  The message to log. |
 | `Rest` args | `any`[] |  Additional parameters to log. |
@@ -129,7 +129,7 @@ Send warning to the logger.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | message | `string` |  The message to log. |
 | `Rest` args | `any`[] |  Additional parameters to log. |

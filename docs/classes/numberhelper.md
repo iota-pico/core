@@ -33,7 +33,7 @@ Is the value a float number formatted as a string, can be used for big numbers t
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  The value to check |
 
@@ -53,7 +53,7 @@ Is the value an integer.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test for its integerness. |
 
@@ -73,7 +73,7 @@ Is the value a integer number formatted as a string, can be used for big numbers
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `string` |  The value to check |
 
@@ -93,7 +93,7 @@ Is the value a number.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `any` |  Object to test for its numberyness. |
 

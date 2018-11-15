@@ -38,7 +38,7 @@ Create a background task.
 #### T 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | task | `function` |  The task to run in the background. |
 | delay | `number` |  The delay before running the task. |

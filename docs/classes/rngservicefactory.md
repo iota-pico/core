@@ -40,7 +40,7 @@ Create an instance of an object from the factory.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | name | `string` |  The name of the type to create. |
 | `Rest` args | `any`[] |  Any parameters to pass to the constructor. |
@@ -63,7 +63,7 @@ Does the factory contain a specific type.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | name | `string` |  The name of the type to look for. |
 
@@ -98,7 +98,7 @@ Register a new type with the factory.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | name | `string` |  The name of the type to register. |
 | typeConstructor | `function` |  The constructor for the type. |
@@ -136,7 +136,7 @@ Unregister a type from the factory.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | name | `string` |  The name of the type to unregister. |
 

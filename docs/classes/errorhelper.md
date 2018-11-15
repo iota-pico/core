@@ -30,7 +30,7 @@ Format an error object into something readable.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | err | `any` |  The object to format. |
 | includeStack | `boolean` |  Include the stack trace if there is one. |
