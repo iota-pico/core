@@ -111,7 +111,7 @@ ___
 
 *Inherited from Error.message*
 
-*Defined in D:/Workarea/iota.eco/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:904*
+*Defined in D:/Workarea/iota.eco/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:904*
 
 ___
 <a id="name"></a>
@@ -122,7 +122,7 @@ ___
 
 *Inherited from Error.name*
 
-*Defined in D:/Workarea/iota.eco/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:903*
+*Defined in D:/Workarea/iota.eco/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:903*
 
 ___
 <a id="stack"></a>
@@ -133,7 +133,7 @@ ___
 
 *Inherited from Error.stack*
 
-*Defined in D:/Workarea/iota.eco/iota-pico/core/node_modules/typescript/lib/lib.es5.d.ts:905*
+*Defined in D:/Workarea/iota.eco/iota-pico/core/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:905*
 
 ___
 

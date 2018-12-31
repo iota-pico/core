@@ -152,7 +152,6 @@
                 "order": "fields-first"
             }
         ],
-        "missing-jsdoc": true,
         "mocha-unneeded-done": true,
         "newline-per-chained-call": false,
         "new-parens": true,
@@ -336,6 +335,8 @@
             }
         ],
         "file-name-casing": false,
-        "no-unused-variable": false
+        "no-unused-variable": false,
+        "unnecessary-constructor": false,
+        "ban-ts-ignore": false
     }
 }
