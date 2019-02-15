@@ -3,6 +3,7 @@
 # Interface: ILogger
 
 Represents a class which can provide logging.
+
 *__interface__*: 
 
 ## Hierarchy

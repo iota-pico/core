@@ -3,6 +3,7 @@
 # Interface: INetworkClient
 
 Represents a client for performing communication.
+
 *__interface__*: 
 
 ## Hierarchy

@@ -3,6 +3,7 @@
 # Interface: IRngService
 
 Represents a service to perform random number generation.
+
 *__interface__*: 
 
 ## Hierarchy

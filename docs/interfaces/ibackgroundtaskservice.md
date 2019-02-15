@@ -3,6 +3,7 @@
 # Interface: IBackgroundTaskService
 
 Represents a class which can provide background tasks.
+
 *__interface__*: 
 
 ## Hierarchy

@@ -3,6 +3,7 @@
 # Interface: ITimeService
 
 Represents a class which can provide the time.
+
 *__interface__*: 
 
 ## Hierarchy

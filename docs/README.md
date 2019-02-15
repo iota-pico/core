@@ -47,7 +47,7 @@
 
 ###  NetworkMethod
 
-**Ƭ NetworkMethod**: *"GET" | "POST" | "PUT" | "DELETE" | "PATCH"*
+**Ƭ NetworkMethod**: *"GET" \| "POST" \| "PUT" \| "DELETE" \| "PATCH"*
 
 *Defined in [interfaces/networkMethod.ts:4](https://github.com/iota-pico/core/tree/master/src/interfaces/networkMethod.ts#L4*
 
@@ -58,7 +58,7 @@ ___
 
 ###  NetworkProtocol
 
-**Ƭ NetworkProtocol**: *"http" | "https"*
+**Ƭ NetworkProtocol**: *"http" \| "https"*
 
 *Defined in [interfaces/networkProtocol.ts:4](https://github.com/iota-pico/core/tree/master/src/interfaces/networkProtocol.ts#L4*
 

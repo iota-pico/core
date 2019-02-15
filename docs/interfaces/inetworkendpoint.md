@@ -3,6 +3,7 @@
 # Interface: INetworkEndPoint
 
 Represents the configuration for a network endpoint.
+
 *__interface__*: 
 
 ## Hierarchy
