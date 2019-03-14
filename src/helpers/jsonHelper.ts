@@ -18,9 +18,8 @@ export class JsonHelper {
                 if (cache.indexOf(replaceValue) !== -1) {
                     // circular reference found, discard key
                     return;
-                } else {
-                    cache.push(replaceValue);
                 }
+                cache.push(replaceValue);
             }
 
             return replacer ? replacer(key, replaceValue) : replaceValue;

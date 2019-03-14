@@ -94,8 +94,7 @@
 <a name='L46'></a><a href='#L46'>46</a>
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -143,7 +142,6 @@
 <span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
  * Object helper methods.
  */
@@ -164,7 +162,7 @@ export class ObjectHelper {
      */
     public static isObject(value: any): value is Object {
         return value === null || value === undefined
-            ? false : typeof(value) === "object" &amp;&amp; !Array.isArray(value);
+            ? false : typeof (value) === "object" &amp;&amp; !Array.isArray(value);
     }
 &nbsp;
     /**
@@ -186,11 +184,10 @@ export class ObjectHelper {
     public static getClassName(object: any): string {
         if (object === null || object === undefined) {
             return undefined;
-        } else {
-            const constructor = typeof object === "function" ? object.toString() : object.constructor.toString();
-            const results = constructor.match(/\w+/g);
-            return (results &amp;&amp; results.length &gt; 1) ? results[1] : undefined;
         }
+        const constructor = typeof object === "function" ? object.toString() : object.constructor.toString();
+        const results = constructor.match(/\w+/g);
+        return (results &amp;&amp; results.length &gt; 1) ? results[1] : undefined;
     }
 }
 &nbsp;</pre></td></tr>

@@ -16,7 +16,8 @@ export class ErrorHelper {
     public static format(err: any, includeStack: boolean): string {
         if (err === null || err === undefined) {
             return "unknown error";
-        } else if (CoreError.isError(err)) {
+        }
+        if (CoreError.isError(err)) {
             let ret = err.format();
             if (includeStack && err.stack) {
                 ret += `\nStack Trace`;
@@ -36,7 +37,8 @@ export class ErrorHelper {
             }
 
             return ret;
-        } else if (err instanceof Error) {
+        }
+        if (err instanceof Error) {
             let ret = "";
             if (includeStack && !ObjectHelper.isEmpty(err.stack)) {
                 ret += err.stack;
@@ -44,12 +46,11 @@ export class ErrorHelper {
                 ret += err.message;
             }
             return ret;
-        } else {
-            if (StringHelper.isString(err)) {
-                return err;
-            } else {
-                return JsonHelper.stringify(err, undefined, "\t");
-            }
         }
+
+        if (StringHelper.isString(err)) {
+            return err;
+        }
+        return JsonHelper.stringify(err, undefined, "\t");
     }
 }

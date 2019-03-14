@@ -51,9 +51,8 @@ export abstract class FactoryBase<T> {
         const instance = this.getInstance();
         if (instance._types[name]) {
             return instance._types[name](...args);
-        } else {
-            return undefined;
         }
+        return undefined;
     }
 
     /* @internal */
